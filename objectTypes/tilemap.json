@@ -1,0 +1,49 @@
+{
+	"name": "Tilemap",
+	"plugin-id": "Tilemap",
+	"sid": 647094784710667,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 910019405844646
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 128,
+		"height": 128,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 8811268,
+		"useCollisionPoly": true
+	},
+	"tile-collision-polys": {
+		"13": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.679487142807399,
+					0.5721154335217596,
+					0.12820518933809705,
+					0.776442356598683,
+					0.13461542740846286,
+					0.8948319141681379,
+					0.2772436462915861,
+					0.99879824809539,
+					0.5673077137042314,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		}
+	}
+}

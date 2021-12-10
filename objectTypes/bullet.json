@@ -1,0 +1,48 @@
+{
+	"name": "bullet",
+	"plugin-id": "Sprite",
+	"sid": 574208807248799,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Bullet",
+			"name": "Bullet",
+			"sid": 328669760856610
+		},
+		{
+			"behaviorId": "Physics",
+			"name": "Physics",
+			"sid": 888932761625903
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 8,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2633244,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 972240754675722,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -1,0 +1,464 @@
+{
+	"name": "obj_Player",
+	"plugin-id": "Sprite",
+	"sid": 234851304274409,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "is_Shooting",
+			"type": "number",
+			"desc": "",
+			"sid": 430132594190459
+		},
+		{
+			"name": "wep_Rate",
+			"type": "number",
+			"desc": "",
+			"sid": 759027096337429
+		},
+		{
+			"name": "wep_Type",
+			"type": "string",
+			"desc": "",
+			"sid": 455006498100971
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Platform",
+			"name": "Platform",
+			"sid": 344516246006524
+		},
+		{
+			"behaviorId": "bound",
+			"name": "BoundToLayout",
+			"sid": 926492313806969
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8354701,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2930466,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4375,
+								"y": 0.71875
+							},
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2881588,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4375,
+								"y": 0.71875
+							},
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5659053,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4375,
+								"y": 0.71875
+							},
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 603992261140034,
+				"name": "Idle",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 7790039,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8037969,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4375,
+								"y": 0.71875
+							},
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8218306,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4375,
+								"y": 0.71875
+							},
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 9740311,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4375,
+								"y": 0.71875
+							},
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					},
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 1968675,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "Image Point 1",
+								"x": 0.4375,
+								"y": 0.71875
+							},
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 156121475440254,
+				"name": "Run",
+				"isLooping": true,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 10
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 2240234,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 411013234696988,
+				"name": "Jump",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4593518,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0.9419644049235751,
+								0,
+								0.9419643197740828
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "soldier",
+								"x": 0.46875,
+								"y": 0.71875
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 416597973555579,
+				"name": "Fall",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 3
+			}
+		],
+		"subfolders": []
+	}
+}

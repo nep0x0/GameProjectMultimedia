@@ -1,0 +1,871 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 811492283489583
+				}
+			],
+			"actions": [
+				{
+					"id": "set-cursor-from-sprite",
+					"objectClass": "Mouse",
+					"sid": 221297441298432,
+					"parameters": {
+						"sprite": "kekeran"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Camera",
+					"sid": 627366561207833,
+					"parameters": {
+						"x": "lerp(Self.X,obj_Player.X,0.1)",
+						"y": "lerp(Self.Y,obj_Player.Y-70,0.1)"
+					}
+				}
+			],
+			"sid": 516623939088974
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Key",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 863898065356719,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "obj_Player",
+							"sid": 589597748396241,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 328258982536160
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 750393870550795,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "obj_Player",
+							"sid": 912179700148053,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 740181762886820
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 482735653082986,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "obj_Player",
+							"sid": 287593924033142,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 593772619899212
+				}
+			],
+			"sid": 176198935598707
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "MoveFX",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "obj_Player",
+									"sid": 488745276470239,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "obj_Player",
+									"sid": 874119707165679,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "obj_Player",
+									"sid": 313031662489162,
+									"parameters": {
+										"animation": "\"Run\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 319444657212937
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-stopped",
+									"objectClass": "obj_Player",
+									"sid": 979749584195696,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "obj_Player",
+									"sid": 815894626147269,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "obj_Player",
+									"sid": 857143621868798,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 895404661316010
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-jumping",
+									"objectClass": "obj_Player",
+									"sid": 836657819385446,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "obj_Player",
+									"sid": 657018470980532,
+									"parameters": {
+										"animation": "\"Jump\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 387823821268837
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-falling",
+									"objectClass": "obj_Player",
+									"sid": 472116431440251,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "obj_Player",
+									"sid": 933793893501640,
+									"parameters": {
+										"animation": "\"Fall\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 715529736958552
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-landed",
+									"objectClass": "obj_Player",
+									"sid": 783968045978447,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "obj_Player",
+									"sid": 463189993831353,
+									"parameters": {
+										"animation": "\"Idle\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 359080963497326
+						}
+					],
+					"sid": 457728978264167
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "GunDirection",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "every-tick",
+									"objectClass": "System",
+									"sid": 707239661878890
+								}
+							],
+							"actions": [
+								{
+									"id": "set-position",
+									"objectClass": "obj_wep",
+									"sid": 601226860378952,
+									"parameters": {
+										"x": "obj_Player.ImagePointX(\"soldier\")",
+										"y": "obj_Player.ImagePointY(\"soldier\")"
+									}
+								},
+								{
+									"id": "set-angle",
+									"objectClass": "obj_wep",
+									"sid": 940252505896279,
+									"parameters": {
+										"angle": "angle(Self.X,Self.Y,Mouse.X,Mouse.Y)"
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "obj_wep",
+									"sid": 145025039919679,
+									"parameters": {
+										"animation": "\"ID_\" & obj_Player.wep_Type",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 174369804160421
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 316539830900114,
+									"parameters": {
+										"first-value": "obj_Player.X",
+										"comparison": 2,
+										"second-value": "Mouse.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "obj_Player",
+									"sid": 188591786716308,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "obj_wep",
+									"sid": 832573652647316,
+									"parameters": {
+										"state": "not-flipped"
+									}
+								}
+							],
+							"sid": 164289781362893
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 722583309479962,
+									"parameters": {
+										"first-value": "obj_Player.X",
+										"comparison": 4,
+										"second-value": "Mouse.X"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-mirrored",
+									"objectClass": "obj_Player",
+									"sid": 624987383263803,
+									"parameters": {
+										"state": "mirrored"
+									}
+								},
+								{
+									"id": "set-flipped",
+									"objectClass": "obj_wep",
+									"sid": 550130742292485,
+									"parameters": {
+										"state": "flipped"
+									}
+								}
+							],
+							"sid": 785746711797938
+						}
+					],
+					"sid": 273919625225362
+				}
+			],
+			"sid": 463457303116082
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Gun Trigger",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 438216746132208,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						},
+						{
+							"id": "every-x-seconds",
+							"objectClass": "System",
+							"sid": 374733866447737,
+							"parameters": {
+								"interval-seconds": "0.3"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "obj_wep",
+							"sid": 595453545721298,
+							"parameters": {
+								"object": "bullet",
+								"layer": "1",
+								"image-point": "1",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 951343638476047,
+							"parameters": {
+								"seconds": "0.4"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "bullet",
+							"sid": 834592637658089
+						}
+					],
+					"sid": 234226203329508,
+					"disabled": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-click",
+							"objectClass": "Mouse",
+							"sid": 986609686373340,
+							"parameters": {
+								"mouse-button": "left",
+								"click-type": "clicked"
+							}
+						},
+						{
+							"id": "mouse-button-is-down",
+							"objectClass": "Mouse",
+							"sid": 505451792282359,
+							"parameters": {
+								"mouse-button": "left"
+							}
+						}
+					],
+					"actions": [],
+					"sid": 873122119432989,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "obj_Player",
+									"sid": 172627488632546,
+									"parameters": {
+										"instance-variable": "is_Shooting",
+										"comparison": 0,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"callFunction": "wepType",
+									"sid": 550175814713053
+								},
+								{
+									"callFunction": "wepTimer",
+									"sid": 332767443073442
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 970781227185490,
+									"parameters": {
+										"instance-variable": "is_Shooting",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 377574901842670,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-mirrored",
+											"objectClass": "obj_Player",
+											"sid": 659345887982431
+										}
+									],
+									"actions": [
+										{
+											"id": "move-forward",
+											"objectClass": "obj_Player",
+											"sid": 327319291789946,
+											"parameters": {
+												"distance": "obj_wep.knockback"
+											}
+										},
+										{
+											"id": "move-forward",
+											"objectClass": "obj_wep",
+											"sid": 404092434198932,
+											"parameters": {
+												"distance": "Self.knockback"
+											}
+										}
+									],
+									"sid": 283109562572669
+								},
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-mirrored",
+											"objectClass": "obj_Player",
+											"sid": 210120816285123,
+											"isInverted": true
+										}
+									],
+									"actions": [
+										{
+											"id": "move-forward",
+											"objectClass": "obj_Player",
+											"sid": 149050870824542,
+											"parameters": {
+												"distance": "-obj_wep.knockback"
+											}
+										},
+										{
+											"id": "move-forward",
+											"objectClass": "obj_wep",
+											"sid": 843434271750661,
+											"parameters": {
+												"distance": "-Self.knockback"
+											}
+										}
+									],
+									"sid": 311848441352007
+								}
+							]
+						}
+					],
+					"isOrBlock": true
+				},
+				{
+					"functionName": "wepType",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [],
+					"sid": 335992973398037,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "obj_Player",
+									"sid": 370707803441000,
+									"parameters": {
+										"instance-variable": "wep_Type",
+										"comparison": 0,
+										"value": "\"PISTOL\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "obj_wep",
+									"sid": 168536034047292,
+									"parameters": {
+										"object": "bullet",
+										"layer": "1",
+										"image-point": "\"gun\"",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 428813755846311,
+									"parameters": {
+										"instance-variable": "wep_Type",
+										"value": "\"PISTOL\""
+									}
+								},
+								{
+									"callFunction": "ScreenShake",
+									"sid": 325565839109107,
+									"parameters": [
+										"2",
+										"0.1"
+									]
+								}
+							],
+							"sid": 600882023824565
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "obj_Player",
+									"sid": 312882957724663,
+									"parameters": {
+										"instance-variable": "wep_Type",
+										"comparison": 0,
+										"value": "\"MACHINEGUN\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "obj_wep",
+									"sid": 682349482542319,
+									"parameters": {
+										"object": "bullet",
+										"layer": "1",
+										"image-point": "\"gun\"",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 389966448063504,
+									"parameters": {
+										"instance-variable": "wep_Rate",
+										"value": "0.2"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 605924294047412,
+									"parameters": {
+										"instance-variable": "wep_Type",
+										"value": "\"MACHINEGUN\""
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_wep",
+									"sid": 368891103833665,
+									"parameters": {
+										"instance-variable": "knockback",
+										"value": "1"
+									}
+								},
+								{
+									"callFunction": "ScreenShake",
+									"sid": 187149364360397,
+									"parameters": [
+										"3",
+										"0.1"
+									]
+								}
+							],
+							"sid": 303942644322628
+						}
+					]
+				},
+				{
+					"functionName": "wepTimer",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 437412877907943,
+							"parameters": {
+								"seconds": "obj_Player.wep_Rate"
+							}
+						},
+						{
+							"id": "set-instvar-value",
+							"objectClass": "obj_Player",
+							"sid": 502381626704560,
+							"parameters": {
+								"instance-variable": "is_Shooting",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 423898086322412
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 422486829941968,
+							"parameters": {
+								"key": 81
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "obj_Player",
+							"sid": 807860064469112,
+							"parameters": {
+								"instance-variable": "wep_Type",
+								"value": "\"MACHINEGUN\""
+							}
+						}
+					],
+					"sid": 210264463556434
+				}
+			],
+			"sid": 855134828564941
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Hit",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "bullet",
+							"sid": 671101403280152,
+							"parameters": {
+								"object": "Enemy"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "bullet",
+							"sid": 919983923880915
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Enemy",
+							"sid": 572303536206396
+						}
+					],
+					"sid": 431991222595847
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "bullet",
+							"sid": 966472252946352
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 693943804310491,
+							"parameters": {
+								"object-to-create": "Particles",
+								"layer": "1",
+								"x": "bullet.X",
+								"y": "bullet.Y",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 371266551473863
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "Enemy",
+							"sid": 104640113216548
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 531964340521605,
+							"parameters": {
+								"object-to-create": "Particles",
+								"layer": "1",
+								"x": "Enemy.X",
+								"y": "Enemy.Y",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 699391809861445
+				}
+			],
+			"sid": 752862303644882
+		},
+		{
+			"functionName": "ScreenShake",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Magnitudo",
+					"type": "number",
+					"initialValue": "2",
+					"comment": "",
+					"sid": 878154409601287
+				},
+				{
+					"name": "Duration",
+					"type": "number",
+					"initialValue": "0.1",
+					"comment": "",
+					"sid": 663834136643789
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "shake",
+					"objectClass": "Camera",
+					"sid": 689752033529748,
+					"behaviorType": "ScrollTo",
+					"parameters": {
+						"magnitude": "Magnitudo",
+						"duration": "Duration",
+						"mode": "reducing-magnitude"
+					}
+				}
+			],
+			"sid": 148660744159116
+		}
+	],
+	"sid": 959625501649600
+}
