@@ -259,7 +259,17 @@
 						}
 					],
 					"sid": 457728978264167
-				},
+				}
+			],
+			"sid": 463457303116082
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Gun Trigger",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
 					"eventType": "group",
 					"disabled": false,
@@ -273,14 +283,14 @@
 								{
 									"id": "every-tick",
 									"objectClass": "System",
-									"sid": 707239661878890
+									"sid": 837806471753576
 								}
 							],
 							"actions": [
 								{
 									"id": "set-animation",
 									"objectClass": "obj_wep",
-									"sid": 149899656814136,
+									"sid": 810135847937145,
 									"parameters": {
 										"animation": "\"id_\" & obj_Player.wep_Type",
 										"from": "beginning"
@@ -289,7 +299,7 @@
 								{
 									"id": "set-position",
 									"objectClass": "obj_wep",
-									"sid": 313090336734929,
+									"sid": 244697351846193,
 									"parameters": {
 										"x": "obj_Player.ImagePointX(\"soldier\")",
 										"y": "obj_Player.ImagePointY(\"soldier\")"
@@ -298,13 +308,35 @@
 								{
 									"id": "set-angle",
 									"objectClass": "obj_wep",
-									"sid": 654320998840586,
+									"sid": 792961428491428,
 									"parameters": {
 										"angle": "angle(Self.X,Self.Y,Mouse.X,Mouse.Y)"
 									}
+								},
+								{
+									"type": "comment",
+									"text": "recoil"
+								},
+								{
+									"id": "move-at-angle",
+									"objectClass": "obj_wep",
+									"sid": 636054059345499,
+									"parameters": {
+										"angle": "Self.Angle+180",
+										"distance": "Self.recoil"
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_wep",
+									"sid": 295457227752133,
+									"parameters": {
+										"instance-variable": "recoil",
+										"value": "lerp(Self.recoil, 0, dt*6)"
+									}
 								}
 							],
-							"sid": 174369804160421
+							"sid": 804593692824270
 						},
 						{
 							"eventType": "block",
@@ -312,7 +344,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 316539830900114,
+									"sid": 156198242763698,
 									"parameters": {
 										"first-value": "obj_Player.X",
 										"comparison": 2,
@@ -324,7 +356,7 @@
 								{
 									"id": "set-mirrored",
 									"objectClass": "obj_Player",
-									"sid": 188591786716308,
+									"sid": 334730968638473,
 									"parameters": {
 										"state": "not-mirrored"
 									}
@@ -332,13 +364,13 @@
 								{
 									"id": "set-flipped",
 									"objectClass": "obj_wep",
-									"sid": 269891025246539,
+									"sid": 527307411103823,
 									"parameters": {
 										"state": "not-flipped"
 									}
 								}
 							],
-							"sid": 164289781362893
+							"sid": 340067645708946
 						},
 						{
 							"eventType": "block",
@@ -346,7 +378,7 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 722583309479962,
+									"sid": 779366029398942,
 									"parameters": {
 										"first-value": "obj_Player.X",
 										"comparison": 4,
@@ -358,7 +390,7 @@
 								{
 									"id": "set-mirrored",
 									"objectClass": "obj_Player",
-									"sid": 624987383263803,
+									"sid": 187178978993319,
 									"parameters": {
 										"state": "mirrored"
 									}
@@ -366,27 +398,17 @@
 								{
 									"id": "set-flipped",
 									"objectClass": "obj_wep",
-									"sid": 343864697463419,
+									"sid": 228364313316942,
 									"parameters": {
 										"state": "flipped"
 									}
 								}
 							],
-							"sid": 785746711797938
+							"sid": 515388473354075
 						}
 					],
-					"sid": 273919625225362
-				}
-			],
-			"sid": 463457303116082
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
-			"title": "Gun Trigger",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
+					"sid": 128304426197030
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -613,6 +635,19 @@
 										"2",
 										"0.1"
 									]
+								},
+								{
+									"type": "comment",
+									"text": "recoil"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_wep",
+									"sid": 363415474934120,
+									"parameters": {
+										"instance-variable": "recoil",
+										"value": "clamp(Self.recoil+10,1,3)"
+									}
 								}
 							],
 							"sid": 600882023824565
@@ -646,7 +681,7 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
-									"sid": 389966448063504,
+									"sid": 178356981863989,
 									"parameters": {
 										"instance-variable": "wep_Rate",
 										"value": "0.2"
@@ -677,6 +712,15 @@
 										"3",
 										"0.1"
 									]
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_wep",
+									"sid": 154886209842758,
+									"parameters": {
+										"instance-variable": "recoil",
+										"value": "clamp(Self.recoil+10,2,5)"
+									}
 								}
 							],
 							"sid": 303942644322628

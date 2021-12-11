@@ -460,7 +460,7 @@
 					"behaviors": {
 						"Bullet": {
 							"properties": {
-								"speed": 400,
+								"speed": 500,
 								"acceleration": 0,
 								"gravity": 0,
 								"bounce-off-solids": false,
@@ -512,7 +512,8 @@
 					},
 					"uid": 2,
 					"instanceVariables": {
-						"knockback": 0.5
+						"knockback": 0.5,
+						"recoil": 0
 					},
 					"behaviors": {},
 					"world": {

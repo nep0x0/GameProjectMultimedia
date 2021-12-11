@@ -9,6 +9,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 963222262616643
+		},
+		{
+			"name": "recoil",
+			"type": "number",
+			"desc": "",
+			"sid": 352792540832979
 		}
 	],
 	"behaviorTypes": [],
