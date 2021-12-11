@@ -824,9 +824,9 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 422486829941968,
+							"sid": 520939522882788,
 							"parameters": {
-								"key": 81
+								"key": 49
 							}
 						}
 					],
@@ -834,14 +834,39 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "obj_Player",
-							"sid": 920140824807178,
+							"sid": 171801762773270,
+							"parameters": {
+								"instance-variable": "wep_Type",
+								"value": "\"Revolver\""
+							}
+						}
+					],
+					"sid": 210264463556434
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 804199201653270,
+							"parameters": {
+								"key": 50
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "obj_Player",
+							"sid": 722050290044744,
 							"parameters": {
 								"instance-variable": "wep_Type",
 								"value": "\"MachineGun\""
 							}
 						}
 					],
-					"sid": 210264463556434
+					"sid": 950894651110883
 				}
 			],
 			"sid": 855134828564941
