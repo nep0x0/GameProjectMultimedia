@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 1",
+	"name": "playerevent",
 	"events": [
 		{
 			"eventType": "block",
@@ -661,6 +661,17 @@
 							],
 							"actions": [
 								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 888405059218308,
+									"parameters": {
+										"audio-file": "sndPistol",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
 									"sid": 571172845710985,
@@ -781,6 +792,17 @@
 									"parameters": {
 										"instance-variable": "recoil",
 										"value": "clamp(Self.recoil+10,2,5)"
+									}
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 366470861036010,
+									"parameters": {
+										"audio-file": "sndMachinegun",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
 									}
 								}
 							],

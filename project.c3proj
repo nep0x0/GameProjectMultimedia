@@ -154,7 +154,8 @@
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"playerevent",
+			"soundevent"
 		],
 		"subfolders": []
 	},
@@ -166,9 +167,24 @@
 		"sound": {
 			"items": [
 				{
-					"name": "cute Shoot sfx.webm",
+					"name": "sndSwapMachinegun.webm",
 					"type": "audio/webm; codecs=opus",
-					"sid": 435777876777703
+					"sid": 609857628897371
+				},
+				{
+					"name": "sndSwapPistol.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 450910504448261
+				},
+				{
+					"name": "sndMachinegun.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 610325736591253
+				},
+				{
+					"name": "sndPistol.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 423130616361926
 				}
 			],
 			"subfolders": []
