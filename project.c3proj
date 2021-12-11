@@ -123,7 +123,7 @@
 	"objectTypes": {
 		"items": [
 			"Enemy",
-			"obj_wep",
+			"obj_wep_old",
 			"Mouse",
 			"bullet",
 			"Keyboard",
@@ -135,7 +135,8 @@
 			"obj_Player",
 			"Tilemap",
 			"TiledBackground",
-			"TiledBackground2"
+			"TiledBackground2",
+			"obj_wep"
 		],
 		"subfolders": []
 	},

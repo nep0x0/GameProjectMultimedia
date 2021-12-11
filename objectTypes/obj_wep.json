@@ -1,60 +1,64 @@
 {
 	"name": "obj_wep",
 	"plugin-id": "Sprite",
-	"sid": 947675636086108,
+	"sid": 574047372745568,
 	"isGlobal": false,
 	"instanceVariables": [
 		{
 			"name": "knockback",
 			"type": "number",
 			"desc": "",
-			"sid": 652070597142061
+			"sid": 963222262616643
 		}
 	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "Pin",
-			"name": "Pin",
-			"sid": 470550528519447
-		}
-	],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
 			{
 				"frames": [
 					{
-						"width": 5,
-						"height": 4,
-						"originX": 0.09090909090909091,
-						"originY": 0.5714285714285714,
+						"width": 22,
+						"height": 23,
+						"originX": 0.36363636363636365,
+						"originY": 0.5217391304347826,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4289721,
+						"imageSpriteId": 9859993,
 						"collisionPoly": {
 							"points": [
 								0,
 								0,
-								0.17045454545454566,
-								0.9196427890232649,
-								0.5681818181818182,
-								0.2633929252624512
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								1
 							]
 						},
 						"useCollisionPoly": true,
 						"imagePoints": [
 							{
 								"name": "gun",
-								"x": 1,
-								"y": 0.25
+								"x": 0.7272727272727273,
+								"y": 0.5
 							}
 						],
 						"duration": 1
 					}
 				],
-				"sid": 566837416961287,
-				"name": "ID_PISTOL",
+				"sid": 283672180892878,
+				"name": "id_Revolver",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -64,24 +68,32 @@
 			{
 				"frames": [
 					{
-						"width": 14,
-						"height": 6,
-						"originX": 0.07142857142857142,
-						"originY": 0.5,
+						"width": 22,
+						"height": 23,
+						"originX": 0.36363636363636365,
+						"originY": 0.5217391304347826,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7700422,
+						"imageSpriteId": 4780492,
 						"collisionPoly": {
 							"points": [
-								0.031249948910304484,
-								0.3151042064030965,
-								0.49776802744184184,
-								0.35937496026356996,
-								0.5044643538338801,
-								0.6354166666666661,
-								0.02306557836986716,
-								0.6458333730697629
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								1
 							]
 						},
 						"useCollisionPoly": true,
@@ -95,8 +107,158 @@
 						"duration": 1
 					}
 				],
-				"sid": 601118227540877,
-				"name": "ID_MACHINEGUN",
+				"sid": 963261519561328,
+				"name": "Rusty Revolver",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 22,
+						"height": 23,
+						"originX": 0.18181818181818182,
+						"originY": 0.5217391304347826,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5867064,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0,
+								0,
+								1,
+								0,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "gun",
+								"x": 1,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 884561849973661,
+				"name": "id_MachineGun",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 459,
+						"height": 89,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8532698,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9978213507625272,
+								0,
+								0.9978213507625272,
+								0.5,
+								0.9978213507625272,
+								0.9887640449438202,
+								0.5,
+								0.9887640449438202,
+								0,
+								0.9887640449438202,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "gun",
+								"x": 1,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 842273483254540,
+				"name": "Animation 4",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 459,
+						"height": 89,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 203320,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								0.5,
+								0,
+								0.9978213507625272,
+								0,
+								0.9978213507625272,
+								0.5,
+								0.9978213507625272,
+								0.9887640449438202,
+								0.5,
+								0.9887640449438202,
+								0,
+								0.9887640449438202,
+								0,
+								0.5
+							]
+						},
+						"useCollisionPoly": true,
+						"imagePoints": [
+							{
+								"name": "gun",
+								"x": 1,
+								"y": 0.5
+							}
+						],
+						"duration": 1
+					}
+				],
+				"sid": 848860545524279,
+				"name": "Animation 5",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

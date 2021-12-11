@@ -278,9 +278,18 @@
 							],
 							"actions": [
 								{
+									"id": "set-animation",
+									"objectClass": "obj_wep",
+									"sid": 149899656814136,
+									"parameters": {
+										"animation": "\"id_\" & obj_Player.wep_Type",
+										"from": "beginning"
+									}
+								},
+								{
 									"id": "set-position",
 									"objectClass": "obj_wep",
-									"sid": 601226860378952,
+									"sid": 313090336734929,
 									"parameters": {
 										"x": "obj_Player.ImagePointX(\"soldier\")",
 										"y": "obj_Player.ImagePointY(\"soldier\")"
@@ -289,18 +298,9 @@
 								{
 									"id": "set-angle",
 									"objectClass": "obj_wep",
-									"sid": 940252505896279,
+									"sid": 654320998840586,
 									"parameters": {
 										"angle": "angle(Self.X,Self.Y,Mouse.X,Mouse.Y)"
-									}
-								},
-								{
-									"id": "set-animation",
-									"objectClass": "obj_wep",
-									"sid": 145025039919679,
-									"parameters": {
-										"animation": "\"ID_\" & obj_Player.wep_Type",
-										"from": "beginning"
 									}
 								}
 							],
@@ -332,7 +332,7 @@
 								{
 									"id": "set-flipped",
 									"objectClass": "obj_wep",
-									"sid": 832573652647316,
+									"sid": 269891025246539,
 									"parameters": {
 										"state": "not-flipped"
 									}
@@ -366,7 +366,7 @@
 								{
 									"id": "set-flipped",
 									"objectClass": "obj_wep",
-									"sid": 550130742292485,
+									"sid": 343864697463419,
 									"parameters": {
 										"state": "flipped"
 									}
@@ -410,7 +410,7 @@
 					"actions": [
 						{
 							"id": "spawn-another-object",
-							"objectClass": "obj_wep",
+							"objectClass": "obj_wep_old",
 							"sid": 595453545721298,
 							"parameters": {
 								"object": "bullet",
@@ -510,13 +510,13 @@
 											"objectClass": "obj_Player",
 											"sid": 327319291789946,
 											"parameters": {
-												"distance": "obj_wep.knockback"
+												"distance": "obj_wep_old.knockback"
 											}
 										},
 										{
 											"id": "move-forward",
 											"objectClass": "obj_wep",
-											"sid": 404092434198932,
+											"sid": 214645955882805,
 											"parameters": {
 												"distance": "Self.knockback"
 											}
@@ -540,12 +540,12 @@
 											"objectClass": "obj_Player",
 											"sid": 149050870824542,
 											"parameters": {
-												"distance": "-obj_wep.knockback"
+												"distance": "-obj_wep_old.knockback"
 											}
 										},
 										{
 											"id": "move-forward",
-											"objectClass": "obj_wep",
+											"objectClass": "obj_wep_old",
 											"sid": 843434271750661,
 											"parameters": {
 												"distance": "-Self.knockback"
@@ -577,11 +577,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "obj_Player",
-									"sid": 370707803441000,
+									"sid": 291712068425702,
 									"parameters": {
 										"instance-variable": "wep_Type",
 										"comparison": 0,
-										"value": "\"PISTOL\""
+										"value": "\"Revolver\""
 									}
 								}
 							],
@@ -589,7 +589,7 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
-									"sid": 168536034047292,
+									"sid": 571172845710985,
 									"parameters": {
 										"object": "bullet",
 										"layer": "1",
@@ -600,10 +600,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
-									"sid": 428813755846311,
+									"sid": 760585618287326,
 									"parameters": {
 										"instance-variable": "wep_Type",
-										"value": "\"PISTOL\""
+										"value": "\"Revolver\""
 									}
 								},
 								{
@@ -623,11 +623,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "obj_Player",
-									"sid": 312882957724663,
+									"sid": 511191647626823,
 									"parameters": {
 										"instance-variable": "wep_Type",
 										"comparison": 0,
-										"value": "\"MACHINEGUN\""
+										"value": "\"MachineGun\""
 									}
 								}
 							],
@@ -635,7 +635,7 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
-									"sid": 682349482542319,
+									"sid": 560173260501449,
 									"parameters": {
 										"object": "bullet",
 										"layer": "1",
@@ -655,16 +655,16 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
-									"sid": 605924294047412,
+									"sid": 337892492701831,
 									"parameters": {
 										"instance-variable": "wep_Type",
-										"value": "\"MACHINEGUN\""
+										"value": "\"MachineGun\""
 									}
 								},
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_wep",
-									"sid": 368891103833665,
+									"sid": 656669156513292,
 									"parameters": {
 										"instance-variable": "knockback",
 										"value": "1"
@@ -729,10 +729,10 @@
 						{
 							"id": "set-instvar-value",
 							"objectClass": "obj_Player",
-							"sid": 807860064469112,
+							"sid": 920140824807178,
 							"parameters": {
 								"instance-variable": "wep_Type",
-								"value": "\"MACHINEGUN\""
+								"value": "\"MachineGun\""
 							}
 						}
 					],
