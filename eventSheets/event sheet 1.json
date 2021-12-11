@@ -12,12 +12,20 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "merubah kursor mouse"
+				},
+				{
 					"id": "set-cursor-from-sprite",
 					"objectClass": "Mouse",
 					"sid": 221297441298432,
 					"parameters": {
 						"sprite": "kekeran"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "camera mengikuti player"
 				},
 				{
 					"id": "set-position",
@@ -38,6 +46,10 @@
 			"description": "",
 			"isActiveOnStart": true,
 			"children": [
+				{
+					"eventType": "comment",
+					"text": "kalau a di tekan = kiri"
+				},
 				{
 					"eventType": "block",
 					"conditions": [
@@ -64,6 +76,10 @@
 					"sid": 328258982536160
 				},
 				{
+					"eventType": "comment",
+					"text": "kalau d di tekan = kiri"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -87,6 +103,10 @@
 						}
 					],
 					"sid": 740181762886820
+				},
+				{
+					"eventType": "comment",
+					"text": "kalau w di tekan = kiri"
 				},
 				{
 					"eventType": "block",
@@ -126,10 +146,14 @@
 				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "MoveFX",
+					"title": "Move Animation",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "comment",
+							"text": "kalau player jalan dan player di lantai -> set animation run"
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -158,6 +182,10 @@
 								}
 							],
 							"sid": 319444657212937
+						},
+						{
+							"eventType": "comment",
+							"text": "kalau player berhenti dan player di lantai -> set animation idle"
 						},
 						{
 							"eventType": "block",
@@ -189,6 +217,10 @@
 							"sid": 895404661316010
 						},
 						{
+							"eventType": "comment",
+							"text": "kalau player lompat -> set animation jump"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -212,6 +244,10 @@
 							"sid": 387823821268837
 						},
 						{
+							"eventType": "comment",
+							"text": "kalau player jatuh dari lompat -> set animation fall"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -233,6 +269,10 @@
 								}
 							],
 							"sid": 715529736958552
+						},
+						{
+							"eventType": "comment",
+							"text": "kalau player mendarat-> set animation kembali ke idle"
 						},
 						{
 							"eventType": "block",
@@ -288,6 +328,10 @@
 							],
 							"actions": [
 								{
+									"type": "comment",
+									"text": "menampilkan weapon sesuai nama animasi"
+								},
+								{
 									"id": "set-animation",
 									"objectClass": "obj_wep",
 									"sid": 810135847937145,
@@ -297,6 +341,10 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "meletakkan animasi senjata di imagepoint soldier obj_player"
+								},
+								{
 									"id": "set-position",
 									"objectClass": "obj_wep",
 									"sid": 244697351846193,
@@ -304,6 +352,10 @@
 										"x": "obj_Player.ImagePointX(\"soldier\")",
 										"y": "obj_Player.ImagePointY(\"soldier\")"
 									}
+								},
+								{
+									"type": "comment",
+									"text": "arah weapon mengikuti mouse"
 								},
 								{
 									"id": "set-angle",
@@ -617,6 +669,15 @@
 										"layer": "1",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 593959302210228,
+									"parameters": {
+										"instance-variable": "wep_Rate",
+										"value": "0.5"
 									}
 								},
 								{

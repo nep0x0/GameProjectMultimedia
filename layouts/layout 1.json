@@ -368,7 +368,7 @@
 					"uid": 13,
 					"instanceVariables": {
 						"is_Shooting": 0,
-						"wep_Rate": 0.5,
+						"wep_Rate": 0,
 						"wep_Type": "Revolver"
 					},
 					"behaviors": {
