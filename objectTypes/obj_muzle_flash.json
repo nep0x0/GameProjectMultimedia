@@ -24,13 +24,36 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 7750630,
+						"imageSpriteId": 1329289,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
 				"sid": 888766201704977,
-				"name": "Animation 1",
+				"name": "muzle_pistol",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			},
+			{
+				"frames": [
+					{
+						"width": 24,
+						"height": 24,
+						"originX": 0.20833333333333334,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 5032299,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 262865427728494,
+				"name": "muzle_machinegun",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,

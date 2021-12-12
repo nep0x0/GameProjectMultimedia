@@ -713,12 +713,21 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
-									"sid": 462981481276091,
+									"sid": 490264312595760,
 									"parameters": {
 										"object": "obj_muzle_flash",
 										"layer": "1",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "obj_muzle_flash",
+									"sid": 793783357069731,
+									"parameters": {
+										"animation": "\"muzle_pistol\"",
+										"from": "beginning"
 									}
 								},
 								{
@@ -837,6 +846,15 @@
 										"layer": "1",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "set-animation",
+									"objectClass": "obj_muzle_flash",
+									"sid": 972514333904764,
+									"parameters": {
+										"animation": "\"muzle_machinegun\"",
+										"from": "beginning"
 									}
 								},
 								{
