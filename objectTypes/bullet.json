@@ -14,6 +14,11 @@
 			"behaviorId": "Physics",
 			"name": "Physics",
 			"sid": 888932761625903
+		},
+		{
+			"behaviorId": "destroy",
+			"name": "DestroyOutsideLayout",
+			"sid": 374468823704338
 		}
 	],
 	"effectTypes": [],

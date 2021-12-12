@@ -511,6 +511,10 @@
 					"disabled": true
 				},
 				{
+					"eventType": "comment",
+					"text": "kalau left button mouse di tekan & klik"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -534,6 +538,10 @@
 					"actions": [],
 					"sid": 873122119432989,
 					"children": [
+						{
+							"eventType": "comment",
+							"text": "dan variable is_Shooting = 0 maka, call function wepType, wepTimer, set variable is_Shooting = 1"
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -634,6 +642,10 @@
 					"isOrBlock": true
 				},
 				{
+					"eventType": "comment",
+					"text": "function jenis weapon'"
+				},
+				{
 					"functionName": "wepType",
 					"functionDescription": "",
 					"functionCategory": "",
@@ -645,6 +657,10 @@
 					"actions": [],
 					"sid": 335992973398037,
 					"children": [
+						{
+							"eventType": "comment",
+							"text": "senjata pistol"
+						},
 						{
 							"eventType": "block",
 							"conditions": [
@@ -661,6 +677,10 @@
 							],
 							"actions": [
 								{
+									"type": "comment",
+									"text": "audio pistol"
+								},
+								{
 									"id": "play",
 									"objectClass": "Audio",
 									"sid": 888405059218308,
@@ -670,6 +690,10 @@
 										"volume": "0",
 										"tag-optional": "\"\""
 									}
+								},
+								{
+									"type": "comment",
+									"text": "spawn bullet"
 								},
 								{
 									"id": "spawn-another-object",
@@ -683,6 +707,10 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "fire rate"
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
 									"sid": 593959302210228,
@@ -692,6 +720,10 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "screenshake"
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
 									"sid": 760585618287326,
@@ -699,6 +731,10 @@
 										"instance-variable": "wep_Type",
 										"value": "\"Revolver\""
 									}
+								},
+								{
+									"type": "comment",
+									"text": "screenshake"
 								},
 								{
 									"callFunction": "ScreenShake",
@@ -725,6 +761,10 @@
 							"sid": 600882023824565
 						},
 						{
+							"eventType": "comment",
+							"text": "senjata machinegun"
+						},
+						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -740,6 +780,25 @@
 							],
 							"actions": [
 								{
+									"type": "comment",
+									"text": "audio machine gun"
+								},
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 163634138221843,
+									"parameters": {
+										"audio-file": "sndMachinegun",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"type": "comment",
+									"text": "spawn bullet"
+								},
+								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
 									"sid": 560173260501449,
@@ -751,6 +810,10 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "fire rate"
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
 									"sid": 178356981863989,
@@ -758,6 +821,10 @@
 										"instance-variable": "wep_Rate",
 										"value": "0.2"
 									}
+								},
+								{
+									"type": "comment",
+									"text": "type weapon"
 								},
 								{
 									"id": "set-instvar-value",
@@ -769,6 +836,10 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "knockback effect"
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_wep",
 									"sid": 656669156513292,
@@ -776,6 +847,10 @@
 										"instance-variable": "knockback",
 										"value": "1"
 									}
+								},
+								{
+									"type": "comment",
+									"text": "screen shake"
 								},
 								{
 									"callFunction": "ScreenShake",
@@ -786,6 +861,10 @@
 									]
 								},
 								{
+									"type": "comment",
+									"text": "recoil"
+								},
+								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_wep",
 									"sid": 154886209842758,
@@ -793,22 +872,15 @@
 										"instance-variable": "recoil",
 										"value": "clamp(Self.recoil+10,2,5)"
 									}
-								},
-								{
-									"id": "play",
-									"objectClass": "Audio",
-									"sid": 366470861036010,
-									"parameters": {
-										"audio-file": "sndMachinegun",
-										"loop": "not-looping",
-										"volume": "0",
-										"tag-optional": "\"\""
-									}
 								}
 							],
 							"sid": 303942644322628
 						}
 					]
+				},
+				{
+					"eventType": "comment",
+					"text": "jeda antara tiap bullet yang dihasilkan"
 				},
 				{
 					"functionName": "wepTimer",
@@ -841,6 +913,10 @@
 					"sid": 423898086322412
 				},
 				{
+					"eventType": "comment",
+					"text": "tekan 1 pilih senjata 1"
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
@@ -864,6 +940,10 @@
 						}
 					],
 					"sid": 210264463556434
+				},
+				{
+					"eventType": "comment",
+					"text": "tekan 2 pilih senjata 2"
 				},
 				{
 					"eventType": "block",
@@ -978,6 +1058,10 @@
 				}
 			],
 			"sid": 752862303644882
+		},
+		{
+			"eventType": "comment",
+			"text": "screen shake function'"
 		},
 		{
 			"functionName": "ScreenShake",
