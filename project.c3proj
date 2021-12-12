@@ -145,7 +145,8 @@
 			"TiledBackground",
 			"TiledBackground2",
 			"obj_wep",
-			"obj_muzle_flash"
+			"obj_muzle_flash",
+			"obj_shell"
 		],
 		"subfolders": []
 	},

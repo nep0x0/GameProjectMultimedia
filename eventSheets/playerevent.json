@@ -780,6 +780,10 @@
 										"instance-variable": "recoil",
 										"value": "clamp(Self.recoil+10,1,3)"
 									}
+								},
+								{
+									"callFunction": "spawn_Shells",
+									"sid": 173369387206623
 								}
 							],
 							"sid": 600882023824565
@@ -864,10 +868,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
-									"sid": 178356981863989,
+									"sid": 886668501236037,
 									"parameters": {
 										"instance-variable": "wep_Rate",
-										"value": "0.2"
+										"value": "0.18"
 									}
 								},
 								{
@@ -902,9 +906,9 @@
 								},
 								{
 									"callFunction": "ScreenShake",
-									"sid": 187149364360397,
+									"sid": 183319446864078,
 									"parameters": [
-										"3",
+										"4",
 										"0.1"
 									]
 								},
@@ -920,6 +924,10 @@
 										"instance-variable": "recoil",
 										"value": "clamp(Self.recoil+10,2,5)"
 									}
+								},
+								{
+									"callFunction": "spawn_Shells",
+									"sid": 242770518107006
 								}
 							],
 							"sid": 303942644322628
@@ -1149,6 +1157,104 @@
 				}
 			],
 			"sid": 148660744159116
+		},
+		{
+			"functionName": "spawn_Shells",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "obj_wep",
+					"sid": 618764427746217,
+					"parameters": {
+						"object": "obj_shell",
+						"layer": "1",
+						"image-point": "\"shell\"",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 285270440470193,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "obj_Player",
+							"sid": 875288713207211
+						}
+					],
+					"actions": [
+						{
+							"id": "set-velocity",
+							"objectClass": "obj_shell",
+							"sid": 950437634789201,
+							"behaviorType": "Physics",
+							"parameters": {
+								"x-component": "choose(10,20,30,40,50,60,70)",
+								"y-component": "choose(-100,-110,-120,-130,-140,-150)"
+							}
+						}
+					],
+					"sid": 838600356827735
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-mirrored",
+							"objectClass": "obj_Player",
+							"sid": 860416370695170,
+							"isInverted": true
+						}
+					],
+					"actions": [
+						{
+							"id": "set-velocity",
+							"objectClass": "obj_shell",
+							"sid": 533691966823933,
+							"behaviorType": "Physics",
+							"parameters": {
+								"x-component": "choose(-10,-20,-30,-40,-50,-60,-70)",
+								"y-component": "choose(-100,-110,-120,-130,-140,-150)"
+							}
+						}
+					],
+					"sid": 880674779351002
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-overlapping-another-object",
+					"objectClass": "obj_shell",
+					"sid": 132109932197146,
+					"parameters": {
+						"object": "Tilemap"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-immovable",
+					"objectClass": "obj_shell",
+					"sid": 214128506578202,
+					"behaviorType": "Physics",
+					"parameters": {
+						"setting": "immovable"
+					}
+				}
+			],
+			"sid": 149847919098532
 		}
 	],
 	"sid": 959625501649600
