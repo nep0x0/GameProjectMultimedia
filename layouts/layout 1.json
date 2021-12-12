@@ -171,8 +171,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -218.33048302668655,
-						"y": 281.8279186733425,
+						"x": -248,
+						"y": 328,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -430,7 +430,7 @@
 						}
 					},
 					"world": {
-						"x": -144,
+						"x": -160,
 						"y": 320,
 						"width": 10.666666666666666,
 						"height": 6.4,
@@ -482,14 +482,11 @@
 								"bullet": false,
 								"enabled": true
 							}
-						},
-						"DestroyOutsideLayout": {
-							"properties": {}
 						}
 					},
 					"world": {
-						"x": -192,
-						"y": 288,
+						"x": -240,
+						"y": 360,
 						"width": 14,
 						"height": 8,
 						"originX": 0.5,
@@ -520,12 +517,52 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": 272,
-						"y": 264,
-						"width": 22,
-						"height": 23,
+						"x": 136,
+						"y": 256,
+						"width": 24,
+						"height": 24,
 						"originX": 0.36363636363636365,
 						"originY": 0.5217391304347826,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_muzle_flash",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 0.05,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": -312,
+						"y": 384,
+						"width": 24,
+						"height": 24,
+						"originX": 0.20833333333333334,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

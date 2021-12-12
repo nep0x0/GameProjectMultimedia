@@ -1,19 +1,14 @@
 {
-	"name": "bullet",
+	"name": "obj_muzle_flash",
 	"plugin-id": "Sprite",
-	"sid": 574208807248799,
+	"sid": 726554822180074,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Bullet",
-			"name": "Bullet",
-			"sid": 328669760856610
-		},
-		{
-			"behaviorId": "Physics",
-			"name": "Physics",
-			"sid": 888932761625903
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 335199251281680
 		}
 	],
 	"effectTypes": [],
@@ -22,19 +17,19 @@
 			{
 				"frames": [
 					{
-						"width": 14,
-						"height": 8,
-						"originX": 0.5,
+						"width": 24,
+						"height": 24,
+						"originX": 0.20833333333333334,
 						"originY": 0.5,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9328440,
+						"imageSpriteId": 7750630,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 972240754675722,
+				"sid": 888766201704977,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

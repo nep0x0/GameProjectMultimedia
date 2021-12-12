@@ -96,14 +96,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "destroy",
-			"name": "Destroy outside layout",
-			"author": "Scirra",
-			"version": "r268",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
@@ -122,6 +114,14 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"version": "r268",
 			"bundled": false
@@ -144,7 +144,8 @@
 			"Tilemap",
 			"TiledBackground",
 			"TiledBackground2",
-			"obj_wep"
+			"obj_wep",
+			"obj_muzle_flash"
 		],
 		"subfolders": []
 	},

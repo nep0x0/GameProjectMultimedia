@@ -708,6 +708,21 @@
 								},
 								{
 									"type": "comment",
+									"text": "spawn muzle flash = efek percikan api di ujung senjata"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "obj_wep",
+									"sid": 462981481276091,
+									"parameters": {
+										"object": "obj_muzle_flash",
+										"layer": "1",
+										"image-point": "\"gun\"",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"type": "comment",
 									"text": "fire rate"
 								},
 								{
@@ -804,6 +819,21 @@
 									"sid": 560173260501449,
 									"parameters": {
 										"object": "bullet",
+										"layer": "1",
+										"image-point": "\"gun\"",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"type": "comment",
+									"text": "spawn muzle flash = efek percikan api di ujung senjata"
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "obj_wep",
+									"sid": 783736191812431,
+									"parameters": {
+										"object": "obj_muzle_flash",
 										"layer": "1",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
