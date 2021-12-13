@@ -21,6 +21,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 455006498100971
+		},
+		{
+			"name": "wep_Range",
+			"type": "number",
+			"desc": "",
+			"sid": 832258943805380
 		}
 	],
 	"behaviorTypes": [

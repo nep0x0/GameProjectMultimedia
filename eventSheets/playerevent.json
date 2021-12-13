@@ -642,6 +642,32 @@
 					"isOrBlock": true
 				},
 				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "bullet",
+							"sid": 630836994633262
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 632079419466870,
+							"parameters": {
+								"seconds": "obj_Player.wep_Range"
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "bullet",
+							"sid": 700523666120220
+						}
+					],
+					"sid": 559869833828585
+				},
+				{
 					"eventType": "comment",
 					"text": "function jenis weapon'"
 				},
@@ -676,6 +702,45 @@
 								}
 							],
 							"actions": [
+								{
+									"type": "comment",
+									"text": "screenshake"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 310426425611121,
+									"parameters": {
+										"instance-variable": "wep_Type",
+										"value": "\"Revolver\""
+									}
+								},
+								{
+									"type": "comment",
+									"text": "fire rate"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 115735252306633,
+									"parameters": {
+										"instance-variable": "wep_Rate",
+										"value": "0.5"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "wep range"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 551199513785168,
+									"parameters": {
+										"instance-variable": "wep_Range",
+										"value": "0.3"
+									}
+								},
 								{
 									"type": "comment",
 									"text": "audio pistol"
@@ -732,32 +797,6 @@
 								},
 								{
 									"type": "comment",
-									"text": "fire rate"
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
-									"sid": 593959302210228,
-									"parameters": {
-										"instance-variable": "wep_Rate",
-										"value": "0.5"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "screenshake"
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
-									"sid": 760585618287326,
-									"parameters": {
-										"instance-variable": "wep_Type",
-										"value": "\"Revolver\""
-									}
-								},
-								{
-									"type": "comment",
 									"text": "screenshake"
 								},
 								{
@@ -807,6 +846,32 @@
 								}
 							],
 							"actions": [
+								{
+									"type": "comment",
+									"text": "fire rate"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 130346024067996,
+									"parameters": {
+										"instance-variable": "wep_Rate",
+										"value": "0.18"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "wep range"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 874713914724167,
+									"parameters": {
+										"instance-variable": "wep_Range",
+										"value": "0.5"
+									}
+								},
 								{
 									"type": "comment",
 									"text": "audio machine gun"
@@ -859,19 +924,6 @@
 									"parameters": {
 										"animation": "\"muzle_machinegun\"",
 										"from": "beginning"
-									}
-								},
-								{
-									"type": "comment",
-									"text": "fire rate"
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
-									"sid": 886668501236037,
-									"parameters": {
-										"instance-variable": "wep_Rate",
-										"value": "0.18"
 									}
 								},
 								{
