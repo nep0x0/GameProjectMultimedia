@@ -125,6 +125,14 @@
 			"author": "Scirra",
 			"version": "r268",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
 		}
 	],
 	"uniqueId": "4oxxtrajkxx",
@@ -146,7 +154,8 @@
 			"TiledBackground2",
 			"obj_wep",
 			"obj_muzle_flash",
-			"obj_shell"
+			"obj_shell",
+			"GameManager"
 		],
 		"subfolders": []
 	},

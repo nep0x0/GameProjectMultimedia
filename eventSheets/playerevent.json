@@ -703,10 +703,6 @@
 							],
 							"actions": [
 								{
-									"type": "comment",
-									"text": "screenshake"
-								},
-								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
 									"sid": 310426425611121,
@@ -735,10 +731,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_Player",
-									"sid": 551199513785168,
+									"sid": 943523700407018,
 									"parameters": {
 										"instance-variable": "wep_Range",
-										"value": "0.3"
+										"value": "0.4"
 									}
 								},
 								{
@@ -800,18 +796,6 @@
 									"text": "screenshake"
 								},
 								{
-									"callFunction": "ScreenShake",
-									"sid": 325565839109107,
-									"parameters": [
-										"2",
-										"0.1"
-									]
-								},
-								{
-									"type": "comment",
-									"text": "recoil"
-								},
-								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_wep",
 									"sid": 363415474934120,
@@ -821,8 +805,24 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "spawn bullet shell"
+								},
+								{
 									"callFunction": "spawn_Shells",
 									"sid": 173369387206623
+								},
+								{
+									"type": "comment",
+									"text": "screen shake"
+								},
+								{
+									"callFunction": "ShakeScreen",
+									"sid": 858463918393383,
+									"parameters": [
+										"1",
+										"0.1"
+									]
 								}
 							],
 							"sid": 600882023824565
@@ -846,6 +846,19 @@
 								}
 							],
 							"actions": [
+								{
+									"type": "comment",
+									"text": "type weapon"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_Player",
+									"sid": 498713837531241,
+									"parameters": {
+										"instance-variable": "wep_Type",
+										"value": "\"MachineGun\""
+									}
+								},
 								{
 									"type": "comment",
 									"text": "fire rate"
@@ -928,19 +941,6 @@
 								},
 								{
 									"type": "comment",
-									"text": "type weapon"
-								},
-								{
-									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
-									"sid": 337892492701831,
-									"parameters": {
-										"instance-variable": "wep_Type",
-										"value": "\"MachineGun\""
-									}
-								},
-								{
-									"type": "comment",
 									"text": "knockback effect"
 								},
 								{
@@ -951,18 +951,6 @@
 										"instance-variable": "knockback",
 										"value": "1"
 									}
-								},
-								{
-									"type": "comment",
-									"text": "screen shake"
-								},
-								{
-									"callFunction": "ScreenShake",
-									"sid": 183319446864078,
-									"parameters": [
-										"4",
-										"0.1"
-									]
 								},
 								{
 									"type": "comment",
@@ -978,8 +966,24 @@
 									}
 								},
 								{
+									"type": "comment",
+									"text": "spawn bullet shell"
+								},
+								{
 									"callFunction": "spawn_Shells",
 									"sid": 242770518107006
+								},
+								{
+									"type": "comment",
+									"text": "screen shake"
+								},
+								{
+									"callFunction": "ShakeScreen",
+									"sid": 331182285515916,
+									"parameters": [
+										"1",
+										"0.1"
+									]
 								}
 							],
 							"sid": 303942644322628
@@ -1169,46 +1173,7 @@
 		},
 		{
 			"eventType": "comment",
-			"text": "screen shake function'"
-		},
-		{
-			"functionName": "ScreenShake",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "Magnitudo",
-					"type": "number",
-					"initialValue": "2",
-					"comment": "",
-					"sid": 878154409601287
-				},
-				{
-					"name": "Duration",
-					"type": "number",
-					"initialValue": "0.1",
-					"comment": "",
-					"sid": 663834136643789
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "shake",
-					"objectClass": "Camera",
-					"sid": 689752033529748,
-					"behaviorType": "ScrollTo",
-					"parameters": {
-						"magnitude": "Magnitudo",
-						"duration": "Duration",
-						"mode": "reducing-magnitude"
-					}
-				}
-			],
-			"sid": 148660744159116
+			"text": "spawn bullet shell function"
 		},
 		{
 			"functionName": "spawn_Shells",
@@ -1284,6 +1249,10 @@
 			]
 		},
 		{
+			"eventType": "comment",
+			"text": "when bullet shell is on the ground set immovable(make bullet shell not fall)"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -1307,6 +1276,88 @@
 				}
 			],
 			"sid": 149847919098532
+		},
+		{
+			"eventType": "comment",
+			"text": "screen shake function"
+		},
+		{
+			"functionName": "ShakeScreen",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionIsAsync": false,
+			"functionParameters": [
+				{
+					"name": "Strength",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 794176182418047
+				},
+				{
+					"name": "Duration",
+					"type": "number",
+					"initialValue": "0",
+					"comment": "",
+					"sid": 555623144627218
+				}
+			],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "stop-tweens",
+					"objectClass": "GameManager",
+					"sid": 278948784425688,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"ScreenShake\""
+					}
+				},
+				{
+					"id": "tween-value",
+					"objectClass": "GameManager",
+					"sid": 334951828759631,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"ScreenShake\"",
+						"start-value": "Strength",
+						"end-value": "0",
+						"time": "Duration",
+						"ease": "default",
+						"destroy-on-complete": "no",
+						"loop": "no",
+						"ping-pong": "no"
+					}
+				}
+			],
+			"sid": 869258521565452
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-playing",
+					"objectClass": "GameManager",
+					"sid": 477953473404024,
+					"behaviorType": "Tween",
+					"parameters": {
+						"tags": "\"ScreenShake\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-angle",
+					"objectClass": "System",
+					"sid": 643126517493929,
+					"parameters": {
+						"angle": "random(-GameManager.Tween.Value(\"ScreenShake\"), GameManager.Tween.Value(\"ScreenShake\"))"
+					}
+				}
+			],
+			"sid": 517341236365076
 		}
 	],
 	"sid": 959625501649600
