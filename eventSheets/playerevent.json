@@ -462,55 +462,6 @@
 					"sid": 128304426197030
 				},
 				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "mouse-button-is-down",
-							"objectClass": "Mouse",
-							"sid": 438216746132208,
-							"parameters": {
-								"mouse-button": "left"
-							}
-						},
-						{
-							"id": "every-x-seconds",
-							"objectClass": "System",
-							"sid": 374733866447737,
-							"parameters": {
-								"interval-seconds": "0.3"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "spawn-another-object",
-							"objectClass": "obj_wep_old",
-							"sid": 595453545721298,
-							"parameters": {
-								"object": "bullet",
-								"layer": "1",
-								"image-point": "1",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "wait",
-							"objectClass": "System",
-							"sid": 951343638476047,
-							"parameters": {
-								"seconds": "0.4"
-							}
-						},
-						{
-							"id": "destroy",
-							"objectClass": "bullet",
-							"sid": 834592637658089
-						}
-					],
-					"sid": 234226203329508,
-					"disabled": true
-				},
-				{
 					"eventType": "comment",
 					"text": "kalau left button mouse di tekan & klik"
 				},
@@ -759,10 +710,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
-									"sid": 571172845710985,
+									"sid": 254865799401139,
 									"parameters": {
 										"object": "bullet",
-										"layer": "1",
+										"layer": "\"Game\"",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
 									}
@@ -907,10 +858,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
-									"sid": 560173260501449,
+									"sid": 313343782210808,
 									"parameters": {
 										"object": "bullet",
-										"layer": "1",
+										"layer": "\"Game\"",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
 									}
@@ -1081,6 +1032,112 @@
 						}
 					],
 					"sid": 950894651110883
+				},
+				{
+					"eventType": "comment",
+					"text": "spawn bullet shell function"
+				},
+				{
+					"functionName": "spawn_Shells",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "obj_wep",
+							"sid": 113971902209906,
+							"parameters": {
+								"object": "obj_shell",
+								"layer": "\"Game\"",
+								"image-point": "\"shell\"",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 504812348982607,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-mirrored",
+									"objectClass": "obj_Player",
+									"sid": 698783377986034
+								}
+							],
+							"actions": [
+								{
+									"id": "set-velocity",
+									"objectClass": "obj_shell",
+									"sid": 403081893515879,
+									"behaviorType": "Physics",
+									"parameters": {
+										"x-component": "choose(10,20,30,40,50,60,70)",
+										"y-component": "choose(-100,-110,-120,-130,-140,-150)"
+									}
+								}
+							],
+							"sid": 450207707516090
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-mirrored",
+									"objectClass": "obj_Player",
+									"sid": 305983710915056,
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "set-velocity",
+									"objectClass": "obj_shell",
+									"sid": 211205503017105,
+									"behaviorType": "Physics",
+									"parameters": {
+										"x-component": "choose(-10,-20,-30,-40,-50,-60,-70)",
+										"y-component": "choose(-100,-110,-120,-130,-140,-150)"
+									}
+								}
+							],
+							"sid": 499030266426962
+						}
+					]
+				},
+				{
+					"eventType": "comment",
+					"text": "when bullet shell is on the ground set immovable(make bullet shell not fall)"
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "obj_shell",
+							"sid": 652833340301027,
+							"parameters": {
+								"object": "Tilemap2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-immovable",
+							"objectClass": "obj_shell",
+							"sid": 476357572928494,
+							"behaviorType": "Physics",
+							"parameters": {
+								"setting": "immovable"
+							}
+						}
+					],
+					"sid": 572738451247274
 				}
 			],
 			"sid": 855134828564941
@@ -1172,192 +1229,96 @@
 			"sid": 752862303644882
 		},
 		{
-			"eventType": "comment",
-			"text": "spawn bullet shell function"
-		},
-		{
-			"functionName": "spawn_Shells",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "spawn-another-object",
-					"objectClass": "obj_wep",
-					"sid": 618764427746217,
-					"parameters": {
-						"object": "obj_shell",
-						"layer": "1",
-						"image-point": "\"shell\"",
-						"create-hierarchy": false
-					}
-				}
-			],
-			"sid": 285270440470193,
+			"eventType": "group",
+			"disabled": false,
+			"title": "ScreenShake",
+			"description": "",
+			"isActiveOnStart": true,
 			"children": [
 				{
+					"eventType": "comment",
+					"text": "screen shake function"
+				},
+				{
+					"functionName": "ShakeScreen",
+					"functionDescription": "",
+					"functionCategory": "",
+					"functionReturnType": "none",
+					"functionIsAsync": false,
+					"functionParameters": [
+						{
+							"name": "Strength",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 794176182418047
+						},
+						{
+							"name": "Duration",
+							"type": "number",
+							"initialValue": "0",
+							"comment": "",
+							"sid": 555623144627218
+						}
+					],
+					"eventType": "function-block",
+					"conditions": [],
+					"actions": [
+						{
+							"id": "stop-tweens",
+							"objectClass": "GameManager",
+							"sid": 957130157749530,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"ScreenShake\""
+							}
+						},
+						{
+							"id": "tween-value",
+							"objectClass": "GameManager",
+							"sid": 780960420748258,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"ScreenShake\"",
+								"start-value": "Strength",
+								"end-value": "0",
+								"time": "Duration",
+								"ease": "default",
+								"destroy-on-complete": "no",
+								"loop": "no",
+								"ping-pong": "no"
+							}
+						}
+					],
+					"sid": 743792207744328
+				},
+				{
 					"eventType": "block",
 					"conditions": [
 						{
-							"id": "is-mirrored",
-							"objectClass": "obj_Player",
-							"sid": 875288713207211
+							"id": "is-playing",
+							"objectClass": "GameManager",
+							"sid": 427525619873045,
+							"behaviorType": "Tween",
+							"parameters": {
+								"tags": "\"ScreenShake\""
+							}
 						}
 					],
 					"actions": [
 						{
-							"id": "set-velocity",
-							"objectClass": "obj_shell",
-							"sid": 950437634789201,
-							"behaviorType": "Physics",
+							"id": "set-layout-angle",
+							"objectClass": "System",
+							"sid": 489906270830785,
 							"parameters": {
-								"x-component": "choose(10,20,30,40,50,60,70)",
-								"y-component": "choose(-100,-110,-120,-130,-140,-150)"
+								"angle": "random(-GameManager.Tween.Value(\"ScreenShake\"), GameManager.Tween.Value(\"ScreenShake\"))"
 							}
 						}
 					],
-					"sid": 838600356827735
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-mirrored",
-							"objectClass": "obj_Player",
-							"sid": 860416370695170,
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "set-velocity",
-							"objectClass": "obj_shell",
-							"sid": 533691966823933,
-							"behaviorType": "Physics",
-							"parameters": {
-								"x-component": "choose(-10,-20,-30,-40,-50,-60,-70)",
-								"y-component": "choose(-100,-110,-120,-130,-140,-150)"
-							}
-						}
-					],
-					"sid": 880674779351002
-				}
-			]
-		},
-		{
-			"eventType": "comment",
-			"text": "when bullet shell is on the ground set immovable(make bullet shell not fall)"
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-overlapping-another-object",
-					"objectClass": "obj_shell",
-					"sid": 132109932197146,
-					"parameters": {
-						"object": "Tilemap"
-					}
+					"sid": 827368291825337
 				}
 			],
-			"actions": [
-				{
-					"id": "set-immovable",
-					"objectClass": "obj_shell",
-					"sid": 214128506578202,
-					"behaviorType": "Physics",
-					"parameters": {
-						"setting": "immovable"
-					}
-				}
-			],
-			"sid": 149847919098532
-		},
-		{
-			"eventType": "comment",
-			"text": "screen shake function"
-		},
-		{
-			"functionName": "ShakeScreen",
-			"functionDescription": "",
-			"functionCategory": "",
-			"functionReturnType": "none",
-			"functionIsAsync": false,
-			"functionParameters": [
-				{
-					"name": "Strength",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 794176182418047
-				},
-				{
-					"name": "Duration",
-					"type": "number",
-					"initialValue": "0",
-					"comment": "",
-					"sid": 555623144627218
-				}
-			],
-			"eventType": "function-block",
-			"conditions": [],
-			"actions": [
-				{
-					"id": "stop-tweens",
-					"objectClass": "GameManager",
-					"sid": 278948784425688,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"ScreenShake\""
-					}
-				},
-				{
-					"id": "tween-value",
-					"objectClass": "GameManager",
-					"sid": 334951828759631,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"ScreenShake\"",
-						"start-value": "Strength",
-						"end-value": "0",
-						"time": "Duration",
-						"ease": "default",
-						"destroy-on-complete": "no",
-						"loop": "no",
-						"ping-pong": "no"
-					}
-				}
-			],
-			"sid": 869258521565452
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-playing",
-					"objectClass": "GameManager",
-					"sid": 477953473404024,
-					"behaviorType": "Tween",
-					"parameters": {
-						"tags": "\"ScreenShake\""
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layout-angle",
-					"objectClass": "System",
-					"sid": 643126517493929,
-					"parameters": {
-						"angle": "random(-GameManager.Tween.Value(\"ScreenShake\"), GameManager.Tween.Value(\"ScreenShake\"))"
-					}
-				}
-			],
-			"sid": 517341236365076
+			"sid": 882151393331241
 		}
 	],
 	"sid": 959625501649600

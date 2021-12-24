@@ -1,6 +1,6 @@
 {
 	"projectFormatVersion": 1,
-	"savedWithRelease": 26800,
+	"savedWithRelease": 27602,
 	"name": "aiming-mouse",
 	"runtime": "c3",
 	"useWorker": "auto",
@@ -11,7 +11,7 @@
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -19,7 +19,7 @@
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -27,7 +27,7 @@
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -35,7 +35,7 @@
 			"id": "Particles",
 			"name": "Particles",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -43,15 +43,7 @@
 			"id": "Audio",
 			"name": "Audio",
 			"author": "Scirra",
-			"version": "r268",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
-			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -59,7 +51,15 @@
 			"id": "TiledBg",
 			"name": "Tiled Background",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -67,7 +67,7 @@
 			"id": "Platform",
 			"name": "Platform",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -75,7 +75,7 @@
 			"id": "Pin",
 			"name": "Pin",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -83,7 +83,7 @@
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -91,7 +91,7 @@
 			"id": "Physics",
 			"name": "Physics",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -99,7 +99,7 @@
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -107,15 +107,7 @@
 			"id": "bound",
 			"name": "Bound to layout",
 			"author": "Scirra",
-			"version": "r268",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -123,7 +115,7 @@
 			"id": "Fade",
 			"name": "Fade",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
 			"bundled": false
 		},
 		{
@@ -131,7 +123,15 @@
 			"id": "Tween",
 			"name": "Tween",
 			"author": "Scirra",
-			"version": "r268",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
 			"bundled": false
 		}
 	],
@@ -149,13 +149,13 @@
 			"Audio",
 			"Dust",
 			"obj_Player",
-			"Tilemap",
 			"TiledBackground",
 			"TiledBackground2",
 			"obj_wep",
 			"obj_muzle_flash",
 			"obj_shell",
-			"GameManager"
+			"GameManager",
+			"Tilemap2"
 		],
 		"subfolders": []
 	},
@@ -329,6 +329,7 @@
 			0
 		],
 		"orientations": "landscape",
+		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
 		"framerateMode": "vsync",
