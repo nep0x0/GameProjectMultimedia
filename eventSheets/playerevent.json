@@ -540,14 +540,6 @@
 									"actions": [
 										{
 											"id": "move-forward",
-											"objectClass": "obj_Player",
-											"sid": 327319291789946,
-											"parameters": {
-												"distance": "obj_wep_old.knockback"
-											}
-										},
-										{
-											"id": "move-forward",
 											"objectClass": "obj_wep",
 											"sid": 214645955882805,
 											"parameters": {
@@ -567,24 +559,7 @@
 											"isInverted": true
 										}
 									],
-									"actions": [
-										{
-											"id": "move-forward",
-											"objectClass": "obj_Player",
-											"sid": 149050870824542,
-											"parameters": {
-												"distance": "-obj_wep_old.knockback"
-											}
-										},
-										{
-											"id": "move-forward",
-											"objectClass": "obj_wep_old",
-											"sid": 843434271750661,
-											"parameters": {
-												"distance": "-Self.knockback"
-											}
-										}
-									],
+									"actions": [],
 									"sid": 311848441352007
 								}
 							]

@@ -16,6 +16,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Particles",
+			"name": "Particles",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -26,14 +34,6 @@
 			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Particles",
-			"name": "Particles",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -72,8 +72,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
+			"id": "bound",
+			"name": "Bound to layout",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -96,24 +96,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "bound",
-			"name": "Bound to layout",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Fade",
 			"name": "Fade",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -138,26 +130,50 @@
 	"uniqueId": "4oxxtrajkxx",
 	"objectTypes": {
 		"items": [
-			"Enemy",
-			"obj_wep_old",
 			"Mouse",
-			"bullet",
 			"Keyboard",
 			"kekeran",
-			"Particles",
 			"Camera",
 			"Audio",
-			"Dust",
-			"obj_Player",
 			"TiledBackground",
 			"TiledBackground2",
-			"obj_wep",
-			"obj_muzle_flash",
-			"obj_shell",
 			"GameManager",
 			"Tilemap2"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"obj_Player"
+				],
+				"subfolders": [],
+				"name": "Player"
+			},
+			{
+				"items": [
+					"Enemy"
+				],
+				"subfolders": [],
+				"name": "Enemy"
+			},
+			{
+				"items": [
+					"bullet",
+					"obj_shell",
+					"obj_wep"
+				],
+				"subfolders": [],
+				"name": "weapon"
+			},
+			{
+				"items": [
+					"Dust",
+					"obj_muzle_flash",
+					"Particles"
+				],
+				"subfolders": [],
+				"name": "particle"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
