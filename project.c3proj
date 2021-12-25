@@ -80,6 +80,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -137,7 +145,8 @@
 			"Audio",
 			"TiledBackground",
 			"TiledBackground2",
-			"GameManager"
+			"GameManager",
+			"arrow"
 		],
 		"subfolders": [
 			{
@@ -197,14 +206,15 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"GameLayout",
+			"WinDeathLayout"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"playerevent",
-			"soundevent"
+			"GameManager",
+			"SFXManager"
 		],
 		"subfolders": []
 	},

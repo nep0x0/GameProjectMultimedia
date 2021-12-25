@@ -39,6 +39,96 @@
 			},
 			"useCollisionPoly": true
 		},
+		"12": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.0625,
+					0.876736005147299,
+					0.06250003311369154,
+					0.8194444179534917,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"20": {
+			"collisionPoly": {
+				"points": [
+					0.125,
+					0,
+					1,
+					0,
+					1,
+					1,
+					0.125,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"22": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					0.875,
+					0,
+					0.875,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"23": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0,
+					0.875,
+					0,
+					0.875,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"25": {
+			"collisionPoly": {
+				"points": [
+					0.125,
+					1.0842021724855044e-18,
+					1,
+					0,
+					1,
+					1,
+					0.125,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
+		"33": {
+			"collisionPoly": {
+				"points": [
+					0,
+					0.0625,
+					1,
+					0.0625,
+					1,
+					1,
+					0,
+					1
+				]
+			},
+			"useCollisionPoly": true
+		},
 		"34": {
 			"collisionPoly": {
 				"points": [

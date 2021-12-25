@@ -9,6 +9,12 @@
 			"type": "string",
 			"desc": "",
 			"sid": 270372888026584
+		},
+		{
+			"name": "health",
+			"type": "number",
+			"desc": "",
+			"sid": 705890285164374
 		}
 	],
 	"behaviorTypes": [
@@ -16,6 +22,11 @@
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 359566960824427
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 634770828917523
 		}
 	],
 	"effectTypes": [],
@@ -31,7 +42,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4150583,
+						"imageSpriteId": 5808065,
 						"collisionPoly": {
 							"points": [
 								0.5,
@@ -55,7 +66,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6672653,
+						"imageSpriteId": 7571073,
 						"collisionPoly": {
 							"points": [
 								0.6458333333333334,
@@ -85,7 +96,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 4387769,
+						"imageSpriteId": 8710448,
 						"collisionPoly": {
 							"points": [
 								0.4583333333333333,
@@ -111,7 +122,7 @@
 					}
 				],
 				"sid": 148514866655335,
-				"name": "Walk",
+				"name": "Walk5rylf",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -128,7 +139,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1965846,
+						"imageSpriteId": 94303,
 						"collisionPoly": {
 							"points": [
 								0.5,
@@ -152,7 +163,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 6766667,
+						"imageSpriteId": 1059240,
 						"collisionPoly": {
 							"points": [
 								0.6666666666666666,
@@ -184,7 +195,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9425639,
+						"imageSpriteId": 7769776,
 						"collisionPoly": {
 							"points": [
 								0.4583333333333333,
@@ -210,7 +221,7 @@
 					}
 				],
 				"sid": 827512422511805,
-				"name": "Idle",
+				"name": "Idlehwqjg",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,

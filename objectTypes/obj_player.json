@@ -27,6 +27,12 @@
 			"type": "number",
 			"desc": "",
 			"sid": 832258943805380
+		},
+		{
+			"name": "health",
+			"type": "number",
+			"desc": "",
+			"sid": 549761553995535
 		}
 	],
 	"behaviorTypes": [
@@ -39,6 +45,11 @@
 			"behaviorId": "bound",
 			"name": "BoundToLayout",
 			"sid": 926492313806969
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 883439133959800
 		}
 	],
 	"effectTypes": [],
