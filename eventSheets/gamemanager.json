@@ -1237,95 +1237,6 @@
 		},
 		{
 			"eventType": "group",
-			"disabled": true,
-			"title": "Hit",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "bullet",
-							"sid": 671101403280152,
-							"parameters": {
-								"object": "obj_enemy"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "bullet",
-							"sid": 919983923880915
-						},
-						{
-							"id": "destroy",
-							"objectClass": "obj_enemy",
-							"sid": 572303536206396
-						}
-					],
-					"sid": 431991222595847,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "bullet",
-							"sid": 966472252946352
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 693943804310491,
-							"parameters": {
-								"object-to-create": "Particles",
-								"layer": "1",
-								"x": "bullet.X",
-								"y": "bullet.Y",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 371266551473863,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "obj_enemy",
-							"sid": 104640113216548
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 531964340521605,
-							"parameters": {
-								"object-to-create": "Particles",
-								"layer": "1",
-								"x": "obj_enemy.X",
-								"y": "obj_enemy.Y",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 699391809861445,
-					"disabled": true
-				}
-			],
-			"sid": 752862303644882
-		},
-		{
-			"eventType": "group",
 			"disabled": false,
 			"title": "ScreenShake",
 			"description": "",
@@ -1638,7 +1549,7 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "bullet",
-							"sid": 265000329587612,
+							"sid": 346652602546072,
 							"parameters": {
 								"object": "obj_enemy"
 							}
@@ -1688,8 +1599,13 @@
 							]
 						},
 						{
-							"callFunction": "enemy_health_func",
-							"sid": 754410180765096
+							"id": "subtract-from-instvar",
+							"objectClass": "obj_enemy",
+							"sid": 270780833988836,
+							"parameters": {
+								"instance-variable": "health",
+								"value": "1"
+							}
 						}
 					],
 					"sid": 923534056245455
@@ -1745,100 +1661,27 @@
 					"sid": 495501304145191
 				},
 				{
-					"eventType": "group",
-					"disabled": false,
-					"title": "Enemy Health",
-					"description": "",
-					"isActiveOnStart": true,
-					"children": [
+					"eventType": "block",
+					"conditions": [
 						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "obj_enemy",
-									"sid": 471257812829519,
-									"parameters": {
-										"instance-variable": "health",
-										"comparison": 5,
-										"value": "3"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "destroy",
-									"objectClass": "obj_enemy",
-									"sid": 171442773255915
-								}
-							],
-							"sid": 665009757248595
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-instance-variable",
-									"objectClass": "obj_enemy",
-									"sid": 171927483639243,
-									"parameters": {
-										"instance-variable": "health",
-										"comparison": 2,
-										"value": "0"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-instvar-value",
-									"objectClass": "obj_enemy",
-									"sid": 399189928884348,
-									"parameters": {
-										"instance-variable": "health",
-										"value": "0"
-									}
-								}
-							],
-							"sid": 778319663973727
-						},
-						{
-							"functionName": "enemy_health_func",
-							"functionDescription": "",
-							"functionCategory": "",
-							"functionReturnType": "none",
-							"functionIsAsync": false,
-							"functionParameters": [],
-							"eventType": "function-block",
-							"conditions": [],
-							"actions": [],
-							"sid": 420400539441010,
-							"children": [
-								{
-									"eventType": "block",
-									"conditions": [
-										{
-											"id": "trigger-once-while-true",
-											"objectClass": "System",
-											"sid": 883290838863110
-										}
-									],
-									"actions": [
-										{
-											"id": "add-to-instvar",
-											"objectClass": "obj_enemy",
-											"sid": 327762899943610,
-											"parameters": {
-												"instance-variable": "health",
-												"value": "1"
-											}
-										}
-									],
-									"sid": 877783392322220
-								}
-							]
+							"id": "compare-instance-variable",
+							"objectClass": "obj_enemy",
+							"sid": 973957757097769,
+							"parameters": {
+								"instance-variable": "health",
+								"comparison": 3,
+								"value": "0"
+							}
 						}
 					],
-					"sid": 508032158263627
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "obj_enemy",
+							"sid": 700953098592253
+						}
+					],
+					"sid": 758654881054891
 				}
 			],
 			"sid": 576425768188411

@@ -146,7 +146,8 @@
 			"TiledBackground",
 			"TiledBackground2",
 			"GameManager",
-			"arrow"
+			"arrow",
+			"obj_enemy_crawler"
 		],
 		"subfolders": [
 			{

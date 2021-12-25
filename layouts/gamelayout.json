@@ -135,7 +135,7 @@
 							"height": 45,
 							"max-width": 115,
 							"max-height": 45,
-							"data": "91x22,14,6x24,34,16x22,11x0,10x22,15,6x0,35,18x22,9x0,10x22,15,6x0,35,14x22,14x0,9x22,15,6x0,35,17x22,11x0,9x22,15,6x0,35,16x22,12x0,9x22,15,6x0,35,15x22,13x0,9x22,15,6x0,35,14x22,14x0,9x22,15,6x0,35,16x22,12x0,9x22,15,6x0,35,14x22,13x0,10x22,15,6x0,35,15x22,11x0,11x22,15,6x0,35,13x22,12x0,12x22,15,6x0,35,14x22,10x0,13x22,15,6x0,35,16x22,7x0,14x22,16,3x26,31,2x0,35,17x22,5x0,19x22,15,2x0,35,17x22,4x0,20x22,15,2x0,35,5x22,14,8x23,34,3x22,3x0,20x22,15,2x0,35,5x22,15,8x0,35,3x22,3x0,20x22,15,2x0,35,5x22,15,8x0,35,3x22,4x0,19x22,15,2x0,35,5x22,15,8x0,35,3x22,5x0,18x22,15,2x0,35,5x22,15,8x0,35,3x22,6x0,6x22,2x0,5x22,14,3x24,33,2x0,13,34,4x22,15,8x0,35,3x22,5x0,6x22,3x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,5x22,3x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,7x0,2x22,5x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,14x0,5x22,15,7x0,13,2x23,2x24,33,8x0,35,3x22,14x0,5x22,15,21x0,35,3x22,14x0,5x22,15,21x0,35,4x22,9x0,22,3x0,5x22,15,7x0,11,4x21,31,8x0,35,3x22,10x0,22,3x0,5x22,15,7x0,35,4x22,15,8x0,2x22,12x0,22,3x0,5x22,16,7x21,36,4x22,15,8x0,35,13x0,22,3x0,18x22,15,22x0,22,3x0,18x22,15,13x0,4x22,9x0,18x22,15,12x0,6x22,8x0,18x22,15,11x0,7x22,8x0,18x22,15,8x0,35,9x22,8x0,18x22,16,8x26,36,9x22,6x0,38x22,7x0,38x22,5x0,39x22,6x0,37x22,8x0,35x22,10x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,12x22,6x0,15x22,12x0,11x22,8x0,14x22,12x0,10x22,9x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,8x22,12x0,13x22,12x0,8x22,12x0,12x22,13x0,8x22,14x0,9x22,14x0,8x22,19x0,4x22,14x0,8x22,37x0,8x22,37x0,8x22,37x0,8x22,37x0,8x22,10x0,35x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,24x22,10x0,2x22,9x0,17x22,17x0,2x22,9x0,14x22,20x0,2x22,9x0,8x22,37x0,6x22,39x0,5x22,40x0,4x22,41x0,3x22,42x0,2x22,43x0,22,1115x0"
+							"data": "91x22,14,6x24,34,16x22,11x0,10x22,15,6x0,35,18x22,9x0,10x22,15,6x0,35,14x22,14x0,9x22,15,6x0,35,17x22,11x0,9x22,15,6x0,35,16x22,12x0,9x22,15,6x0,35,15x22,13x0,9x22,15,6x0,35,14x22,14x0,9x22,15,6x0,35,16x22,12x0,9x22,15,6x0,35,14x22,13x0,10x22,15,6x0,35,15x22,11x0,11x22,15,6x0,35,13x22,12x0,12x22,15,6x0,35,14x22,10x0,13x22,15,6x0,35,16x22,7x0,14x22,16,3x26,31,2x0,35,17x22,5x0,19x22,15,2x0,35,17x22,4x0,20x22,15,2x0,35,5x22,14,8x23,34,3x22,3x0,20x22,15,2x0,35,5x22,15,8x0,35,3x22,3x0,20x22,15,2x0,35,5x22,15,8x0,35,3x22,4x0,19x22,15,2x0,35,5x22,15,8x0,35,3x22,5x0,18x22,15,2x0,35,5x22,15,8x0,35,3x22,6x0,6x22,2x0,5x22,14,3x24,33,2x0,13,34,4x22,15,8x0,35,3x22,5x0,6x22,3x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,5x22,3x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,7x0,2x22,5x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,14x0,5x22,15,7x0,13,2x23,2x24,33,8x0,35,3x22,14x0,5x22,15,21x0,35,3x22,14x0,5x22,15,21x0,35,4x22,9x0,22,3x0,5x22,15,7x0,11,4x21,31,8x0,35,3x22,10x0,22,3x0,5x22,15,7x0,35,4x22,15,8x0,2x22,12x0,22,3x0,5x22,16,7x21,36,4x22,15,8x0,35,13x0,22,3x0,18x22,15,22x0,22,3x0,18x22,15,13x0,4x22,9x0,18x22,15,12x0,6x22,8x0,18x22,15,11x0,7x22,8x0,18x22,15,8x0,35,9x22,8x0,18x22,16,8x26,36,9x22,6x0,38x22,7x0,38x22,5x0,39x22,6x0,37x22,8x0,35x22,10x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,12x22,6x0,15x22,12x0,11x22,8x0,14x22,12x0,10x22,9x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,8x22,12x0,13x22,12x0,8x22,12x0,12x22,13x0,8x22,14x0,9x22,14x0,8x22,19x0,4x22,14x0,8x22,37x0,8x22,37x0,8x22,37x0,8x22,37x0,8x22,10x0,35x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,24x22,10x0,2x22,9x0,17x22,17x0,2x22,9x0,14x22,20x0,2x22,9x0,8x22,37x0,6x22,39x0,5x22,40x0,4x22,41x0,3x22,42x0,2x22,43x0,22,1115x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -173,8 +173,195 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 320,
+						"x": 752,
 						"y": 240,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_col_r",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1032,
+						"y": 272,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_col_l",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 464,
+						"y": 240,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {
+						"direction": "",
+						"health": 3
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 40,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 880,
+						"y": 272,
+						"width": 32,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"direction": "",
+						"health": 3
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 40,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 696,
+						"y": 712,
+						"width": 32,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_col_r",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1200,
+						"y": 720,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -332,56 +519,6 @@
 					}
 				},
 				{
-					"type": "obj_enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Walk5rylf",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {
-						"direction": "",
-						"health": 0
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 40,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": true,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
-						},
-						"Flash": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 232,
-						"y": 239.27271062677556,
-						"width": 32,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "obj_player",
 					"properties": {
 						"initially-visible": true,
@@ -423,8 +560,8 @@
 						}
 					},
 					"world": {
-						"x": 392,
-						"y": 240,
+						"x": 432,
+						"y": 248,
 						"width": 32,
 						"height": 32,
 						"originX": 0.375,
@@ -643,6 +780,56 @@
 						"y": -8,
 						"width": 16,
 						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 3,
+					"instanceVariables": {
+						"direction": "",
+						"health": 3
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 40,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 608,
+						"y": 240,
+						"width": 32,
+						"height": 48,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
