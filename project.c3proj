@@ -24,6 +24,14 @@
 		},
 		{
 			"type": "plugin",
+			"id": "Tilemap",
+			"name": "Tilemap",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Mouse",
 			"name": "Mouse",
 			"author": "Scirra",
@@ -50,14 +58,6 @@
 			"type": "plugin",
 			"id": "TiledBg",
 			"name": "Tiled Background",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
-			"id": "Tilemap",
-			"name": "Tilemap",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -104,6 +104,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
@@ -114,14 +122,6 @@
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -137,23 +137,22 @@
 			"Audio",
 			"TiledBackground",
 			"TiledBackground2",
-			"GameManager",
-			"Tilemap2"
+			"GameManager"
 		],
 		"subfolders": [
 			{
 				"items": [
-					"obj_Player"
+					"obj_player"
 				],
 				"subfolders": [],
-				"name": "Player"
+				"name": "player"
 			},
 			{
 				"items": [
-					"Enemy"
+					"obj_enemy"
 				],
 				"subfolders": [],
-				"name": "Enemy"
+				"name": "enemy"
 			},
 			{
 				"items": [
@@ -172,6 +171,21 @@
 				],
 				"subfolders": [],
 				"name": "particle"
+			},
+			{
+				"items": [
+					"obj_enemy_col_l",
+					"obj_enemy_col_r"
+				],
+				"subfolders": [],
+				"name": "collison_objects"
+			},
+			{
+				"items": [
+					"Tilemap2"
+				],
+				"subfolders": [],
+				"name": "tilesets"
 			}
 		]
 	},

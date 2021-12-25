@@ -65,7 +65,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "obj_Player",
+							"objectClass": "obj_player",
 							"sid": 589597748396241,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -94,7 +94,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "obj_Player",
+							"objectClass": "obj_player",
 							"sid": 912179700148053,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -123,7 +123,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "obj_Player",
+							"objectClass": "obj_player",
 							"sid": 287593924033142,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -159,13 +159,13 @@
 							"conditions": [
 								{
 									"id": "is-moving",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 488745276470239,
 									"behaviorType": "Platform"
 								},
 								{
 									"id": "is-on-floor",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 874119707165679,
 									"behaviorType": "Platform"
 								}
@@ -173,7 +173,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 313031662489162,
 									"parameters": {
 										"animation": "\"Run\"",
@@ -192,13 +192,13 @@
 							"conditions": [
 								{
 									"id": "on-stopped",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 979749584195696,
 									"behaviorType": "Platform"
 								},
 								{
 									"id": "is-on-floor",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 815894626147269,
 									"behaviorType": "Platform"
 								}
@@ -206,7 +206,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 857143621868798,
 									"parameters": {
 										"animation": "\"Idle\"",
@@ -225,7 +225,7 @@
 							"conditions": [
 								{
 									"id": "is-jumping",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 836657819385446,
 									"behaviorType": "Platform"
 								}
@@ -233,7 +233,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 657018470980532,
 									"parameters": {
 										"animation": "\"Jump\"",
@@ -252,7 +252,7 @@
 							"conditions": [
 								{
 									"id": "is-falling",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 472116431440251,
 									"behaviorType": "Platform"
 								}
@@ -260,7 +260,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 933793893501640,
 									"parameters": {
 										"animation": "\"Fall\"",
@@ -279,7 +279,7 @@
 							"conditions": [
 								{
 									"id": "on-landed",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 783968045978447,
 									"behaviorType": "Platform"
 								}
@@ -287,7 +287,7 @@
 							"actions": [
 								{
 									"id": "set-animation",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 463189993831353,
 									"parameters": {
 										"animation": "\"Idle\"",
@@ -407,7 +407,7 @@
 							"actions": [
 								{
 									"id": "set-mirrored",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 334730968638473,
 									"parameters": {
 										"state": "not-mirrored"
@@ -441,7 +441,7 @@
 							"actions": [
 								{
 									"id": "set-mirrored",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 187178978993319,
 									"parameters": {
 										"state": "mirrored"
@@ -498,7 +498,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 172627488632546,
 									"parameters": {
 										"instance-variable": "is_Shooting",
@@ -518,7 +518,7 @@
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 970781227185490,
 									"parameters": {
 										"instance-variable": "is_Shooting",
@@ -533,7 +533,7 @@
 									"conditions": [
 										{
 											"id": "is-mirrored",
-											"objectClass": "obj_Player",
+											"objectClass": "obj_player",
 											"sid": 659345887982431
 										}
 									],
@@ -554,7 +554,7 @@
 									"conditions": [
 										{
 											"id": "is-mirrored",
-											"objectClass": "obj_Player",
+											"objectClass": "obj_player",
 											"sid": 210120816285123,
 											"isInverted": true
 										}
@@ -618,7 +618,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 291712068425702,
 									"parameters": {
 										"instance-variable": "wep_Type",
@@ -630,7 +630,7 @@
 							"actions": [
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 310426425611121,
 									"parameters": {
 										"instance-variable": "wep_Type",
@@ -643,7 +643,7 @@
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 115735252306633,
 									"parameters": {
 										"instance-variable": "wep_Rate",
@@ -656,7 +656,7 @@
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 943523700407018,
 									"parameters": {
 										"instance-variable": "wep_Range",
@@ -762,7 +762,7 @@
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 511191647626823,
 									"parameters": {
 										"instance-variable": "wep_Type",
@@ -778,7 +778,7 @@
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 498713837531241,
 									"parameters": {
 										"instance-variable": "wep_Type",
@@ -791,7 +791,7 @@
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 130346024067996,
 									"parameters": {
 										"instance-variable": "wep_Rate",
@@ -804,7 +804,7 @@
 								},
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 874713914724167,
 									"parameters": {
 										"instance-variable": "wep_Range",
@@ -940,7 +940,7 @@
 						},
 						{
 							"id": "set-instvar-value",
-							"objectClass": "obj_Player",
+							"objectClass": "obj_player",
 							"sid": 502381626704560,
 							"parameters": {
 								"instance-variable": "is_Shooting",
@@ -969,7 +969,7 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "obj_Player",
+							"objectClass": "obj_player",
 							"sid": 171801762773270,
 							"parameters": {
 								"instance-variable": "wep_Type",
@@ -998,7 +998,7 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "obj_Player",
+							"objectClass": "obj_player",
 							"sid": 722050290044744,
 							"parameters": {
 								"instance-variable": "wep_Type",
@@ -1041,7 +1041,7 @@
 							"conditions": [
 								{
 									"id": "is-mirrored",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 698783377986034
 								}
 							],
@@ -1064,7 +1064,7 @@
 							"conditions": [
 								{
 									"id": "is-mirrored",
-									"objectClass": "obj_Player",
+									"objectClass": "obj_player",
 									"sid": 305983710915056,
 									"isInverted": true
 								}
@@ -1132,7 +1132,7 @@
 							"objectClass": "bullet",
 							"sid": 671101403280152,
 							"parameters": {
-								"object": "Enemy"
+								"object": "obj_enemy"
 							}
 						}
 					],
@@ -1144,7 +1144,7 @@
 						},
 						{
 							"id": "destroy",
-							"objectClass": "Enemy",
+							"objectClass": "obj_enemy",
 							"sid": 572303536206396
 						}
 					],
@@ -1180,7 +1180,7 @@
 					"conditions": [
 						{
 							"id": "on-destroyed",
-							"objectClass": "Enemy",
+							"objectClass": "obj_enemy",
 							"sid": 104640113216548
 						}
 					],
@@ -1192,8 +1192,8 @@
 							"parameters": {
 								"object-to-create": "Particles",
 								"layer": "1",
-								"x": "Enemy.X",
-								"y": "Enemy.Y",
+								"x": "obj_enemy.X",
+								"y": "obj_enemy.Y",
 								"create-hierarchy": false
 							}
 						}
@@ -1294,6 +1294,205 @@
 				}
 			],
 			"sid": 882151393331241
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Enemy",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "obj_enemy",
+							"sid": 500923375035433,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-animation",
+							"objectClass": "obj_enemy",
+							"sid": 459277988467885,
+							"parameters": {
+								"animation": "\"WALK\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 713650859080597
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-created",
+							"objectClass": "obj_enemy",
+							"sid": 299076877977954
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "obj_enemy",
+							"sid": 184768803123171,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "choose(\"left\",\"right\")"
+							}
+						}
+					],
+					"sid": 203341224132642
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "obj_enemy",
+							"sid": 739040317240099,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "\"left\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "obj_enemy",
+							"sid": 771239142218869,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "obj_enemy",
+							"sid": 406161251381052,
+							"parameters": {
+								"state": "mirrored"
+							}
+						}
+					],
+					"sid": 399176259918694
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-instance-variable",
+							"objectClass": "obj_enemy",
+							"sid": 498219986915725,
+							"parameters": {
+								"instance-variable": "direction",
+								"comparison": 0,
+								"value": "\"right\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "obj_enemy",
+							"sid": 599252463118037,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						},
+						{
+							"id": "set-mirrored",
+							"objectClass": "obj_enemy",
+							"sid": 940986605845223,
+							"parameters": {
+								"state": "not-mirrored"
+							}
+						}
+					],
+					"sid": 174512775993046
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-by-wall",
+							"objectClass": "obj_enemy",
+							"sid": 750760839369861,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "left"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "obj_enemy",
+							"sid": 312523228781203,
+							"parameters": {
+								"object": "obj_enemy_col_l",
+								"offset-x": "1",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "obj_enemy",
+							"sid": 198570086360132,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"right\""
+							}
+						}
+					],
+					"sid": 111815264529829,
+					"isOrBlock": true
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-by-wall",
+							"objectClass": "obj_enemy",
+							"sid": 277378895687973,
+							"behaviorType": "Platform",
+							"parameters": {
+								"side": "right"
+							}
+						},
+						{
+							"id": "is-overlapping-at-offset",
+							"objectClass": "obj_enemy",
+							"sid": 612547656447986,
+							"parameters": {
+								"object": "obj_enemy_col_r",
+								"offset-x": "1",
+								"offset-y": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-instvar-value",
+							"objectClass": "obj_enemy",
+							"sid": 151411940527838,
+							"parameters": {
+								"instance-variable": "direction",
+								"value": "\"left\""
+							}
+						}
+					],
+					"sid": 476759452722444,
+					"isOrBlock": true
+				}
+			],
+			"sid": 576425768188411
 		}
 	],
 	"sid": 959625501649600

@@ -1,5 +1,5 @@
 {
-	"name": "obj_Player",
+	"name": "obj_player",
 	"plugin-id": "Sprite",
 	"sid": 234851304274409,
 	"isGlobal": false,

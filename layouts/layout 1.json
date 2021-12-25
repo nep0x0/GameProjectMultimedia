@@ -159,6 +159,35 @@
 						],
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "obj_enemy_col_r",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 320,
+						"y": 240,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 522980905082289,
@@ -206,8 +235,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -248,
-						"y": 328,
+						"x": -176,
+						"y": 224,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -251,8 +280,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": -400,
-						"y": 224,
+						"x": -384,
+						"y": 160,
 						"width": 100,
 						"height": 100,
 						"originX": 0,
@@ -286,8 +315,8 @@
 						}
 					},
 					"world": {
-						"x": -224,
-						"y": 224,
+						"x": -200,
+						"y": 104,
 						"width": 15,
 						"height": 15,
 						"originX": 0.5,
@@ -348,24 +377,26 @@
 					}
 				},
 				{
-					"type": "Enemy",
+					"type": "obj_enemy",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Walk",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
 					},
 					"uid": 14,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"direction": ""
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
-								"max-speed": 330,
+								"max-speed": 40,
 								"acceleration": 1500,
 								"deceleration": 1500,
-								"jump-strength": 500,
-								"gravity": 1200,
+								"jump-strength": 650,
+								"gravity": 1500,
 								"max-fall-speed": 1000,
 								"double-jump": true,
 								"jump-sustain": 0,
@@ -375,10 +406,10 @@
 						}
 					},
 					"world": {
-						"x": 240,
-						"y": 248,
-						"width": 16,
-						"height": 15.636355313387782,
+						"x": 232,
+						"y": 239.27271062677556,
+						"width": 32,
+						"height": 48,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -392,7 +423,7 @@
 					}
 				},
 				{
-					"type": "obj_Player",
+					"type": "obj_player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Idle",
@@ -429,7 +460,7 @@
 						}
 					},
 					"world": {
-						"x": 528,
+						"x": 120,
 						"y": 248,
 						"width": 32,
 						"height": 32,
@@ -484,8 +515,8 @@
 						}
 					},
 					"world": {
-						"x": -240,
-						"y": 360,
+						"x": -168,
+						"y": 184,
 						"width": 14,
 						"height": 8,
 						"originX": 0.5,
@@ -516,8 +547,8 @@
 					},
 					"behaviors": {},
 					"world": {
-						"x": -136,
-						"y": 216,
+						"x": -176,
+						"y": 200,
 						"width": 24,
 						"height": 24,
 						"originX": 0.36363636363636365,
@@ -556,8 +587,8 @@
 						}
 					},
 					"world": {
-						"x": -312,
-						"y": 384,
+						"x": -184,
+						"y": 168,
 						"width": 24,
 						"height": 24,
 						"originX": 0.125,
@@ -611,7 +642,7 @@
 					},
 					"world": {
 						"x": -160,
-						"y": 280,
+						"y": 200,
 						"width": 6,
 						"height": 4,
 						"originX": 0.5,
