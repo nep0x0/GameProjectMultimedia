@@ -192,7 +192,8 @@
 			},
 			{
 				"items": [
-					"Tilemap2"
+					"Tilemap2",
+					"purplecity"
 				],
 				"subfolders": [],
 				"name": "tilesets"

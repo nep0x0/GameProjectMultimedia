@@ -133,9 +133,9 @@
 						"tilemapData": {
 							"width": 97,
 							"height": 45,
-							"max-width": 115,
-							"max-height": 45,
-							"data": "91x22,14,6x24,34,16x22,11x0,10x22,15,6x0,35,18x22,9x0,10x22,15,6x0,35,14x22,14x0,9x22,15,6x0,35,17x22,11x0,9x22,15,6x0,35,16x22,12x0,9x22,15,6x0,35,15x22,13x0,9x22,15,6x0,35,14x22,14x0,9x22,15,6x0,35,16x22,12x0,9x22,15,6x0,35,14x22,13x0,10x22,15,6x0,35,15x22,11x0,11x22,15,6x0,35,13x22,12x0,12x22,15,6x0,35,14x22,10x0,13x22,15,6x0,35,16x22,7x0,14x22,16,3x26,31,2x0,35,17x22,5x0,19x22,15,2x0,35,17x22,4x0,20x22,15,2x0,35,5x22,14,8x23,34,3x22,3x0,20x22,15,2x0,35,5x22,15,8x0,35,3x22,3x0,20x22,15,2x0,35,5x22,15,8x0,35,3x22,4x0,19x22,15,2x0,35,5x22,15,8x0,35,3x22,5x0,18x22,15,2x0,35,5x22,15,8x0,35,3x22,6x0,6x22,2x0,5x22,14,3x24,33,2x0,13,34,4x22,15,8x0,35,3x22,5x0,6x22,3x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,5x22,3x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,7x0,2x22,5x0,5x22,15,7x0,35,4x22,15,8x0,35,3x22,14x0,5x22,15,7x0,13,2x23,2x24,33,8x0,35,3x22,14x0,5x22,15,21x0,35,3x22,14x0,5x22,15,21x0,35,4x22,9x0,22,3x0,5x22,15,7x0,11,4x21,31,8x0,35,3x22,10x0,22,3x0,5x22,15,7x0,35,4x22,15,8x0,2x22,12x0,22,3x0,5x22,16,7x21,36,4x22,15,8x0,35,13x0,22,3x0,18x22,15,22x0,22,3x0,18x22,15,13x0,4x22,9x0,18x22,15,12x0,6x22,8x0,18x22,15,11x0,7x22,8x0,18x22,15,8x0,35,9x22,8x0,18x22,16,8x26,36,9x22,6x0,38x22,7x0,38x22,5x0,39x22,6x0,37x22,8x0,35x22,10x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,33x22,12x0,12x22,6x0,15x22,12x0,11x22,8x0,14x22,12x0,10x22,9x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,9x22,10x0,14x22,12x0,8x22,12x0,13x22,12x0,8x22,12x0,12x22,13x0,8x22,14x0,9x22,14x0,8x22,19x0,4x22,14x0,8x22,37x0,8x22,37x0,8x22,37x0,8x22,37x0,8x22,10x0,35x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,36x22,9x0,24x22,10x0,2x22,9x0,17x22,17x0,2x22,9x0,14x22,20x0,2x22,9x0,8x22,37x0,6x22,39x0,5x22,40x0,4x22,41x0,3x22,42x0,2x22,43x0,22,1115x0"
+							"max-width": 141,
+							"max-height": 53,
+							"data": "45x22,8x0,45x22,8x0,22,14,6x24,34,16x22,11x0,9x22,8x0,22,15,6x0,35,18x22,9x0,9x22,8x0,22,15,6x0,35,14x22,14x0,8x22,8x0,22,15,6x0,35,17x22,11x0,8x22,8x0,22,15,6x0,35,16x22,12x0,8x22,8x0,22,15,6x0,35,15x22,13x0,8x22,8x0,22,15,6x0,35,14x22,14x0,8x22,8x0,22,15,6x0,35,16x22,12x0,8x22,8x0,22,15,6x0,35,14x22,13x0,9x22,8x0,22,15,6x0,35,15x22,11x0,10x22,8x0,22,15,6x0,35,13x22,12x0,11x22,8x0,22,15,6x0,35,14x22,10x0,12x22,8x0,22,15,6x0,35,16x22,7x0,13x22,8x0,22,16,3x26,31,2x0,35,17x22,5x0,14x22,8x0,5x22,15,2x0,35,17x22,4x0,15x22,8x0,5x22,15,2x0,35,5x22,14,8x23,34,3x22,3x0,15x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,3x0,15x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,4x0,14x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,5x0,13x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,6x0,6x22,2x0,4x22,8x0,22,14,3x24,33,2x0,13,34,4x22,15,8x0,35,3x22,5x0,6x22,3x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,5x22,3x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,7x0,2x22,5x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,14x0,4x22,8x0,22,15,7x0,13,2x23,2x24,33,8x0,35,3x22,14x0,4x22,8x0,22,15,21x0,35,3x22,14x0,4x22,8x0,22,15,21x0,35,4x22,9x0,22,3x0,4x22,8x0,22,15,7x0,11,4x21,31,8x0,35,3x22,10x0,22,3x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,2x22,12x0,22,3x0,4x22,8x0,22,16,7x21,36,4x22,15,8x0,35,13x0,22,3x0,4x22,8x0,14x22,15,22x0,22,3x0,4x22,8x0,14x22,15,13x0,4x22,9x0,4x22,8x0,14x22,15,12x0,6x22,8x0,4x22,8x0,14x22,15,11x0,7x22,8x0,4x22,8x0,14x22,15,8x0,35,9x22,8x0,4x22,8x0,14x22,16,8x26,36,9x22,6x0,6x22,8x0,32x22,7x0,6x22,8x0,32x22,5x0,8x22,8x0,31x22,6x0,8x22,8x0,29x22,8x0,8x22,8x0,27x22,10x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,4x22,6x0,15x22,12x0,8x22,8x0,3x22,8x0,14x22,12x0,8x22,8x0,2x22,9x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,20x0,13x22,12x0,8x22,20x0,12x22,13x0,8x22,22x0,9x22,14x0,8x22,27x0,4x22,14x0,8x22,45x0,8x22,45x0,8x22,45x0,8x22,45x0,8x22,18x0,35x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,24x22,10x0,2x22,17x0,17x22,17x0,2x22,17x0,14x22,20x0,2x22,17x0,8x22,45x0,6x22,47x0,5x22,48x0,4x22,49x0,3x22,50x0,2x22,51x0,22,2693x0"
 						},
 						"tile-width": 32,
 						"tile-height": 32,
@@ -145,8 +145,8 @@
 						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 0,
-						"y": 0,
+						"x": -168,
+						"y": 1632,
 						"width": 3120,
 						"height": 1456,
 						"originX": 0,
@@ -161,218 +161,57 @@
 					}
 				},
 				{
-					"type": "obj_enemy_col_r",
+					"type": "purplecity",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
 					},
-					"uid": 4,
+					"uid": 24,
 					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 752,
-						"y": 240,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "obj_enemy_col_r",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 9,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1032,
-						"y": 272,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "obj_enemy_col_l",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 21,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 464,
-						"y": 240,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "obj_enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Walk",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 14,
-					"instanceVariables": {
-						"direction": "",
-						"health": 3
-					},
 					"behaviors": {
-						"Platform": {
+						"Solid": {
 							"properties": {
-								"max-speed": 40,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": true,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
+								"enabled": true,
+								"tags": ""
 							}
-						},
-						"Flash": {
-							"properties": {}
 						}
 					},
-					"world": {
-						"x": 880,
-						"y": 272,
-						"width": 32,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "obj_enemy",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Walk",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"instanceVariables": {
-						"direction": "",
-						"health": 3
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 40,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": 1500,
-								"max-fall-speed": 1000,
-								"double-jump": true,
-								"jump-sustain": 0,
-								"default-controls": false,
-								"enabled": true
-							}
+					"ownData": {
+						"tilemapData": {
+							"width": 150,
+							"height": 84,
+							"max-width": 213,
+							"max-height": 84,
+							"data": "58x12,26x0,59x12,25x0,58x12,26x0,58x12,0,12,24x0,50x12,2x0,2x12,0,12,5x0,12,22x0,53x12,0,12,3x0,12,4x0,12,20x0,14x12,5,13,8,37x12,6x0,2x12,3x0,2x12,17x0,10x12,5,3x13,23,0,2,37x12,30x0,10x12,22,5x0,2,23x12,2x0,4x12,2x0,12,14x0,12,2x0,12,17x0,9x12,5,23,5x0,2,22x12,3x0,12,0,2x12,7x0,12,0,3x12,5x0,2x12,0,12,17x0,8x12,5,23,6x0,2,23x12,6x0,12,4x0,12,2x0,2x12,2x0,12,0,2x12,4x0,12,17x0,7x12,5,23,7x0,2,18x12,11x0,12,6x0,12,8x0,12,3x0,12,17x0,7x12,23,8x0,2,15x12,2x0,12,17x0,2x12,9x0,12,2x0,12,17x0,5x12,5,23,9x0,2,15x12,17x0,12,0,12,12x0,12,0,12,17x0,5x12,5,10x0,2,15x12,19x0,12,12x0,12,0,12,17x0,5x12,22,10x0,2,15x12,19x0,2x12,11x0,12,0,12,17x0,5x12,22,10x0,2,15x12,32x0,12,0,12,17x0,5x12,22,10x0,2,19x12,12x0,12,0,12,33x0,5x12,22,10x0,2,33x12,2x0,12,11x0,12,0,12,17x0,5x12,22,10x0,2,34x12,13x0,12,19x0,5x12,22,10x0,2,30x12,0,12,15x0,12,0,12,17x0,5x12,22,10x0,2,29x12,18x0,2x12,18x0,5x12,22,10x0,2,32x12,3x0,12,12x0,12,18x0,5x12,22,10x0,2,31x12,17x0,12,18x0,5x12,22,10x0,2,27x12,4x0,12,0,12,14x0,12,18x0,5x12,22,10x0,2,27x12,7x0,12,12x0,2x12,18x0,5x12,22,10x0,2,29x12,2x0,12,15x0,12,19x0,5x12,6,21,9x0,2,29x12,5x0,12,12x0,12,19x0,6x12,6,21,8x0,2,33x12,13x0,12,20x0,7x12,6,21,7x0,2,36x12,9x0,12,21x0,8x12,6,2x11,21,4x0,2,36x12,7x0,2x12,22x0,11x12,22,4x0,2,36x12,31x0,11x12,22,4x0,2,35x12,32x0,11x12,22,4x0,2,36x12,6x0,2x12,23x0,11x12,22,4x0,2,37x12,5x0,12,24x0,11x12,22,4x0,2,38x12,29x0,11x12,22,4x0,2,38x12,4x0,12,24x0,11x12,22,4x0,2,38x12,5x0,12,23x0,11x12,22,4x0,2,37x12,6x0,12,23x0,11x12,22,4x0,2,37x12,0,12,5x0,12,22x0,11x12,22,4x0,2,37x12,0,12,5x0,12,0,12,20x0,11x12,22,4x0,2,37x12,0,12,7x0,12,20x0,11x12,22,4x0,2,37x12,30x0,11x12,22,4x0,2,39x12,8x0,2x12,18x0,11x12,22,4x0,2,18x12,5,9x13,15,9x12,10x0,12,18x0,10x12,13,23,4x0,3,13,8,16x12,22,9x0,4,9x12,29x0,8x12,5,23,8x0,2,15x12,5,23,9x0,4,10x12,9x0,12,18x0,7x12,13,23,9x0,2,14x12,5,23,10x0,4,10x12,9x0,12,18x0,5x12,5,23,11x0,2,13x12,5,23,11x0,4,10x12,18x0,5x12,5x0,5x12,22,12x0,2,13x12,22,12x0,4,8x12,0,12,9x0,12,8x0,5x12,0,12,3x0,5x12,22,12x0,2,13x12,22,12x0,4,9x12,10x0,12,7x0,3x12,3x0,3x12,2x0,5x12,22,12x0,2,13x12,22,12x0,4,10x12,15x0,12,0,12,7x0,12,2x0,5x12,22,6x0,1,21,4x0,2,13x12,22,12x0,4,8x12,0,2x12,8x0,12,7x0,12,7x0,2x12,0,5x12,22,6x0,2,22,4x0,2,13x12,22,12x0,4,10x12,2x0,12,6x0,12,3x0,12,2x0,2x12,7x0,12,2x0,4x12,5,23,6x0,2,22,4x0,2,12x12,5,23,12x0,4,8x12,3x0,2x12,6x0,2x12,0,2x12,2x0,12,8x0,12,2x0,4x12,22,7x0,2,22,4x0,2,12x12,22,13x0,4,8x12,2x0,12,0,12,7x0,2x12,0,3x12,9x0,2x12,0,4x12,22,7x0,3,23,4x0,2,12x12,22,13x0,4,8x12,2x0,2x12,8x0,3x12,12x0,2x12,0,4x12,22,13x0,2,12x12,22,13x0,2,9x12,0,3x12,22x0,12,2x0,4x12,22,13x0,2,11x12,5,23,13x0,2,8x12,4x0,12,22x0,12,2x0,4x12,22,13x0,2,11x12,22,14x0,2,11x12,24x0,2x12,0,4x12,22,13x0,2,11x12,22,14x0,2,8x12,2x0,12,0,12,22x0,12,2x0,4x12,22,13x0,2,11x12,22,14x0,2,9x12,0,2x12,23x0,12,2x0,4x12,22,13x0,2,10x12,5,23,14x0,2,11x12,0,12,22x0,12,2x0,4x12,6,21,12x0,3,10x13,23,15x0,2,11x12,24x0,12,2x0,4x12,5,23,39x0,2,10x12,24x0,2x12,2x0,4x12,22,40x0,2,8x12,0,12,2x0,12,21x0,2x12,2x0,4x12,22,40x0,2,8x12,6,12,18x0,9x12,0,4x12,22,40x0,2,10x12,7x0,2x12,9x0,8x12,2x0,4x12,22,13x0,1,10x11,21,15x0,2,8x12,0,12,7x0,2x12,9x0,14x12,22,13x0,2,10x12,6,21,14x0,2,7x12,22,0,12,7x0,2x12,9x0,9x12,0,4x12,22,13x0,2,11x12,6,21,13x0,3,8,2x12,5,3x13,23,9x0,12,17x0,2x12,0,4x12,6,21,12x0,2,12x12,6,21,13x0,2,2x12,22,12x0,3x12,16x0,2x12,0,5x12,6,12x11,16,12x12,5,23,13x0,2,12,5,23,12x0,3x12,16x0,2x12,0,31x12,6,14x0,3,13,23,13x0,3x12,16x0,12,2x0,31x12,22,30x0,3x12,16x0,2x12,0,31x12,22,29x0,3x12,17x0,12,2x0,31x12,22,24x0,9x12,16x0,12,2x0,31x12,22,24x0,9x12,9x0,12,6x0,2x12,0,31x12,6,21,21x0,12x12,8x0,42x12,6,21,20x0,12x12,8x0,43x12,6,21,17x0,14x12,8x0,44x12,6,21,16x0,14x12,8x0,45x12,6,21,8x0,2,20x12,9x0,8x12,0,36x12,6,21,7x0,2,20x12,14x0,12,0,12,0,36x12,24,6,7x11,16,20x12,14x0,12,0,12,0,66x12,13x0,12,2x0,12,0,64x12,18x0,12,0,64x12,14x0,12,3x0,12,0,64x12,14x0,12,3x0,12,2x0,63x12,13x0,12,4x0,12,10x0,54x12,12x0,2x12,16x0,53x12,13x0,12,6x0,12,11x0,49x12,15x0,12,28x0,4x12,9x0,2x12,10x0,12,0,10x12,18x0,12,7x0,12,55x0,12,103x0,12,7x0,12,54x0,2x12,27x0,12,54x0,12,20x0,12,62x0,12,84x0,12,26x0,12,55x0,2x12,82x0,12,27x0,12,56x0,12,83x0,12,19x0,12,5x0,12,57x0,12,24x0,12,58x0,12,23x0,12,83x0,12,59x0,12,22x0,12,60x0,12,22x0,12,60x0,12,21x0,12,61x0,12,83x0,12,21x0,12,81x0,12,63x0,12,105x0,12,61x0,12,21x0,12,16x0,12,2x0,12,2x0,12,59x0,12,15x0,12,10x0,12,35x0,12,20x0,12,12x0,2x12,14x0,12,54x0,12,12x0,12,17x0,12,32x0,12,31x0,12,19x0,12,31x0,12,31x0,12,71x0,12,11x0,12,20x0,12,30x0,12,30x0,12,52x0,12,30x0,12,22x0,12,29x0,12,29x0,12,53x0,12,19x0,12,9x0,12,53x0,12,54x0,12,28x0,12,29x0,12,82x0,2x12,25x0,12,27x0,12,18x0,12,9x0,12,0,12,52x0,12,30x0,12,24x0,12,27x0,12,83x0,12,18x0,12,11x0,12,26x0,12,24x0,12,31x0,12,26x0,12,0,4x12,2x0,2x12,0,12,2x0,12,0,12,3x0,12,3x0,12,32x0,12,70x0,12,166x0,12,82x0,12,34x0,12,2x0,12,3x0,12,0,12,0,2x12,0,2x12,65x0,12,19x0,12,2x0,12,44x0,12,14x0,12,24x0,12,2x0,12,22x0,12,17x0,12,45x0,12,2x0,12,3x0,12,3x0,12,26x0,12,13x0,12,45x0,12,0,12,0,12,33x0,12,153x0,12,83x0,12,96x0,12,70x0,12,12x0,12,5359x0"
 						},
-						"Flash": {
-							"properties": {}
-						}
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
 					},
 					"world": {
-						"x": 696,
-						"y": 712,
-						"width": 32,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
+						"x": 0,
+						"y": 0,
+						"width": 2400,
+						"height": 1350,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "obj_enemy_col_r",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 23,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 1200,
-						"y": 720,
-						"width": 32,
-						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
 						"zElevation": 0
 					}
 				}
@@ -826,10 +665,226 @@
 						}
 					},
 					"world": {
-						"x": 608,
+						"x": 544,
 						"y": 240,
 						"width": 32,
 						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 14,
+					"instanceVariables": {
+						"direction": "",
+						"health": 3
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 40,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 816,
+						"y": 272,
+						"width": 32,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 22,
+					"instanceVariables": {
+						"direction": "",
+						"health": 3
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 40,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 650,
+								"gravity": 1500,
+								"max-fall-speed": 1000,
+								"double-jump": true,
+								"jump-sustain": 0,
+								"default-controls": false,
+								"enabled": true
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 816,
+						"y": 704,
+						"width": 32,
+						"height": 48,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_col_l",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 21,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 464,
+						"y": 240,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_col_r",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 4,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 752,
+						"y": 240,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_col_r",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 9,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1032,
+						"y": 272,
+						"width": 32,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_col_r",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 23,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1200,
+						"y": 720,
+						"width": 32,
+						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
