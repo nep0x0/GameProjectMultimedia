@@ -120,8 +120,8 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
+			"id": "Pin",
+			"name": "Pin",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -130,6 +130,30 @@
 			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowvertical",
+			"name": "Glow vertical",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -198,6 +222,22 @@
 				],
 				"subfolders": [],
 				"name": "tilesets"
+			},
+			{
+				"items": [
+					"Bullet2",
+					"JumpingDust",
+					"LandingDust",
+					"MuzzleFlash",
+					"PlayerCollision",
+					"PlayerGraphics",
+					"SmallExplosion",
+					"WalkingDust",
+					"BulletTrail",
+					"BulletHit"
+				],
+				"subfolders": [],
+				"name": "Player"
 			}
 		]
 	},
@@ -210,7 +250,8 @@
 	"layouts": {
 		"items": [
 			"GameLayout",
-			"WinDeathLayout"
+			"WinDeathLayout",
+			"ObjectRepository"
 		],
 		"subfolders": []
 	},

@@ -726,20 +726,90 @@
 							"id": "destroy",
 							"objectClass": "bullet",
 							"sid": 700523666120220
-						},
+						}
+					],
+					"sid": 559869833828585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "bullet",
+							"sid": 399386642288915
+						}
+					],
+					"actions": [
 						{
 							"id": "spawn-another-object",
 							"objectClass": "bullet",
-							"sid": 251257596614789,
+							"sid": 127781700016393,
 							"parameters": {
 								"object": "obj_muzle_flash",
 								"layer": "\"Game\"",
 								"image-point": "0",
 								"create-hierarchy": false
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "bullet",
+							"sid": 853313103240785,
+							"parameters": {
+								"object": "SmallExplosion",
+								"layer": "\"Game\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "bullet",
+							"sid": 425655759422849,
+							"disabled": true,
+							"parameters": {
+								"object": "BulletHit",
+								"layer": "\"Game\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "BulletHit",
+							"sid": 121416033024997,
+							"disabled": true,
+							"parameters": {
+								"angle": "lerp((Bullet.Bullet.AngleOfMotion + 180), 270, 0.5) + random(-10, 10)"
+							}
 						}
 					],
-					"sid": 559869833828585
+					"sid": 735758026923233
+				},
+				{
+					"eventType": "comment",
+					"text": "Destroy the particles after their animation is done to prevent CPU overload."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "SmallExplosion",
+							"sid": 561383667586544,
+							"parameters": {
+								"animation": "\"Default\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "SmallExplosion",
+							"sid": 443396284484913
+						}
+					],
+					"sid": 382398024102955
 				},
 				{
 					"eventType": "comment",
@@ -1274,6 +1344,27 @@
 						}
 					],
 					"sid": 572738451247274
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "bullet",
+							"sid": 129404785426474,
+							"parameters": {
+								"object": "purplecity"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "bullet",
+							"sid": 375075540916411
+						}
+					],
+					"sid": 806092819447913
 				}
 			],
 			"sid": 855134828564941
