@@ -171,9 +171,13 @@
 			"TiledBackground2",
 			"GameManager",
 			"arrow",
-			"TiledBackground3",
 			"bg",
-			"bg0_c"
+			"bg0_c",
+			"CloudsBack",
+			"CloudsFront",
+			"BGFront",
+			"BGBack",
+			"CloudsFront2"
 		],
 		"subfolders": [
 			{
