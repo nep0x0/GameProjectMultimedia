@@ -1213,9 +1213,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "obj_shell",
-							"sid": 652833340301027,
+							"sid": 640042958022138,
 							"parameters": {
-								"object": "Tilemap2"
+								"object": "purplecity"
 							}
 						}
 					],
