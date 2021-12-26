@@ -88,6 +88,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -112,6 +120,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Tween",
+			"name": "Tween",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
 			"author": "Scirra",
@@ -127,9 +143,17 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "Tween",
-			"name": "Tween",
+			"type": "effect",
+			"id": "glowhorizontal",
+			"name": "Glow horizontal",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "glowvertical",
+			"name": "Glow vertical",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -151,14 +175,20 @@
 		"subfolders": [
 			{
 				"items": [
-					"obj_player"
+					"obj_player",
+					"WalkingDust",
+					"MuzzleFlash",
+					"LandingDust",
+					"JumpingDust"
 				],
 				"subfolders": [],
 				"name": "player"
 			},
 			{
 				"items": [
-					"obj_enemy"
+					"obj_enemy_gummy_green",
+					"obj_enemy_wall",
+					"Block"
 				],
 				"subfolders": [],
 				"name": "enemy"
@@ -167,7 +197,10 @@
 				"items": [
 					"bullet",
 					"obj_shell",
-					"obj_wep"
+					"obj_wep",
+					"BulletTrail",
+					"BulletHit",
+					"SmallExplosion"
 				],
 				"subfolders": [],
 				"name": "weapon"
@@ -191,10 +224,20 @@
 			},
 			{
 				"items": [
-					"Tilemap2"
+					"Tilemap2",
+					"purplecity"
 				],
 				"subfolders": [],
 				"name": "tilesets"
+			},
+			{
+				"items": [
+					"Bullet2",
+					"PlayerCollision",
+					"PlayerGraphics"
+				],
+				"subfolders": [],
+				"name": "Player"
 			}
 		]
 	},
@@ -207,7 +250,8 @@
 	"layouts": {
 		"items": [
 			"GameLayout",
-			"WinDeathLayout"
+			"WinDeathLayout",
+			"ObjectRepository"
 		],
 		"subfolders": []
 	},

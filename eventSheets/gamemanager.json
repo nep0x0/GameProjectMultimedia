@@ -5,6 +5,27 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 697385111826004
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Block",
+					"sid": 919489087840025,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 367847479163750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 811492283489583
@@ -313,11 +334,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "obj_player",
-									"sid": 661019068513110,
+									"sid": 953608554415523,
 									"parameters": {
 										"instance-variable": "health",
 										"comparison": 5,
-										"value": "6"
+										"value": "3"
 									}
 								}
 							],
@@ -406,6 +427,164 @@
 						}
 					],
 					"sid": 182920305627931
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Particle",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "obj_player",
+									"sid": 519876420607338,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "obj_player",
+									"sid": 542736116778173,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [],
+							"sid": 506435689143578,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 785596370388435,
+											"parameters": {
+												"interval-seconds": "0.2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "obj_player",
+											"sid": 944832567078024,
+											"parameters": {
+												"object": "WalkingDust",
+												"layer": "\"Game\"",
+												"image-point": "\"dust\"",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 990199583783558
+								}
+							]
+						}
+					],
+					"sid": 872974436274996
+				},
+				{
+					"eventType": "comment",
+					"text": "Landing dust."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "obj_player",
+							"sid": 964909920916076,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "obj_player",
+							"sid": 157862772902552,
+							"parameters": {
+								"object": "LandingDust",
+								"layer": "\"Game\"",
+								"image-point": "\"fall_dust\"",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 216098790006438
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "LandingDust",
+							"sid": 396857354110863,
+							"parameters": {
+								"animation": "\"Default\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LandingDust",
+							"sid": 525271964375266
+						}
+					],
+					"sid": 233652179582372
+				},
+				{
+					"eventType": "comment",
+					"text": "Jumping dust."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-jump",
+							"objectClass": "obj_player",
+							"sid": 703992730092181,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "obj_player",
+							"sid": 885028982221666,
+							"parameters": {
+								"object": "JumpingDust",
+								"layer": "\"Game\"",
+								"image-point": "\"jump_dust\"",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 438457732938359
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "JumpingDust",
+							"sid": 421619985583623,
+							"parameters": {
+								"animation": "\"Default\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "JumpingDust",
+							"sid": 456993244283125
+						}
+					],
+					"sid": 336763513082572
 				}
 			],
 			"sid": 463457303116082
@@ -647,10 +826,10 @@
 									"actions": [
 										{
 											"id": "move-forward",
-											"objectClass": "obj_wep",
-											"sid": 214645955882805,
+											"objectClass": "obj_player",
+											"sid": 527260139294066,
 											"parameters": {
-												"distance": "Self.knockback"
+												"distance": "obj_wep.knockback"
 											}
 										}
 									],
@@ -666,7 +845,16 @@
 											"isInverted": true
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "move-forward",
+											"objectClass": "obj_player",
+											"sid": 634195173270387,
+											"parameters": {
+												"distance": "-obj_wep.knockback"
+											}
+										}
+									],
 									"sid": 311848441352007
 								}
 							]
@@ -696,20 +884,90 @@
 							"id": "destroy",
 							"objectClass": "bullet",
 							"sid": 700523666120220
-						},
+						}
+					],
+					"sid": 559869833828585
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "bullet",
+							"sid": 399386642288915
+						}
+					],
+					"actions": [
 						{
 							"id": "spawn-another-object",
 							"objectClass": "bullet",
-							"sid": 251257596614789,
+							"sid": 127781700016393,
 							"parameters": {
 								"object": "obj_muzle_flash",
 								"layer": "\"Game\"",
 								"image-point": "0",
 								"create-hierarchy": false
 							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "bullet",
+							"sid": 853313103240785,
+							"parameters": {
+								"object": "SmallExplosion",
+								"layer": "\"Game\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "spawn-another-object",
+							"objectClass": "bullet",
+							"sid": 425655759422849,
+							"disabled": true,
+							"parameters": {
+								"object": "BulletHit",
+								"layer": "\"Game\"",
+								"image-point": "0",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-angle",
+							"objectClass": "BulletHit",
+							"sid": 121416033024997,
+							"disabled": true,
+							"parameters": {
+								"angle": "lerp((Bullet.Bullet.AngleOfMotion + 180), 270, 0.5) + random(-10, 10)"
+							}
 						}
 					],
-					"sid": 559869833828585
+					"sid": 735758026923233
+				},
+				{
+					"eventType": "comment",
+					"text": "Destroy the particles after their animation is done to prevent CPU overload."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "SmallExplosion",
+							"sid": 561383667586544,
+							"parameters": {
+								"animation": "\"Default\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "SmallExplosion",
+							"sid": 443396284484913
+						}
+					],
+					"sid": 382398024102955
 				},
 				{
 					"eventType": "comment",
@@ -775,10 +1033,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_player",
-									"sid": 943523700407018,
+									"sid": 851277390825643,
 									"parameters": {
 										"instance-variable": "wep_Range",
-										"value": "0.4"
+										"value": "0.3"
 									}
 								},
 								{
@@ -833,6 +1091,19 @@
 									"parameters": {
 										"animation": "\"muzle_pistol\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "knock back"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_wep",
+									"sid": 936129234164030,
+									"parameters": {
+										"instance-variable": "knockback",
+										"value": "0.5"
 									}
 								},
 								{
@@ -1213,9 +1484,9 @@
 						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "obj_shell",
-							"sid": 652833340301027,
+							"sid": 640042958022138,
 							"parameters": {
-								"object": "Tilemap2"
+								"object": "purplecity"
 							}
 						}
 					],
@@ -1231,98 +1502,30 @@
 						}
 					],
 					"sid": 572738451247274
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "bullet",
+							"sid": 129404785426474,
+							"parameters": {
+								"object": "purplecity"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "bullet",
+							"sid": 375075540916411
+						}
+					],
+					"sid": 806092819447913
 				}
 			],
 			"sid": 855134828564941
-		},
-		{
-			"eventType": "group",
-			"disabled": true,
-			"title": "Hit",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "bullet",
-							"sid": 671101403280152,
-							"parameters": {
-								"object": "obj_enemy"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "bullet",
-							"sid": 919983923880915
-						},
-						{
-							"id": "destroy",
-							"objectClass": "obj_enemy",
-							"sid": 572303536206396
-						}
-					],
-					"sid": 431991222595847,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "bullet",
-							"sid": 966472252946352
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 693943804310491,
-							"parameters": {
-								"object-to-create": "Particles",
-								"layer": "1",
-								"x": "bullet.X",
-								"y": "bullet.Y",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 371266551473863,
-					"disabled": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-destroyed",
-							"objectClass": "obj_enemy",
-							"sid": 104640113216548
-						}
-					],
-					"actions": [
-						{
-							"id": "create-object",
-							"objectClass": "System",
-							"sid": 531964340521605,
-							"parameters": {
-								"object-to-create": "Particles",
-								"layer": "1",
-								"x": "obj_enemy.X",
-								"y": "obj_enemy.Y",
-								"create-hierarchy": false
-							}
-						}
-					],
-					"sid": 699391809861445,
-					"disabled": true
-				}
-			],
-			"sid": 752862303644882
 		},
 		{
 			"eventType": "group",
@@ -1424,421 +1627,677 @@
 			"isActiveOnStart": true,
 			"children": [
 				{
-					"eventType": "comment",
-					"text": "kalau penemy moving set animasi ke walk"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-moving",
-							"objectClass": "obj_enemy",
-							"sid": 500923375035433,
-							"behaviorType": "Platform"
-						}
-					],
-					"actions": [
-						{
-							"id": "set-animation",
-							"objectClass": "obj_enemy",
-							"sid": 459277988467885,
-							"parameters": {
-								"animation": "\"WALK\"",
-								"from": "beginning"
-							}
-						}
-					],
-					"sid": 713650859080597
-				},
-				{
-					"eventType": "comment",
-					"text": "ketika enemy sudah dibuat set pilih direction random , kiri atau kanan  "
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-created",
-							"objectClass": "obj_enemy",
-							"sid": 299076877977954
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "obj_enemy",
-							"sid": 184768803123171,
-							"parameters": {
-								"instance-variable": "direction",
-								"value": "choose(\"left\",\"right\")"
-							}
-						}
-					],
-					"sid": 203341224132642
-				},
-				{
-					"eventType": "comment",
-					"text": "jika direction enemy adalah kiri enemy simulasi pressing left dan set mirrored"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "obj_enemy",
-							"sid": 739040317240099,
-							"parameters": {
-								"instance-variable": "direction",
-								"comparison": 0,
-								"value": "\"left\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "obj_enemy",
-							"sid": 771239142218869,
-							"behaviorType": "Platform",
-							"parameters": {
-								"control": "left"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "obj_enemy",
-							"sid": 406161251381052,
-							"parameters": {
-								"state": "mirrored"
-							}
-						}
-					],
-					"sid": 399176259918694
-				},
-				{
-					"eventType": "comment",
-					"text": "jika direction enemy adalah kanan enemy simulasi pressing right dan set not mirrored"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "compare-instance-variable",
-							"objectClass": "obj_enemy",
-							"sid": 498219986915725,
-							"parameters": {
-								"instance-variable": "direction",
-								"comparison": 0,
-								"value": "\"right\""
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "simulate-control",
-							"objectClass": "obj_enemy",
-							"sid": 599252463118037,
-							"behaviorType": "Platform",
-							"parameters": {
-								"control": "right"
-							}
-						},
-						{
-							"id": "set-mirrored",
-							"objectClass": "obj_enemy",
-							"sid": 940986605845223,
-							"parameters": {
-								"state": "not-mirrored"
-							}
-						}
-					],
-					"sid": 174512775993046
-				},
-				{
-					"eventType": "comment",
-					"text": ""
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-by-wall",
-							"objectClass": "obj_enemy",
-							"sid": 750760839369861,
-							"behaviorType": "Platform",
-							"parameters": {
-								"side": "left"
-							}
-						},
-						{
-							"id": "is-overlapping-at-offset",
-							"objectClass": "obj_enemy",
-							"sid": 312523228781203,
-							"parameters": {
-								"object": "obj_enemy_col_l",
-								"offset-x": "1",
-								"offset-y": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "obj_enemy",
-							"sid": 198570086360132,
-							"parameters": {
-								"instance-variable": "direction",
-								"value": "\"right\""
-							}
-						}
-					],
-					"sid": 111815264529829,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-by-wall",
-							"objectClass": "obj_enemy",
-							"sid": 277378895687973,
-							"behaviorType": "Platform",
-							"parameters": {
-								"side": "right"
-							}
-						},
-						{
-							"id": "is-overlapping-at-offset",
-							"objectClass": "obj_enemy",
-							"sid": 612547656447986,
-							"parameters": {
-								"object": "obj_enemy_col_r",
-								"offset-x": "1",
-								"offset-y": "0"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-instvar-value",
-							"objectClass": "obj_enemy",
-							"sid": 151411940527838,
-							"parameters": {
-								"instance-variable": "direction",
-								"value": "\"left\""
-							}
-						}
-					],
-					"sid": 476759452722444,
-					"isOrBlock": true
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "bullet",
-							"sid": 265000329587612,
-							"parameters": {
-								"object": "obj_enemy"
-							}
-						},
-						{
-							"id": "is-flashing",
-							"objectClass": "obj_enemy",
-							"sid": 865631460674135,
-							"behaviorType": "Flash",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "destroy",
-							"objectClass": "bullet",
-							"sid": 663893456812999
-						},
-						{
-							"id": "spawn-another-object",
-							"objectClass": "bullet",
-							"sid": 917809518598830,
-							"parameters": {
-								"object": "obj_muzle_flash",
-								"layer": "\"Game\"",
-								"image-point": "0",
-								"create-hierarchy": false
-							}
-						},
-						{
-							"id": "flash",
-							"objectClass": "obj_enemy",
-							"sid": 838818371758711,
-							"behaviorType": "Flash",
-							"parameters": {
-								"on-time": "0.05",
-								"off-time": "0.05",
-								"duration": "0.5"
-							}
-						},
-						{
-							"callFunction": "screenshake_func",
-							"sid": 649823486857390,
-							"parameters": [
-								"2",
-								"0.1"
-							]
-						},
-						{
-							"callFunction": "enemy_health_func",
-							"sid": 754410180765096
-						}
-					],
-					"sid": 923534056245455
-				},
-				{
-					"eventType": "comment",
-					"text": "player take damages/player hurt"
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "is-overlapping-another-object",
-							"objectClass": "obj_player",
-							"sid": 766153440167342,
-							"parameters": {
-								"object": "obj_enemy"
-							}
-						},
-						{
-							"id": "is-flashing",
-							"objectClass": "obj_player",
-							"sid": 188119507528921,
-							"behaviorType": "Flash",
-							"isInverted": true
-						}
-					],
-					"actions": [
-						{
-							"id": "flash",
-							"objectClass": "obj_player",
-							"sid": 459299396399752,
-							"behaviorType": "Flash",
-							"parameters": {
-								"on-time": "0.05",
-								"off-time": "0.05",
-								"duration": "1.0"
-							}
-						},
-						{
-							"callFunction": "screenshake_func",
-							"sid": 697745369761902,
-							"parameters": [
-								"2",
-								"0.1"
-							]
-						},
-						{
-							"callFunction": "player_health_func",
-							"sid": 857213806475784
-						}
-					],
-					"sid": 495501304145191
-				},
-				{
 					"eventType": "group",
 					"disabled": false,
-					"title": "Enemy Health",
+					"title": "gummy-enemy",
 					"description": "",
 					"isActiveOnStart": true,
 					"children": [
+						{
+							"eventType": "comment",
+							"text": "kalau penemy moving set animasi ke walk"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 314996699235093,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [
+								{
+									"id": "set-animation",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 820190227932317,
+									"parameters": {
+										"animation": "\"WALK\"",
+										"from": "beginning"
+									}
+								}
+							],
+							"sid": 804493179500556
+						},
+						{
+							"eventType": "comment",
+							"text": "ketika enemy sudah dibuat set pilih direction random , kiri atau kanan  "
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "on-created",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 633582843826609
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 221538870544563,
+									"parameters": {
+										"instance-variable": "direction",
+										"value": "choose(\"left\",\"right\")"
+									}
+								}
+							],
+							"sid": 878779231724641
+						},
+						{
+							"eventType": "comment",
+							"text": "jika direction enemy adalah kiri enemy simulasi pressing left dan set mirrored"
+						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "obj_enemy",
-									"sid": 471257812829519,
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 430737186638588,
 									"parameters": {
-										"instance-variable": "health",
-										"comparison": 5,
-										"value": "3"
+										"instance-variable": "direction",
+										"comparison": 0,
+										"value": "\"left\""
 									}
 								}
 							],
 							"actions": [
 								{
-									"id": "destroy",
-									"objectClass": "obj_enemy",
-									"sid": 171442773255915
+									"id": "simulate-control",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 383008792629041,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "left"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 144697227285617,
+									"parameters": {
+										"state": "mirrored"
+									}
 								}
 							],
-							"sid": 665009757248595
+							"sid": 823257277662859
+						},
+						{
+							"eventType": "comment",
+							"text": "jika direction enemy adalah kanan enemy simulasi pressing right dan set not mirrored"
 						},
 						{
 							"eventType": "block",
 							"conditions": [
 								{
 									"id": "compare-instance-variable",
-									"objectClass": "obj_enemy",
-									"sid": 171927483639243,
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 146345071271908,
 									"parameters": {
-										"instance-variable": "health",
-										"comparison": 2,
-										"value": "0"
+										"instance-variable": "direction",
+										"comparison": 0,
+										"value": "\"right\""
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 425335947020401,
+									"behaviorType": "Platform",
+									"parameters": {
+										"control": "right"
+									}
+								},
+								{
+									"id": "set-mirrored",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 121217800531300,
+									"parameters": {
+										"state": "not-mirrored"
+									}
+								}
+							],
+							"sid": 498333066982704
+						},
+						{
+							"eventType": "comment",
+							"text": ""
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-by-wall",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 786376122713383,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "left"
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 718929730707126,
+									"parameters": {
+										"object": "obj_enemy_col_l",
+										"offset-x": "1",
+										"offset-y": "0"
 									}
 								}
 							],
 							"actions": [
 								{
 									"id": "set-instvar-value",
-									"objectClass": "obj_enemy",
-									"sid": 399189928884348,
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 916180160583001,
+									"parameters": {
+										"instance-variable": "direction",
+										"value": "\"right\""
+									}
+								}
+							],
+							"sid": 645359173412039,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-by-wall",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 214054314197763,
+									"behaviorType": "Platform",
+									"parameters": {
+										"side": "right"
+									}
+								},
+								{
+									"id": "is-overlapping-at-offset",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 755661662556285,
+									"parameters": {
+										"object": "obj_enemy_col_r",
+										"offset-x": "1",
+										"offset-y": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 457074859746030,
+									"parameters": {
+										"instance-variable": "direction",
+										"value": "\"left\""
+									}
+								}
+							],
+							"sid": 454245620359340,
+							"isOrBlock": true
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "bullet",
+									"sid": 148492738259216,
+									"parameters": {
+										"object": "obj_enemy_gummy_green"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 183481800740314,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "bullet",
+									"sid": 372586556447601
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "bullet",
+									"sid": 120330974555117,
+									"parameters": {
+										"object": "obj_muzle_flash",
+										"layer": "\"Game\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "flash",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 492333305727612,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.05",
+										"off-time": "0.05",
+										"duration": "0.5"
+									}
+								},
+								{
+									"callFunction": "screenshake_func",
+									"sid": 830780479420253,
+									"parameters": [
+										"2",
+										"0.1"
+									]
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 203392214488881,
 									"parameters": {
 										"instance-variable": "health",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 536746385469656
+						},
+						{
+							"eventType": "comment",
+							"text": "player take damages/player hurt"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "obj_player",
+									"sid": 438197955600512,
+									"parameters": {
+										"object": "obj_enemy_gummy_green"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "obj_player",
+									"sid": 329055101111517,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "obj_player",
+									"sid": 215979389670369,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.05",
+										"off-time": "0.05",
+										"duration": "1.0"
+									}
+								},
+								{
+									"callFunction": "screenshake_func",
+									"sid": 560802589822853,
+									"parameters": [
+										"2",
+										"0.1"
+									]
+								},
+								{
+									"callFunction": "player_health_func",
+									"sid": 557358191578148
+								}
+							],
+							"sid": 410200285413591
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 767249303355597,
+									"parameters": {
+										"instance-variable": "health",
+										"comparison": 3,
 										"value": "0"
 									}
 								}
 							],
-							"sid": 778319663973727
-						},
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "obj_enemy_gummy_green",
+									"sid": 887589894272368
+								}
+							],
+							"sid": 982296599352155
+						}
+					],
+					"sid": 539245547972645
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "spider-enemy",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
 						{
-							"functionName": "enemy_health_func",
-							"functionDescription": "",
-							"functionCategory": "",
-							"functionReturnType": "none",
-							"functionIsAsync": false,
-							"functionParameters": [],
-							"eventType": "function-block",
-							"conditions": [],
-							"actions": [],
-							"sid": 420400539441010,
+							"eventType": "group",
+							"disabled": false,
+							"title": "walk arround ",
+							"description": "",
+							"isActiveOnStart": true,
 							"children": [
 								{
 									"eventType": "block",
 									"conditions": [
 										{
-											"id": "trigger-once-while-true",
+											"id": "every-tick",
 											"objectClass": "System",
-											"sid": 883290838863110
-										}
-									],
-									"actions": [
+											"sid": 799362767086496
+										},
 										{
-											"id": "add-to-instvar",
-											"objectClass": "obj_enemy",
-											"sid": 327762899943610,
+											"id": "for-each",
+											"objectClass": "System",
+											"sid": 329178804476421,
 											"parameters": {
-												"instance-variable": "health",
-												"value": "1"
+												"object": "obj_enemy_wall"
 											}
 										}
 									],
-									"sid": 877783392322220
+									"actions": [],
+									"sid": 578505325460837,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "repeat",
+													"objectClass": "System",
+													"sid": 356858757583315,
+													"parameters": {
+														"count": "6"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "move-at-angle",
+													"objectClass": "obj_enemy_wall",
+													"sid": 900905059182910,
+													"parameters": {
+														"angle": "Self.Angle",
+														"distance": "Self.speed*dt/10"
+													}
+												}
+											],
+											"sid": 730628298465584,
+											"children": [
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "pick-overlapping-point",
+															"objectClass": "System",
+															"sid": 605214303291129,
+															"parameters": {
+																"object": "Block",
+																"x": "obj_enemy_wall.ImagePointX(\"L2\")",
+																"y": "obj_enemy_wall.ImagePointY(\"L2\")"
+															}
+														}
+													],
+													"actions": [],
+													"sid": 737791757981218,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "pick-all",
+																	"objectClass": "System",
+																	"sid": 647673649203793,
+																	"parameters": {
+																		"object": "Block"
+																	}
+																},
+																{
+																	"id": "pick-overlapping-point",
+																	"objectClass": "System",
+																	"sid": 724893500239052,
+																	"parameters": {
+																		"object": "Block",
+																		"x": "obj_enemy_wall.ImagePointX(\"F\")",
+																		"y": "obj_enemy_wall.ImagePointY(\"F\")"
+																	}
+																}
+															],
+															"actions": [
+																{
+																	"id": "rotate-clockwise",
+																	"objectClass": "obj_enemy_wall",
+																	"sid": 246501118517784,
+																	"parameters": {
+																		"degrees": "90"
+																	}
+																}
+															],
+															"sid": 234819229993797
+														}
+													]
+												},
+												{
+													"eventType": "block",
+													"conditions": [
+														{
+															"id": "else",
+															"objectClass": "System",
+															"sid": 760009787729656
+														}
+													],
+													"actions": [],
+													"sid": 454125524277621,
+													"children": [
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "pick-overlapping-point",
+																	"objectClass": "System",
+																	"sid": 830126266921166,
+																	"parameters": {
+																		"object": "Block",
+																		"x": "obj_enemy_wall.ImagePointX(\"L1\")",
+																		"y": "obj_enemy_wall.ImagePointY(\"L1\")"
+																	}
+																}
+															],
+															"actions": [],
+															"sid": 346836771837645
+														},
+														{
+															"eventType": "block",
+															"conditions": [
+																{
+																	"id": "else",
+																	"objectClass": "System",
+																	"sid": 757129875477207
+																}
+															],
+															"actions": [
+																{
+																	"id": "rotate-counter-clockwise",
+																	"objectClass": "obj_enemy_wall",
+																	"sid": 541504378274830,
+																	"parameters": {
+																		"degrees": "90"
+																	}
+																}
+															],
+															"sid": 592601641046376
+														}
+													]
+												}
+											]
+										}
+									]
 								}
-							]
+							],
+							"sid": 838408308928012
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "bullet",
+									"sid": 787940259503140,
+									"parameters": {
+										"object": "obj_enemy_wall"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "obj_enemy_wall",
+									"sid": 613655968925056,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "bullet",
+									"sid": 297809471557524
+								},
+								{
+									"id": "spawn-another-object",
+									"objectClass": "bullet",
+									"sid": 645135694092033,
+									"parameters": {
+										"object": "obj_muzle_flash",
+										"layer": "\"Game\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								},
+								{
+									"id": "flash",
+									"objectClass": "obj_enemy_wall",
+									"sid": 734044680886868,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.05",
+										"off-time": "0.05",
+										"duration": "0.5"
+									}
+								},
+								{
+									"callFunction": "screenshake_func",
+									"sid": 873165777690697,
+									"parameters": [
+										"2",
+										"0.1"
+									]
+								},
+								{
+									"id": "subtract-from-instvar",
+									"objectClass": "obj_enemy_wall",
+									"sid": 744291445518900,
+									"parameters": {
+										"instance-variable": "health",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 651838787694368
+						},
+						{
+							"eventType": "comment",
+							"text": "player take damages/player hurt"
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "obj_player",
+									"sid": 837566474381310,
+									"parameters": {
+										"object": "obj_enemy_wall"
+									}
+								},
+								{
+									"id": "is-flashing",
+									"objectClass": "obj_player",
+									"sid": 423868361383940,
+									"behaviorType": "Flash",
+									"isInverted": true
+								}
+							],
+							"actions": [
+								{
+									"id": "flash",
+									"objectClass": "obj_player",
+									"sid": 974095668862407,
+									"behaviorType": "Flash",
+									"parameters": {
+										"on-time": "0.05",
+										"off-time": "0.05",
+										"duration": "1.0"
+									}
+								},
+								{
+									"callFunction": "screenshake_func",
+									"sid": 760196195082261,
+									"parameters": [
+										"2",
+										"0.1"
+									]
+								},
+								{
+									"callFunction": "player_health_func",
+									"sid": 227925006890291
+								}
+							],
+							"sid": 778736596415291
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-instance-variable",
+									"objectClass": "obj_enemy_wall",
+									"sid": 220603381646686,
+									"parameters": {
+										"instance-variable": "health",
+										"comparison": 3,
+										"value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "destroy",
+									"objectClass": "obj_enemy_wall",
+									"sid": 577622549730602
+								}
+							],
+							"sid": 250814485530372
 						}
 					],
-					"sid": 508032158263627
+					"sid": 293079657529096
 				}
 			],
 			"sid": 576425768188411

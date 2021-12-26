@@ -1,5 +1,5 @@
 {
-	"name": "obj_enemy",
+	"name": "obj_enemy_gummy_green",
 	"plugin-id": "Sprite",
 	"sid": 702894148340719,
 	"isGlobal": false,
@@ -122,7 +122,7 @@
 					}
 				],
 				"sid": 148514866655335,
-				"name": "Walk5rylf",
+				"name": "Walk",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
@@ -221,7 +221,7 @@
 					}
 				],
 				"sid": 827512422511805,
-				"name": "Idlehwqjg",
+				"name": "Idle",
 				"isLooping": true,
 				"isPingPong": false,
 				"repeatCount": 1,
