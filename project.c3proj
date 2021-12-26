@@ -159,7 +159,7 @@
 			},
 			{
 				"items": [
-					"obj_enemy"
+					"obj_enemy_gummy_green"
 				],
 				"subfolders": [],
 				"name": "enemy"

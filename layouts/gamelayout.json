@@ -632,7 +632,7 @@
 					}
 				},
 				{
-					"type": "obj_enemy",
+					"type": "obj_enemy_gummy_green",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Walk",
@@ -682,7 +682,7 @@
 					}
 				},
 				{
-					"type": "obj_enemy",
+					"type": "obj_enemy_gummy_green",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Walk",
@@ -732,7 +732,7 @@
 					}
 				},
 				{
-					"type": "obj_enemy",
+					"type": "obj_enemy_gummy_green",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Walk",
@@ -823,7 +823,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 752,
+						"x": 736,
 						"y": 240,
 						"width": 32,
 						"height": 32,
@@ -852,7 +852,7 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1032,
+						"x": 1024,
 						"y": 272,
 						"width": 32,
 						"height": 32,
@@ -881,8 +881,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 1200,
-						"y": 720,
+						"x": 1136,
+						"y": 704,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,

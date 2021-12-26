@@ -1343,7 +1343,7 @@
 					"conditions": [
 						{
 							"id": "is-moving",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 500923375035433,
 							"behaviorType": "Platform"
 						}
@@ -1351,7 +1351,7 @@
 					"actions": [
 						{
 							"id": "set-animation",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 459277988467885,
 							"parameters": {
 								"animation": "\"WALK\"",
@@ -1370,14 +1370,14 @@
 					"conditions": [
 						{
 							"id": "on-created",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 299076877977954
 						}
 					],
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 184768803123171,
 							"parameters": {
 								"instance-variable": "direction",
@@ -1396,7 +1396,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 739040317240099,
 							"parameters": {
 								"instance-variable": "direction",
@@ -1408,7 +1408,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 771239142218869,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -1417,7 +1417,7 @@
 						},
 						{
 							"id": "set-mirrored",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 406161251381052,
 							"parameters": {
 								"state": "mirrored"
@@ -1435,7 +1435,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 498219986915725,
 							"parameters": {
 								"instance-variable": "direction",
@@ -1447,7 +1447,7 @@
 					"actions": [
 						{
 							"id": "simulate-control",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 599252463118037,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -1456,7 +1456,7 @@
 						},
 						{
 							"id": "set-mirrored",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 940986605845223,
 							"parameters": {
 								"state": "not-mirrored"
@@ -1474,7 +1474,7 @@
 					"conditions": [
 						{
 							"id": "is-by-wall",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 750760839369861,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -1483,7 +1483,7 @@
 						},
 						{
 							"id": "is-overlapping-at-offset",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 312523228781203,
 							"parameters": {
 								"object": "obj_enemy_col_l",
@@ -1495,7 +1495,7 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 198570086360132,
 							"parameters": {
 								"instance-variable": "direction",
@@ -1511,7 +1511,7 @@
 					"conditions": [
 						{
 							"id": "is-by-wall",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 277378895687973,
 							"behaviorType": "Platform",
 							"parameters": {
@@ -1520,7 +1520,7 @@
 						},
 						{
 							"id": "is-overlapping-at-offset",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 612547656447986,
 							"parameters": {
 								"object": "obj_enemy_col_r",
@@ -1532,7 +1532,7 @@
 					"actions": [
 						{
 							"id": "set-instvar-value",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 151411940527838,
 							"parameters": {
 								"instance-variable": "direction",
@@ -1551,12 +1551,12 @@
 							"objectClass": "bullet",
 							"sid": 346652602546072,
 							"parameters": {
-								"object": "obj_enemy"
+								"object": "obj_enemy_gummy_green"
 							}
 						},
 						{
 							"id": "is-flashing",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 865631460674135,
 							"behaviorType": "Flash",
 							"isInverted": true
@@ -1581,7 +1581,7 @@
 						},
 						{
 							"id": "flash",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 838818371758711,
 							"behaviorType": "Flash",
 							"parameters": {
@@ -1600,7 +1600,7 @@
 						},
 						{
 							"id": "subtract-from-instvar",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 270780833988836,
 							"parameters": {
 								"instance-variable": "health",
@@ -1622,7 +1622,7 @@
 							"objectClass": "obj_player",
 							"sid": 766153440167342,
 							"parameters": {
-								"object": "obj_enemy"
+								"object": "obj_enemy_gummy_green"
 							}
 						},
 						{
@@ -1665,7 +1665,7 @@
 					"conditions": [
 						{
 							"id": "compare-instance-variable",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 973957757097769,
 							"parameters": {
 								"instance-variable": "health",
@@ -1677,7 +1677,7 @@
 					"actions": [
 						{
 							"id": "destroy",
-							"objectClass": "obj_enemy",
+							"objectClass": "obj_enemy_gummy_green",
 							"sid": 700953098592253
 						}
 					],
