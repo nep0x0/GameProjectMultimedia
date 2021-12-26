@@ -88,6 +88,14 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Bullet",
 			"name": "Bullet",
 			"author": "Scirra",
@@ -112,24 +120,16 @@
 		},
 		{
 			"type": "behavior",
-			"id": "solid",
-			"name": "Solid",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "Pin",
-			"name": "Pin",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Tween",
 			"name": "Tween",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "solid",
+			"name": "Solid",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -175,7 +175,11 @@
 		"subfolders": [
 			{
 				"items": [
-					"obj_player"
+					"obj_player",
+					"WalkingDust",
+					"MuzzleFlash",
+					"LandingDust",
+					"JumpingDust"
 				],
 				"subfolders": [],
 				"name": "player"
@@ -193,7 +197,10 @@
 				"items": [
 					"bullet",
 					"obj_shell",
-					"obj_wep"
+					"obj_wep",
+					"BulletTrail",
+					"BulletHit",
+					"SmallExplosion"
 				],
 				"subfolders": [],
 				"name": "weapon"
@@ -226,15 +233,8 @@
 			{
 				"items": [
 					"Bullet2",
-					"JumpingDust",
-					"LandingDust",
-					"MuzzleFlash",
 					"PlayerCollision",
-					"PlayerGraphics",
-					"SmallExplosion",
-					"WalkingDust",
-					"BulletTrail",
-					"BulletHit"
+					"PlayerGraphics"
 				],
 				"subfolders": [],
 				"name": "Player"

@@ -427,6 +427,164 @@
 						}
 					],
 					"sid": 182920305627931
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
+					"title": "Player Particle",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-moving",
+									"objectClass": "obj_player",
+									"sid": 519876420607338,
+									"behaviorType": "Platform"
+								},
+								{
+									"id": "is-on-floor",
+									"objectClass": "obj_player",
+									"sid": 542736116778173,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [],
+							"sid": 506435689143578,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 785596370388435,
+											"parameters": {
+												"interval-seconds": "0.2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "spawn-another-object",
+											"objectClass": "obj_player",
+											"sid": 944832567078024,
+											"parameters": {
+												"object": "WalkingDust",
+												"layer": "\"Game\"",
+												"image-point": "\"dust\"",
+												"create-hierarchy": false
+											}
+										}
+									],
+									"sid": 990199583783558
+								}
+							]
+						}
+					],
+					"sid": 872974436274996
+				},
+				{
+					"eventType": "comment",
+					"text": "Landing dust."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-landed",
+							"objectClass": "obj_player",
+							"sid": 964909920916076,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "obj_player",
+							"sid": 157862772902552,
+							"parameters": {
+								"object": "LandingDust",
+								"layer": "\"Game\"",
+								"image-point": "\"fall_dust\"",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 216098790006438
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "LandingDust",
+							"sid": 396857354110863,
+							"parameters": {
+								"animation": "\"Default\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "LandingDust",
+							"sid": 525271964375266
+						}
+					],
+					"sid": 233652179582372
+				},
+				{
+					"eventType": "comment",
+					"text": "Jumping dust."
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-jump",
+							"objectClass": "obj_player",
+							"sid": 703992730092181,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "spawn-another-object",
+							"objectClass": "obj_player",
+							"sid": 885028982221666,
+							"parameters": {
+								"object": "JumpingDust",
+								"layer": "\"Game\"",
+								"image-point": "\"jump_dust\"",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 438457732938359
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-animation-finished",
+							"objectClass": "JumpingDust",
+							"sid": 421619985583623,
+							"parameters": {
+								"animation": "\"Default\""
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "JumpingDust",
+							"sid": 456993244283125
+						}
+					],
+					"sid": 336763513082572
 				}
 			],
 			"sid": 463457303116082
