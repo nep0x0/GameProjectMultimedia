@@ -170,7 +170,10 @@
 			"TiledBackground",
 			"TiledBackground2",
 			"GameManager",
-			"arrow"
+			"arrow",
+			"TiledBackground3",
+			"bg",
+			"bg0_c"
 		],
 		"subfolders": [
 			{
@@ -227,7 +230,15 @@
 					"Tilemap2",
 					"purplecity"
 				],
-				"subfolders": [],
+				"subfolders": [
+					{
+						"items": [
+							"purplecity2"
+						],
+						"subfolders": [],
+						"name": "bg"
+					}
+				],
 				"name": "tilesets"
 			},
 			{

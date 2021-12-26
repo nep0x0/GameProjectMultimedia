@@ -901,9 +901,9 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "bullet",
-							"sid": 127781700016393,
+							"sid": 853313103240785,
 							"parameters": {
-								"object": "obj_muzle_flash",
+								"object": "SmallExplosion",
 								"layer": "\"Game\"",
 								"image-point": "0",
 								"create-hierarchy": false
@@ -912,9 +912,9 @@
 						{
 							"id": "spawn-another-object",
 							"objectClass": "bullet",
-							"sid": 853313103240785,
+							"sid": 572683486439491,
 							"parameters": {
-								"object": "SmallExplosion",
+								"object": "obj_muzle_flash",
 								"layer": "\"Game\"",
 								"image-point": "0",
 								"create-hierarchy": false
@@ -1076,10 +1076,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
-									"sid": 490264312595760,
+									"sid": 688123641538841,
 									"parameters": {
 										"object": "obj_muzle_flash",
-										"layer": "1",
+										"layer": "\"Game\"",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
 									}
@@ -1237,10 +1237,10 @@
 								{
 									"id": "spawn-another-object",
 									"objectClass": "obj_wep",
-									"sid": 783736191812431,
+									"sid": 272796752504308,
 									"parameters": {
 										"object": "obj_muzle_flash",
-										"layer": "1",
+										"layer": "\"Game\"",
 										"image-point": "\"gun\"",
 										"create-hierarchy": false
 									}
