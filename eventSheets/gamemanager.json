@@ -5,6 +5,27 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 697385111826004
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "Block",
+					"sid": 919489087840025,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 367847479163750
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "every-tick",
 					"objectClass": "System",
 					"sid": 811492283489583
@@ -313,11 +334,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "obj_player",
-									"sid": 661019068513110,
+									"sid": 953608554415523,
 									"parameters": {
 										"instance-variable": "health",
 										"comparison": 5,
-										"value": "6"
+										"value": "3"
 									}
 								}
 							],
@@ -647,10 +668,10 @@
 									"actions": [
 										{
 											"id": "move-forward",
-											"objectClass": "obj_wep",
-											"sid": 214645955882805,
+											"objectClass": "obj_player",
+											"sid": 527260139294066,
 											"parameters": {
-												"distance": "Self.knockback"
+												"distance": "obj_wep.knockback"
 											}
 										}
 									],
@@ -666,7 +687,16 @@
 											"isInverted": true
 										}
 									],
-									"actions": [],
+									"actions": [
+										{
+											"id": "move-forward",
+											"objectClass": "obj_player",
+											"sid": 634195173270387,
+											"parameters": {
+												"distance": "-obj_wep.knockback"
+											}
+										}
+									],
 									"sid": 311848441352007
 								}
 							]
@@ -775,10 +805,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_player",
-									"sid": 943523700407018,
+									"sid": 851277390825643,
 									"parameters": {
 										"instance-variable": "wep_Range",
-										"value": "0.4"
+										"value": "0.3"
 									}
 								},
 								{
@@ -833,6 +863,19 @@
 									"parameters": {
 										"animation": "\"muzle_pistol\"",
 										"from": "beginning"
+									}
+								},
+								{
+									"type": "comment",
+									"text": "knock back"
+								},
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_wep",
+									"sid": 936129234164030,
+									"parameters": {
+										"instance-variable": "knockback",
+										"value": "0.5"
 									}
 								},
 								{
