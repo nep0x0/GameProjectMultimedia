@@ -146,8 +146,7 @@
 			"TiledBackground",
 			"TiledBackground2",
 			"GameManager",
-			"arrow",
-			"obj_enemy_crawler"
+			"arrow"
 		],
 		"subfolders": [
 			{
@@ -159,7 +158,9 @@
 			},
 			{
 				"items": [
-					"obj_enemy_gummy_green"
+					"obj_enemy_gummy_green",
+					"obj_enemy_wall",
+					"Block"
 				],
 				"subfolders": [],
 				"name": "enemy"

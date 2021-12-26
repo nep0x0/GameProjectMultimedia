@@ -399,8 +399,8 @@
 						}
 					},
 					"world": {
-						"x": 432,
-						"y": 248,
+						"x": 722.9322176114783,
+						"y": 251.25669550719346,
 						"width": 32,
 						"height": 32,
 						"originX": 0.375,
@@ -887,6 +887,72 @@
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_enemy_wall",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "walk",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 25,
+					"instanceVariables": {
+						"walk_around_enemy": 0,
+						"health": 3,
+						"speed": 100
+					},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 850.7305220038513,
+						"y": 227.91998637951414,
+						"width": 20.848913494693807,
+						"height": 20.848913494693807,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Block",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 26,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 840.2895295499227,
+						"y": 196.04130443050803,
+						"width": 63.098958470588514,
+						"height": 23.610903702689058,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
