@@ -56,6 +56,18 @@
 						"x": "lerp(Self.X,obj_Player.X,0.1)",
 						"y": "lerp(Self.Y,obj_Player.Y-70,0.1)"
 					}
+				},
+				{
+					"type": "comment",
+					"text": "health bar"
+				},
+				{
+					"id": "set-animation-frame",
+					"objectClass": "obj_hud_health",
+					"sid": 300967156127254,
+					"parameters": {
+						"frame-number": "obj_player.health"
+					}
 				}
 			],
 			"sid": 516623939088974
@@ -334,11 +346,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "obj_player",
-									"sid": 953608554415523,
+									"sid": 284260906826123,
 									"parameters": {
 										"instance-variable": "health",
 										"comparison": 5,
-										"value": "3"
+										"value": "6"
 									}
 								}
 							],

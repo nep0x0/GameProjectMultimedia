@@ -216,7 +216,8 @@
 				"items": [
 					"Dust",
 					"obj_muzle_flash",
-					"Particles"
+					"Particles",
+					"obj_hud_health"
 				],
 				"subfolders": [],
 				"name": "particle"

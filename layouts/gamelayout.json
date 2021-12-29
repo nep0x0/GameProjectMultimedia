@@ -19,8 +19,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 656,
-						"y": 492,
+						"x": 648,
+						"y": 496,
 						"width": 1296,
 						"height": 992,
 						"originX": 0.5,
@@ -323,61 +323,6 @@
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
-				{
-					"type": "Tilemap2",
-					"properties": {
-						"initially-visible": true,
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0,
-						"tile-x-drawing-offset": 0,
-						"tile-y-drawing-offset": 0,
-						"drawing-mode": "top-to-right"
-					},
-					"uid": 20,
-					"instanceVariables": {},
-					"behaviors": {
-						"Solid": {
-							"properties": {
-								"enabled": true,
-								"tags": ""
-							}
-						}
-					},
-					"ownData": {
-						"tilemapData": {
-							"width": 97,
-							"height": 45,
-							"max-width": 141,
-							"max-height": 53,
-							"data": "45x22,8x0,45x22,8x0,22,14,6x24,34,16x22,11x0,9x22,8x0,22,15,6x0,35,18x22,9x0,9x22,8x0,22,15,6x0,35,14x22,14x0,8x22,8x0,22,15,6x0,35,17x22,11x0,8x22,8x0,22,15,6x0,35,16x22,12x0,8x22,8x0,22,15,6x0,35,15x22,13x0,8x22,8x0,22,15,6x0,35,14x22,14x0,8x22,8x0,22,15,6x0,35,16x22,12x0,8x22,8x0,22,15,6x0,35,14x22,13x0,9x22,8x0,22,15,6x0,35,15x22,11x0,10x22,8x0,22,15,6x0,35,13x22,12x0,11x22,8x0,22,15,6x0,35,14x22,10x0,12x22,8x0,22,15,6x0,35,16x22,7x0,13x22,8x0,22,16,3x26,31,2x0,35,17x22,5x0,14x22,8x0,5x22,15,2x0,35,17x22,4x0,15x22,8x0,5x22,15,2x0,35,5x22,14,8x23,34,3x22,3x0,15x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,3x0,15x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,4x0,14x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,5x0,13x22,8x0,5x22,15,2x0,35,5x22,15,8x0,35,3x22,6x0,6x22,2x0,4x22,8x0,22,14,3x24,33,2x0,13,34,4x22,15,8x0,35,3x22,5x0,6x22,3x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,5x22,3x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,4x0,22,2x0,35,4x22,15,8x0,35,3x22,6x0,4x22,4x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,7x0,2x22,5x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,35,3x22,14x0,4x22,8x0,22,15,7x0,13,2x23,2x24,33,8x0,35,3x22,14x0,4x22,8x0,22,15,21x0,35,3x22,14x0,4x22,8x0,22,15,21x0,35,4x22,9x0,22,3x0,4x22,8x0,22,15,7x0,11,4x21,31,8x0,35,3x22,10x0,22,3x0,4x22,8x0,22,15,7x0,35,4x22,15,8x0,2x22,12x0,22,3x0,4x22,8x0,22,16,7x21,36,4x22,15,8x0,35,13x0,22,3x0,4x22,8x0,14x22,15,22x0,22,3x0,4x22,8x0,14x22,15,13x0,4x22,9x0,4x22,8x0,14x22,15,12x0,6x22,8x0,4x22,8x0,14x22,15,11x0,7x22,8x0,4x22,8x0,14x22,15,8x0,35,9x22,8x0,4x22,8x0,14x22,16,8x26,36,9x22,6x0,6x22,8x0,32x22,7x0,6x22,8x0,32x22,5x0,8x22,8x0,31x22,6x0,8x22,8x0,29x22,8x0,8x22,8x0,27x22,10x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,25x22,12x0,8x22,8x0,4x22,6x0,15x22,12x0,8x22,8x0,3x22,8x0,14x22,12x0,8x22,8x0,2x22,9x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,8x0,22,10x0,14x22,12x0,8x22,20x0,13x22,12x0,8x22,20x0,12x22,13x0,8x22,22x0,9x22,14x0,8x22,27x0,4x22,14x0,8x22,45x0,8x22,45x0,8x22,45x0,8x22,45x0,8x22,18x0,35x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,36x22,17x0,24x22,10x0,2x22,17x0,17x22,17x0,2x22,17x0,14x22,20x0,2x22,17x0,8x22,45x0,6x22,47x0,5x22,48x0,4x22,49x0,3x22,50x0,2x22,51x0,22,2693x0"
-						},
-						"tile-width": 32,
-						"tile-height": 32,
-						"tile-x-offset": 0,
-						"tile-y-offset": 0,
-						"tile-x-spacing": 0,
-						"tile-y-spacing": 0
-					},
-					"world": {
-						"x": -168,
-						"y": 1632,
-						"width": 3120,
-						"height": 1456,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "purplecity",
 					"properties": {
@@ -793,7 +738,7 @@
 						}
 					},
 					"world": {
-						"x": -40,
+						"x": 8,
 						"y": -8,
 						"width": 16,
 						"height": 16,
@@ -1232,6 +1177,68 @@
 			"isTransparent": true,
 			"parallaxX": 0.9,
 			"parallaxY": 0.9,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "HUD",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "obj_hud_health",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 20,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 64,
+						"y": 32,
+						"width": 67,
+						"height": 12,
+						"originX": 0.5074626865671642,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 400588775635057,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 0,
+			"parallaxY": 0,
 			"scaleRate": 1,
 			"forceOwnTexture": false,
 			"renderingMode": "3d",
