@@ -2313,6 +2313,67 @@
 				}
 			],
 			"sid": 576425768188411
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "layout transition new update",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 600572446103504
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "Zone",
+							"sid": 498042790660152,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 990918870575278
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 641675692338997
+						},
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Zone",
+							"sid": 103049848860602,
+							"parameters": {
+								"object": "obj_player"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "scroll-to-position",
+							"objectClass": "System",
+							"sid": 879771528781293,
+							"parameters": {
+								"x": "lerp(scrollx,(clamp(obj_player.X,zone.X+(160),zone.X+zone.Width-(160))),0.1*60*dt)",
+								"y": "lerp(scrolly,(clamp(obj_player.Y,zone.Y+(120),zone.Y+zone.Height-(120))),0.1*60*dt)"
+							}
+						}
+					],
+					"sid": 824114653170608
+				}
+			],
+			"sid": 179726187213604
 		}
 	],
 	"sid": 959625501649600

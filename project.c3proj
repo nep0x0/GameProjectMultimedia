@@ -135,14 +135,6 @@
 			"bundled": false
 		},
 		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
 			"type": "effect",
 			"id": "glowhorizontal",
 			"name": "Glow horizontal",
@@ -177,7 +169,8 @@
 			"CloudsFront",
 			"BGFront",
 			"BGBack",
-			"CloudsFront2"
+			"CloudsFront2",
+			"Zone"
 		],
 		"subfolders": [
 			{

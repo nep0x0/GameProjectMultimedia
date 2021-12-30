@@ -1,7 +1,7 @@
 {
-	"name": "Camera",
+	"name": "Zone",
 	"plugin-id": "Sprite",
-	"sid": 152416705519886,
+	"sid": 701692555612989,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
@@ -13,18 +13,18 @@
 					{
 						"width": 8,
 						"height": 8,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 0,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9211990,
+						"imageSpriteId": 5907851,
 						"useCollisionPoly": true,
 						"duration": 1
 					}
 				],
-				"sid": 387652965075780,
-				"name": "Animation 1",
+				"sid": 581514767457750,
+				"name": "Default",
 				"isLooping": false,
 				"isPingPong": false,
 				"repeatCount": 1,
