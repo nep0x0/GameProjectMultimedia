@@ -170,7 +170,8 @@
 			"BGFront",
 			"BGBack",
 			"CloudsFront2",
-			"Zone"
+			"Zone",
+			"boss1"
 		],
 		"subfolders": [
 			{

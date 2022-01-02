@@ -616,15 +616,6 @@
 					"isActiveOnStart": true,
 					"children": [
 						{
-							"eventType": "group",
-							"disabled": false,
-							"title": "function",
-							"description": "",
-							"isActiveOnStart": true,
-							"children": [],
-							"sid": 387952577634885
-						},
-						{
 							"eventType": "block",
 							"conditions": [
 								{
@@ -712,6 +703,33 @@
 								}
 							],
 							"sid": 297617172894052
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "bullet",
+									"sid": 279144421039569,
+									"parameters": {
+										"object": "boss1"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "spawn-another-object",
+									"objectClass": "boss1",
+									"sid": 805674349129929,
+									"parameters": {
+										"object": "obj_blood",
+										"layer": "\"Game\"",
+										"image-point": "0",
+										"create-hierarchy": false
+									}
+								}
+							],
+							"sid": 164812049390783
 						},
 						{
 							"eventType": "block",
