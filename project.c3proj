@@ -200,7 +200,8 @@
 					"obj_wep",
 					"BulletTrail",
 					"BulletHit",
-					"SmallExplosion"
+					"SmallExplosion",
+					"obj_blood"
 				],
 				"subfolders": [],
 				"name": "weapon"

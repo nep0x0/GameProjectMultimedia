@@ -1,20 +1,11 @@
 {
-	"name": "BulletHit",
+	"name": "obj_blood",
 	"plugin-id": "Particles",
-	"sid": 908085750126561,
+	"sid": 302063947503538,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
-	"effectTypes": [
-		{
-			"effectId": "glowhorizontal",
-			"name": "GlowHorizontal"
-		},
-		{
-			"effectId": "glowvertical",
-			"name": "GlowVertical"
-		}
-	],
+	"effectTypes": [],
 	"image": {
 		"width": 16,
 		"height": 16,
@@ -23,7 +14,7 @@
 		"originalSource": "",
 		"exportFormat": "png",
 		"exportQuality": 0.8,
-		"imageSpriteId": 7143263,
+		"imageSpriteId": 8215481,
 		"useCollisionPoly": true
 	}
 }

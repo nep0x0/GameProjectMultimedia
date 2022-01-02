@@ -103,7 +103,7 @@
 						}
 					},
 					"world": {
-						"x": 192,
+						"x": 160,
 						"y": 96,
 						"width": 100,
 						"height": 100,
@@ -186,6 +186,51 @@
 						"height": 16,
 						"originX": 0.5,
 						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_blood",
+					"properties": {
+						"rate": 5,
+						"spray-cone": 360,
+						"type": "one-shot",
+						"object": -1,
+						"live-preview": false,
+						"speed": 128,
+						"size": 16,
+						"opacity": 100,
+						"grow-rate": 0,
+						"x-randomiser": 0,
+						"y-randomiser": 0,
+						"initial-speed-randomiser": 128,
+						"size-randomiser": 0,
+						"grow-rate-randomiser": 16,
+						"acceleration": -32,
+						"gravity": 256,
+						"angle-randomiser": 5,
+						"life-speed-randomiser": 0,
+						"opacity-randomiser": 0,
+						"destroy-mode": "fade-to-invisible",
+						"timeout": 2
+					},
+					"uid": 50,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 224,
+						"y": 160,
+						"width": 100,
+						"height": 100,
+						"originX": 0,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
