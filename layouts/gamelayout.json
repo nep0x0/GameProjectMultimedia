@@ -654,64 +654,6 @@
 					}
 				},
 				{
-					"type": "obj_player",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Idle",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 13,
-					"instanceVariables": {
-						"is_Shooting": 0,
-						"wep_Rate": 0.5,
-						"wep_Type": "Revolver",
-						"wep_Range": 0.3,
-						"health": 0
-					},
-					"behaviors": {
-						"Platform": {
-							"properties": {
-								"max-speed": 130,
-								"acceleration": 1500,
-								"deceleration": 1500,
-								"jump-strength": 400,
-								"gravity": 1500,
-								"max-fall-speed": 500,
-								"double-jump": true,
-								"jump-sustain": 5,
-								"default-controls": true,
-								"enabled": true
-							}
-						},
-						"BoundToLayout": {
-							"properties": {
-								"bound-by": "edge"
-							}
-						},
-						"Flash": {
-							"properties": {}
-						}
-					},
-					"world": {
-						"x": 240,
-						"y": 256,
-						"width": 32,
-						"height": 32,
-						"originX": 0.375,
-						"originY": 0.75,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "bullet",
 					"properties": {
 						"initially-visible": true,
@@ -756,38 +698,6 @@
 						"height": 8,
 						"originX": 0.5,
 						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "obj_wep",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "id_Revolver",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 2,
-					"instanceVariables": {
-						"knockback": 0.5,
-						"recoil": 0
-					},
-					"behaviors": {},
-					"world": {
-						"x": -176,
-						"y": 200,
-						"width": 24,
-						"height": 24,
-						"originX": 0.36363636363636365,
-						"originY": 0.5217391304347826,
 						"color": [
 							1,
 							1,
@@ -1393,6 +1303,183 @@
 						"height": 96,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_checkpoint",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 272,
+						"y": 248,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_checkpoint",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 59,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 920,
+						"y": 280,
+						"width": 16,
+						"height": 16,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "cppoint_item",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 60,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 344,
+						"y": -176,
+						"width": 8,
+						"height": 8,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_player",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Idle",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 13,
+					"instanceVariables": {
+						"is_Shooting": 0,
+						"wep_Rate": 0.5,
+						"wep_Type": "Revolver",
+						"wep_Range": 0.3,
+						"health": 0
+					},
+					"behaviors": {
+						"Platform": {
+							"properties": {
+								"max-speed": 130,
+								"acceleration": 1500,
+								"deceleration": 1500,
+								"jump-strength": 400,
+								"gravity": 1500,
+								"max-fall-speed": 500,
+								"double-jump": true,
+								"jump-sustain": 5,
+								"default-controls": true,
+								"enabled": true
+							}
+						},
+						"BoundToLayout": {
+							"properties": {
+								"bound-by": "edge"
+							}
+						},
+						"Flash": {
+							"properties": {}
+						}
+					},
+					"world": {
+						"x": 240,
+						"y": 256,
+						"width": 32,
+						"height": 32,
+						"originX": 0.375,
+						"originY": 0.75,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "obj_wep",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "id_Revolver",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 2,
+					"instanceVariables": {
+						"knockback": 0.5,
+						"recoil": 0
+					},
+					"behaviors": {},
+					"world": {
+						"x": -176,
+						"y": 200,
+						"width": 24,
+						"height": 24,
+						"originX": 0.36363636363636365,
+						"originY": 0.5217391304347826,
 						"color": [
 							1,
 							1,

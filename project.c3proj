@@ -182,7 +182,9 @@
 			"boss1",
 			"Text",
 			"Sprite",
-			"Sprite2"
+			"Sprite2",
+			"obj_checkpoint",
+			"cppoint_item"
 		],
 		"subfolders": [
 			{

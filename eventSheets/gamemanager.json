@@ -367,8 +367,34 @@
 									"id": "go-to-layout",
 									"objectClass": "System",
 									"sid": 834654339163173,
+									"disabled": true,
 									"parameters": {
 										"layout": "WinDeathLayout"
+									}
+								},
+								{
+									"id": "destroy",
+									"objectClass": "obj_player",
+									"sid": 336921800059114
+								},
+								{
+									"id": "wait",
+									"objectClass": "System",
+									"sid": 634970979461483,
+									"parameters": {
+										"seconds": "0.5"
+									}
+								},
+								{
+									"id": "create-object",
+									"objectClass": "System",
+									"sid": 300413485384591,
+									"parameters": {
+										"object-to-create": "obj_player",
+										"layer": "\"Game\"",
+										"x": "cppoint_item.X",
+										"y": "cppoint_item.Y",
+										"create-hierarchy": false
 									}
 								}
 							],
@@ -1405,10 +1431,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_wep",
-									"sid": 936129234164030,
+									"sid": 727757630127073,
 									"parameters": {
 										"instance-variable": "knockback",
-										"value": "0.5"
+										"value": "2"
 									}
 								},
 								{
@@ -1566,10 +1592,10 @@
 								{
 									"id": "set-instvar-value",
 									"objectClass": "obj_wep",
-									"sid": 656669156513292,
+									"sid": 345946896767575,
 									"parameters": {
 										"instance-variable": "knockback",
-										"value": "1"
+										"value": "5"
 									}
 								},
 								{
@@ -2621,6 +2647,41 @@
 				}
 			],
 			"sid": 991162660655796
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "cp",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "obj_player",
+							"sid": 170386150047976,
+							"parameters": {
+								"object": "obj_checkpoint"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "cppoint_item",
+							"sid": 843575029819342,
+							"parameters": {
+								"x": "obj_checkpoint.X",
+								"y": "obj_checkpoint.Y"
+							}
+						}
+					],
+					"sid": 316772887604427
+				}
+			],
+			"sid": 983152380958669
 		}
 	],
 	"sid": 959625501649600
