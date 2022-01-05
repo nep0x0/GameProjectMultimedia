@@ -63,6 +63,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Text",
+			"name": "Text",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -171,7 +179,10 @@
 			"BGBack",
 			"CloudsFront2",
 			"Zone",
-			"boss1"
+			"boss1",
+			"Text",
+			"Sprite",
+			"Sprite2"
 		],
 		"subfolders": [
 			{
@@ -237,6 +248,13 @@
 						],
 						"subfolders": [],
 						"name": "bg"
+					},
+					{
+						"items": [
+							"goa"
+						],
+						"subfolders": [],
+						"name": "goa"
 					}
 				],
 				"name": "tilesets"

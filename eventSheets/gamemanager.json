@@ -346,11 +346,11 @@
 								{
 									"id": "compare-instance-variable",
 									"objectClass": "obj_player",
-									"sid": 284260906826123,
+									"sid": 485414723947426,
 									"parameters": {
 										"instance-variable": "health",
 										"comparison": 5,
-										"value": "6"
+										"value": "4"
 									}
 								}
 							],
@@ -436,6 +436,31 @@
 									"sid": 213614087483587
 								}
 							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-overlapping-another-object",
+									"objectClass": "obj_player",
+									"sid": 364023626932095,
+									"parameters": {
+										"object": "Sprite2"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "set-instvar-value",
+									"objectClass": "obj_player",
+									"sid": 489244339781884,
+									"parameters": {
+										"instance-variable": "health",
+										"value": "5"
+									}
+								}
+							],
+							"sid": 742455704949498
 						}
 					],
 					"sid": 182920305627931
@@ -2541,6 +2566,61 @@
 				}
 			],
 			"sid": 179726187213604
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "goa",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "obj_player",
+							"sid": 338370240132667,
+							"parameters": {
+								"object": "goa"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "goa",
+							"sid": 847232880639275,
+							"parameters": {
+								"visibility": "invisible"
+							}
+						}
+					],
+					"sid": 496885378066759
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 298818925279501
+						}
+					],
+					"actions": [
+						{
+							"id": "set-visible",
+							"objectClass": "goa",
+							"sid": 939554307097441,
+							"parameters": {
+								"visibility": "visible"
+							}
+						}
+					],
+					"sid": 670179005957029
+				}
+			],
+			"sid": 991162660655796
 		}
 	],
 	"sid": 959625501649600

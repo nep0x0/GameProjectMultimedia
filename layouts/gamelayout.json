@@ -377,9 +377,148 @@
 						],
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 54,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2176,
+						"y": 264,
+						"width": 264,
+						"height": 192,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Sprite2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 56,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2395,
+						"y": 1088,
+						"width": 384,
+						"height": 248,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 522980905082289,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "goa",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [
+				{
+					"type": "goa",
+					"properties": {
+						"initially-visible": true,
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0,
+						"tile-x-drawing-offset": 0,
+						"tile-y-drawing-offset": 0,
+						"drawing-mode": "top-to-right"
+					},
+					"uid": 57,
+					"instanceVariables": {},
+					"behaviors": {},
+					"ownData": {
+						"tilemapData": {
+							"width": 33,
+							"height": 19,
+							"max-width": 99,
+							"max-height": 57,
+							"data": "119x0,3x12,0,4x12,48x0,8x12,0,2x12,43x0,12,0,12x12,43x0,16x12,41x0,16x12,41x0,16x12,40x0,19x12,39x0,18x12,39x0,18x12,39x0,16x12,41x0,17x12,40x0,16x12,41x0,18x12,39x0,18x12,39x0,17x12,40x0,18x12,39x0,17x12,40x0,16x12,0,2x12,38x0,17x12,40x0,17x12,40x0,16x12,41x0,6x12,24,9x12,41x0,16x12,41x0,16x12,41x0,16x12,41x0,16x12,41x0,4x12,24,3x12,24,7x12,41x0,7x12,24,8x12,41x0,13x12,24,2x12,44x0,4x12,24,14,2x13,15,3x12,24,44x0,3x12,2x24,23,2x0,3,4x12,3802x0"
+						},
+						"tile-width": 16,
+						"tile-height": 16,
+						"tile-x-offset": 0,
+						"tile-y-offset": 0,
+						"tile-x-spacing": 0,
+						"tile-y-spacing": 0
+					},
+					"world": {
+						"x": 112,
+						"y": 768,
+						"width": 536,
+						"height": 312,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 863849179346479,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"color": [
@@ -556,7 +695,7 @@
 						}
 					},
 					"world": {
-						"x": 248,
+						"x": 240,
 						"y": 256,
 						"width": 32,
 						"height": 32,
@@ -1312,9 +1451,9 @@
 					"world": {
 						"x": 64,
 						"y": 32,
-						"width": 67,
+						"width": 45,
 						"height": 12,
-						"originX": 0.5074626865671642,
+						"originX": 0.7555555555555555,
 						"originY": 0.5,
 						"color": [
 							1,
@@ -1666,6 +1805,35 @@
 						"y": 0,
 						"width": 696,
 						"height": 400,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Zone",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 55,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 2152,
+						"y": 400,
+						"width": 360,
+						"height": 512,
 						"originX": 0,
 						"originY": 0,
 						"color": [
