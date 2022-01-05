@@ -184,7 +184,8 @@
 			"Sprite",
 			"Sprite2",
 			"obj_checkpoint",
-			"cppoint_item"
+			"cppoint_item",
+			"Sprite3"
 		],
 		"subfolders": [
 			{
