@@ -82,6 +82,130 @@
 				{
 					"eventType": "group",
 					"disabled": false,
+					"title": "Group1",
+					"description": "",
+					"isActiveOnStart": true,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-floor",
+									"objectClass": "obj_player",
+									"sid": 544905583316010,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [],
+							"sid": 375757821446096,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "is-moving",
+											"objectClass": "obj_player",
+											"sid": 549107782293215,
+											"behaviorType": "Platform"
+										}
+									],
+									"actions": [],
+									"sid": 388478387137363,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-x-seconds",
+													"objectClass": "System",
+													"sid": 290340166710716,
+													"parameters": {
+														"interval-seconds": "0.58"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "play",
+													"objectClass": "Audio",
+													"sid": 616590270067773,
+													"parameters": {
+														"audio-file": "ES_Footsteps Grass 2 - SFX Producer",
+														"loop": "not-looping",
+														"volume": "0",
+														"tag-optional": "\"step\""
+													}
+												}
+											],
+											"sid": 675375980956814
+										}
+									]
+								}
+							]
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "is-on-floor",
+									"objectClass": "obj_player",
+									"sid": 594397262450502,
+									"behaviorType": "Platform"
+								}
+							],
+							"actions": [],
+							"sid": 352242648965471,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "on-stopped",
+											"objectClass": "obj_player",
+											"sid": 531620294477211,
+											"behaviorType": "Platform"
+										}
+									],
+									"actions": [],
+									"sid": 889282743391816,
+									"children": [
+										{
+											"eventType": "block",
+											"conditions": [
+												{
+													"id": "every-x-seconds",
+													"objectClass": "System",
+													"sid": 933201697007201,
+													"parameters": {
+														"interval-seconds": "0"
+													}
+												}
+											],
+											"actions": [
+												{
+													"id": "fade-volume",
+													"objectClass": "Audio",
+													"sid": 941158879277905,
+													"parameters": {
+														"tag": "\"step\"",
+														"db": "-100",
+														"duration": "3",
+														"ending": "stop"
+													}
+												}
+											],
+											"sid": 981968302144450
+										}
+									]
+								}
+							]
+						}
+					],
+					"sid": 455327215824659
+				},
+				{
+					"eventType": "group",
+					"disabled": false,
 					"title": "Player Control",
 					"description": "",
 					"isActiveOnStart": true,
@@ -1377,11 +1501,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 888405059218308,
+									"sid": 466098938264972,
 									"parameters": {
 										"audio-file": "sndPistol",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-10",
 										"tag-optional": "\"\""
 									}
 								},
@@ -1538,11 +1662,11 @@
 								{
 									"id": "play",
 									"objectClass": "Audio",
-									"sid": 163634138221843,
+									"sid": 287701502943994,
 									"parameters": {
 										"audio-file": "sndMachinegun",
 										"loop": "not-looping",
-										"volume": "0",
+										"volume": "-10",
 										"tag-optional": "\"\""
 									}
 								},
@@ -1957,6 +2081,17 @@
 										{
 											"callFunction": "player_health_func",
 											"sid": 544461656998272
+										},
+										{
+											"id": "play",
+											"objectClass": "Audio",
+											"sid": 907171399562299,
+											"parameters": {
+												"audio-file": "ouch",
+												"loop": "not-looping",
+												"volume": "0",
+												"tag-optional": "\"\""
+											}
 										}
 									],
 									"sid": 113703867464009
@@ -1989,7 +2124,7 @@
 						},
 						{
 							"eventType": "group",
-							"disabled": true,
+							"disabled": false,
 							"title": "movement",
 							"description": "",
 							"isActiveOnStart": true,
@@ -2019,8 +2154,7 @@
 											}
 										}
 									],
-									"sid": 283228970158638,
-									"disabled": true
+									"sid": 283228970158638
 								},
 								{
 									"eventType": "comment",
@@ -2046,8 +2180,7 @@
 											}
 										}
 									],
-									"sid": 808187399080392,
-									"disabled": true
+									"sid": 808187399080392
 								},
 								{
 									"eventType": "comment",
@@ -2086,8 +2219,7 @@
 											}
 										}
 									],
-									"sid": 853739009644298,
-									"disabled": true
+									"sid": 853739009644298
 								},
 								{
 									"eventType": "comment",
@@ -2126,8 +2258,7 @@
 											}
 										}
 									],
-									"sid": 273928812375457,
-									"disabled": true
+									"sid": 273928812375457
 								},
 								{
 									"eventType": "comment",
@@ -2168,7 +2299,6 @@
 										}
 									],
 									"sid": 844104560180713,
-									"disabled": true,
 									"isOrBlock": true
 								},
 								{
@@ -2206,7 +2336,6 @@
 										}
 									],
 									"sid": 473329331859731,
-									"disabled": true,
 									"isOrBlock": true
 								}
 							],
@@ -2477,6 +2606,17 @@
 								}
 							],
 							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 116797720799368,
+									"parameters": {
+										"audio-file": "ouch",
+										"loop": "not-looping",
+										"volume": "0",
+										"tag-optional": "\"\""
+									}
+								},
 								{
 									"id": "flash",
 									"objectClass": "obj_player",

@@ -320,6 +320,16 @@
 					"name": "sndPistol.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 423130616361926
+				},
+				{
+					"name": "ES_Footsteps Grass 2 - SFX Producer.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 841694194761256
+				},
+				{
+					"name": "ouch.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 991876938800872
 				}
 			],
 			"subfolders": []
