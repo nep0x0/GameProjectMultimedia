@@ -71,6 +71,22 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Button",
+			"name": "Button",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Spritefont2",
+			"name": "Sprite font",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -157,6 +173,22 @@
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "replacecolor",
+			"name": "Replace color",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "effect",
+			"id": "multiply",
+			"name": "Multiply",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
 		}
 	],
 	"uniqueId": "4oxxtrajkxx",
@@ -185,7 +217,17 @@
 			"Sprite2",
 			"obj_checkpoint",
 			"cppoint_item",
-			"Sprite3"
+			"Sprite3",
+			"Button",
+			"Button2",
+			"SpriteFont",
+			"Tilemap",
+			"TiledBackground3",
+			"Mask1",
+			"bullet_light",
+			"bxyc",
+			"Sprite4",
+			"jamur_light"
 		],
 		"subfolders": [
 			{
@@ -283,14 +325,16 @@
 		"items": [
 			"GameLayout",
 			"WinDeathLayout",
-			"ObjectRepository"
+			"ObjectRepository",
+			"Menu"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
 			"GameManager",
-			"SFXManager"
+			"SFXManager",
+			"menu"
 		],
 		"subfolders": []
 	},

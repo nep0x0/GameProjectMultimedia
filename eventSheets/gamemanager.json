@@ -508,18 +508,6 @@
 									"parameters": {
 										"seconds": "0.5"
 									}
-								},
-								{
-									"id": "create-object",
-									"objectClass": "System",
-									"sid": 300413485384591,
-									"parameters": {
-										"object-to-create": "obj_player",
-										"layer": "\"Game\"",
-										"x": "cppoint_item.X",
-										"y": "cppoint_item.Y",
-										"create-hierarchy": false
-									}
 								}
 							],
 							"sid": 832815376683406
@@ -772,6 +760,31 @@
 						}
 					],
 					"sid": 336763513082572
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-destroyed",
+							"objectClass": "obj_player",
+							"sid": 331736781985253
+						}
+					],
+					"actions": [
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 300413485384591,
+							"parameters": {
+								"object-to-create": "obj_player",
+								"layer": "\"Game\"",
+								"x": "cppoint_item.X",
+								"y": "cppoint_item.Y",
+								"create-hierarchy": false
+							}
+						}
+					],
+					"sid": 374310108012575
 				}
 			],
 			"sid": 463457303116082
@@ -2822,6 +2835,28 @@
 				}
 			],
 			"sid": 983152380958669
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 930942720200734
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Mask1",
+					"sid": 439551600289817,
+					"parameters": {
+						"object": "obj_player",
+						"image-point-optional": "\"lights\""
+					}
+				}
+			],
+			"sid": 649625955618135
 		}
 	],
 	"sid": 959625501649600

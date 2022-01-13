@@ -1,0 +1,37 @@
+{
+	"name": "bxyc",
+	"plugin-id": "Sprite",
+	"sid": 452084119221059,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 15,
+						"height": 19,
+						"originX": 31.333333333333332,
+						"originY": -16.657894736842106,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8377082,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 822949796928664,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

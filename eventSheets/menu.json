@@ -1,0 +1,51 @@
+{
+	"name": "menu",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Button",
+					"sid": 323297158700609
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 675458622227209,
+					"parameters": {
+						"layout": "GameLayout"
+					}
+				}
+			],
+			"sid": 924830965310057
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 814521644077735,
+					"parameters": {
+						"key": 27
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 423448046462476,
+					"parameters": {
+						"layout": "Menu"
+					}
+				}
+			],
+			"sid": 563422421165316
+		}
+	],
+	"sid": 620864437446856
+}
