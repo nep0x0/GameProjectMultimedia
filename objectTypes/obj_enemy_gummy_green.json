@@ -15,6 +15,24 @@
 			"type": "number",
 			"desc": "",
 			"sid": 705890285164374
+		},
+		{
+			"name": "active",
+			"type": "boolean",
+			"desc": "",
+			"sid": 899813589327988
+		},
+		{
+			"name": "dist",
+			"type": "number",
+			"desc": "",
+			"sid": 436269191953285
+		},
+		{
+			"name": "state",
+			"type": "string",
+			"desc": "",
+			"sid": 320812415130742
 		}
 	],
 	"behaviorTypes": [
@@ -27,6 +45,11 @@
 			"behaviorId": "Flash",
 			"name": "Flash",
 			"sid": 634770828917523
+		},
+		{
+			"behaviorId": "LOS",
+			"name": "LineOfSight",
+			"sid": 613665978000340
 		}
 	],
 	"effectTypes": [],

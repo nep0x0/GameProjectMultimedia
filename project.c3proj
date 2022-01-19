@@ -112,8 +112,24 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Timer",
+			"name": "Timer",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pin",
 			"name": "Pin",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "LOS",
+			"name": "Line of sight",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -154,6 +170,30 @@
 			"type": "behavior",
 			"id": "solid",
 			"name": "Solid",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "scrollto",
+			"name": "Scroll To",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "destroy",
+			"name": "Destroy outside layout",
+			"author": "Scirra",
+			"version": "r276.2",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
 			"author": "Scirra",
 			"version": "r276.2",
 			"bundled": false
@@ -227,7 +267,15 @@
 			"bullet_light",
 			"bxyc",
 			"Sprite4",
-			"jamur_light"
+			"jamur_light",
+			"MossyHangingPlants",
+			"akarLight",
+			"download",
+			"Water",
+			"Water2",
+			"win_sign",
+			"skyCloudOrange",
+			"Tutorial"
 		],
 		"subfolders": [
 			{
@@ -312,6 +360,18 @@
 				],
 				"subfolders": [],
 				"name": "Player"
+			},
+			{
+				"items": [
+					"obj_boss_trigger",
+					"obj_boss_door",
+					"boss_light",
+					"obj_player2",
+					"obj_boss",
+					"winlight"
+				],
+				"subfolders": [],
+				"name": "boss"
 			}
 		]
 	},

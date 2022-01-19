@@ -1,0 +1,26 @@
+{
+	"name": "Tutorial",
+	"plugin-id": "Spritefont2",
+	"sid": 264197017087828,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 545884974577709
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 1024,
+		"height": 32,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "png",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2099644,
+		"useCollisionPoly": true
+	}
+}

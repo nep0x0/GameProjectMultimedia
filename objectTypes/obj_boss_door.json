@@ -1,0 +1,43 @@
+{
+	"name": "obj_boss_door",
+	"plugin-id": "Sprite",
+	"sid": 206672692879252,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 464612309159597
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 57,
+						"height": 258,
+						"originX": 0.491228,
+						"originY": 0.143411,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 3549019,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 222229147125184,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

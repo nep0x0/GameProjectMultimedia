@@ -1,0 +1,57 @@
+{
+	"name": "MossyHangingPlants",
+	"plugin-id": "Sprite",
+	"sid": 327389516337552,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 55,
+						"height": 145,
+						"originX": 1.9272727272727297,
+						"originY": -0.020689655172413793,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 1,
+						"imageSpriteId": 3912385,
+						"collisionPoly": {
+							"points": [
+								0,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								0,
+								1,
+								1,
+								1,
+								1,
+								0,
+								1,
+								0,
+								0
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 874068298717919,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

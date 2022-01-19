@@ -251,11 +251,15 @@
 						"live-preview": false
 					},
 					"uid": 51,
-					"instanceVariables": {},
+					"instanceVariables": {
+						"direction": "",
+						"Target": 0,
+						"health": 25
+					},
 					"behaviors": {
 						"Platform": {
 							"properties": {
-								"max-speed": 330,
+								"max-speed": 100,
 								"acceleration": 1500,
 								"deceleration": 1500,
 								"jump-strength": 650,
@@ -263,18 +267,21 @@
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 0,
-								"default-controls": true,
+								"default-controls": false,
 								"enabled": true
 							}
+						},
+						"Flash": {
+							"properties": {}
 						}
 					},
 					"world": {
 						"x": 64,
 						"y": 64,
-						"width": 96,
-						"height": 96,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 69,
+						"height": 72,
+						"originX": 0.463768115942029,
+						"originY": 0.4305555555555556,
 						"color": [
 							1,
 							1,

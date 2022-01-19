@@ -1,0 +1,37 @@
+{
+	"name": "download",
+	"plugin-id": "Sprite",
+	"sid": 750603210751945,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 69,
+						"height": 64,
+						"originX": -0.2463768115942029,
+						"originY": -1.328125,
+						"originalSource": "",
+						"exportFormat": "png",
+						"exportQuality": 0.8,
+						"imageSpriteId": 4107337,
+						"useCollisionPoly": true,
+						"duration": 1
+					}
+				],
+				"sid": 976405379878668,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

@@ -3,12 +3,36 @@
 	"plugin-id": "Sprite",
 	"sid": 742766056109654,
 	"isGlobal": false,
-	"instanceVariables": [],
+	"instanceVariables": [
+		{
+			"name": "direction",
+			"type": "string",
+			"desc": "",
+			"sid": 796145947048488
+		},
+		{
+			"name": "Target",
+			"type": "number",
+			"desc": "",
+			"sid": 341103497184755
+		},
+		{
+			"name": "health",
+			"type": "number",
+			"desc": "",
+			"sid": 960623091299930
+		}
+	],
 	"behaviorTypes": [
 		{
 			"behaviorId": "Platform",
 			"name": "Platform",
 			"sid": 950866205238076
+		},
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 815285889588393
 		}
 	],
 	"effectTypes": [],
@@ -17,96 +41,96 @@
 			{
 				"frames": [
 					{
-						"width": 96,
-						"height": 96,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 69,
+						"height": 72,
+						"originX": 0.463768115942029,
+						"originY": 0.4305555555555556,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1630476,
+						"imageSpriteId": 3631453,
 						"collisionPoly": {
 							"points": [
-								0.10156253973642985,
-								0.06250003973642985,
-								0.9088541666666664,
-								0.06249999006589251,
-								0.8854162693023682,
-								0.9010415871938069,
-								0.12499988079071048,
-								0.8984372615814207
+								0.9855074122332145,
+								0.9618052376641164,
+								0,
+								0.9652776718139648,
+								0,
+								0,
+								1,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
 					{
-						"width": 96,
-						"height": 96,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 69,
+						"height": 72,
+						"originX": 0.463768115942029,
+						"originY": 0.4305555555555556,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 80642,
+						"imageSpriteId": 4470523,
 						"collisionPoly": {
 							"points": [
-								0.10156253973642985,
-								0.06250003973642985,
-								0.9088541666666664,
-								0.06249999006589251,
-								0.8854162693023682,
-								0.9010415871938069,
-								0.12499988079071048,
-								0.8984372615814207
+								0.9855074122332145,
+								0.9618052376641164,
+								0,
+								0.9652776718139648,
+								0,
+								0,
+								1,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
 					{
-						"width": 96,
-						"height": 96,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 69,
+						"height": 72,
+						"originX": 0.463768115942029,
+						"originY": 0.4305555555555556,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1911501,
+						"imageSpriteId": 9379263,
 						"collisionPoly": {
 							"points": [
-								0.10156253973642985,
-								0.06250003973642985,
-								0.9088541666666664,
-								0.06249999006589251,
-								0.8854162693023682,
-								0.9010415871938069,
-								0.12499988079071048,
-								0.8984372615814207
+								0.9855074122332145,
+								0.9618052376641164,
+								0,
+								0.9652776718139648,
+								0,
+								0,
+								1,
+								0
 							]
 						},
 						"useCollisionPoly": true,
 						"duration": 1
 					},
 					{
-						"width": 96,
-						"height": 96,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 69,
+						"height": 72,
+						"originX": 0.463768115942029,
+						"originY": 0.4305555555555556,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 450669,
+						"imageSpriteId": 2172655,
 						"collisionPoly": {
 							"points": [
-								0.10156253973642985,
-								0.06250003973642985,
-								0.9088541666666664,
-								0.06249999006589251,
-								0.8854162693023682,
-								0.9010415871938069,
-								0.12499988079071048,
-								0.8984372615814207
+								0.9855074122332145,
+								0.9618052376641164,
+								0,
+								0.9652776718139648,
+								0,
+								0,
+								1,
+								0
 							]
 						},
 						"useCollisionPoly": true,

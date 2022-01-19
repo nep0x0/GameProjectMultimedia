@@ -50,6 +50,11 @@
 			"behaviorId": "Flash",
 			"name": "Flash",
 			"sid": 883439133959800
+		},
+		{
+			"behaviorId": "Timer",
+			"name": "Timer",
+			"sid": 449993390781126
 		}
 	],
 	"effectTypes": [],
