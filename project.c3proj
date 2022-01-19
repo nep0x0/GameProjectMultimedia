@@ -275,7 +275,9 @@
 			"Water2",
 			"win_sign",
 			"skyCloudOrange",
-			"Tutorial"
+			"Tutorial",
+			"creditbox",
+			"credit"
 		],
 		"subfolders": [
 			{

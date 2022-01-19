@@ -3847,6 +3847,15 @@
 								"object": "win_sign",
 								"image-point-optional": "0"
 							}
+						},
+						{
+							"id": "set-position-to-another-object",
+							"objectClass": "credit",
+							"sid": 582138369271396,
+							"parameters": {
+								"object": "creditbox",
+								"image-point-optional": "0"
+							}
 						}
 					],
 					"sid": 275715277826019
