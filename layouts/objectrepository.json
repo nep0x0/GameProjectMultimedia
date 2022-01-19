@@ -254,7 +254,7 @@
 					"instanceVariables": {
 						"direction": "",
 						"Target": 0,
-						"health": 5
+						"health": 25
 					},
 					"behaviors": {
 						"Platform": {
