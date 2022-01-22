@@ -7,62 +7,6 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Bullet2",
-					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Default",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 31,
-					"instanceVariables": {
-						"LastX": 0,
-						"LastY": 0
-					},
-					"behaviors": {
-						"Bullet": {
-							"properties": {
-								"speed": 400,
-								"acceleration": 0,
-								"gravity": 0,
-								"bounce-off-solids": false,
-								"set-angle": true,
-								"step": false,
-								"enabled": true
-							}
-						}
-					},
-					"effects": {
-						"GlowHorizontal": {
-							"parameters": {
-								"intensity": 1
-							}
-						},
-						"GlowVertical": {
-							"parameters": {
-								"intensity": 1
-							}
-						}
-					},
-					"world": {
-						"x": 128,
-						"y": 96,
-						"width": 16,
-						"height": 16,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "BulletHit",
 					"properties": {
 						"rate": 8,

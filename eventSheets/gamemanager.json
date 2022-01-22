@@ -2658,8 +2658,8 @@
 									"conditions": [
 										{
 											"id": "on-landed",
-											"objectClass": "obj_boss",
-											"sid": 256736463739013,
+											"objectClass": "boss1",
+											"sid": 584863071978225,
 											"behaviorType": "Platform"
 										}
 									],

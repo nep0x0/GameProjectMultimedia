@@ -176,22 +176,6 @@
 		},
 		{
 			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "destroy",
-			"name": "Destroy outside layout",
-			"author": "Scirra",
-			"version": "r276.2",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
@@ -355,11 +339,7 @@
 				"name": "tilesets"
 			},
 			{
-				"items": [
-					"Bullet2",
-					"PlayerCollision",
-					"PlayerGraphics"
-				],
+				"items": [],
 				"subfolders": [],
 				"name": "Player"
 			},
@@ -368,8 +348,6 @@
 					"obj_boss_trigger",
 					"obj_boss_door",
 					"boss_light",
-					"obj_player2",
-					"obj_boss",
 					"winlight"
 				],
 				"subfolders": [],
